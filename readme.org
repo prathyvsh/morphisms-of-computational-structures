@@ -47,17 +47,13 @@ This rise in complexity and clarity would lead to the use of topological/metric 
 
 An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
-Moggi’s semantics is used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
-
-Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf
-][monads and control flow constructs in Lambda Calculus]].
+Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
 
 Andrzej Filinski and Olivier Danvy worked on [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf][unifying control concepts]].
 
 Filinski found out about Symmetric Lambda Calculus during his Ph. D. work. [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.8729&rep=rep1&type=pdf][This paper]] detailed about the duality existing between values and continuations.
 
-Expressions can be thought of as [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf
-][producing data and continuations as consuming data]].
+Expressions can be thought of as [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf][producing data and continuations as consuming data]].
 Matija Pretnar uses Filinski’s representation theorem to [[https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf][invent *effect handlers*]].
 
 These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing computational effects]] in languages like Eff and Koka.
