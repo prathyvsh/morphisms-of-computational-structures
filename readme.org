@@ -26,14 +26,30 @@ Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but w
 ** Montague Quantification vs. Continuations
 Natural language exhibiting continuations is described by Barker here: https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf
 
-** History
+** Histor
 
-Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert programme to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it. They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
+Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert programme to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it.
+
+Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
+
+Godemont invented monads in 1958 under the name “standard constrution”.
+
+They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
 
 Using these formalizations, one can start to reason about what different constructs in programming language mean (operation wise / structure preserving mapping wise) and conduct studies on them for discovering their properties and complexity parameters.
 
+Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling continuous lattices: https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat
+TODO: Understand how CPO figures in here
+
+There was a flurry of work in understanding how control flow constructs work post 1960s which is documented in the work of John Reynolds (See Resources section). There ensued work on denotational models of effectful (state, control flow, I/O) and non-deterministic (concurrency/parallelism) languages.
+
+This rise in complexity and clarity would lead to the use of topological/metric spaces to be brought to bear on studying computational structures.
+
+An important paper in this direction seems to be: http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf
+
+Moggi’s semantics is used by Philipp Wadler to simplify the API of Haskell from CPS-based to monad based: http://doi.acm.org/10.1145/143165.143169
+
 Eugenio Moggi brought together monads and control flow constructs in Lambda Calculus: https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf
-There was a flurry of work in understanding how control flow constructs work post 1960s which is documented in the work of John Reynolds (See Resources section).
 
 Andrzej Filinski and Olivier Danvy worked on unifying control concepts: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf
 
@@ -42,9 +58,17 @@ This paper detailed about the duality existing between values and continuations.
 
 Expressions can be thought of as producing data and continuations as consuming data: http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf
 
-These works leads up to formalizing computational effects in languages like Eff and Koka. A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
+Matija Pretnar uses Filinski’s representation theorem to invent “effect handlers”: https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf
+
+These works leads up to formalizing computational effects in languages like Eff and Koka:http://lambda-the-ultimate.org/node/4481
+
+A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
 
 TODO: Find out how the categorical duality between expressions and continuations can be grounded using initial and final algebras and co-algebras.
+
+TODO: Find out what how Plotkin and Power used Lawvere’s idea to model algebraic theory of effects in categorical semantics.
+
+TODO: Investigate Call by Push Value by Paul Blain Levy
 
 * Resources
 
@@ -52,6 +76,9 @@ TODO: Find out how the categorical duality between expressions and continuations
 
 *** [[https://jlongster.com/Whats-in-a-Continuation][Whats in a Continuation]]
 James Longster
+
+*** [[https://garlandus.co/OfTablesChairsBeerMugsAndComputing.html][Of Tables, Chairs, Beers Mugs and Computing]]
+A really nice essay by Garlandus outlining the role of Hilbert and Göttingen in influencing the history of Computer Science
 
 ** Talks
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
