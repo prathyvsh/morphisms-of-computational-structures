@@ -18,13 +18,14 @@ These are the constructs that I have observed to display morphisms.
 Some of these connections where what drew may attention to find that there is morphisms happening across different control constructs.
 
 ** Continuations vs. Lazy Evaluation
-Chris Okasaki has found the link between Lazy Evaluation / Call by Need and Continuations: https://link.springer.com/article/10.1007/BF01019945
+Chris Okasaki has found the link between [[https://link.springer.com/article/10.1007/BF01019945][Lazy Evaluation / Call by Need and Continuations]].
 
 ** Closures vs. Actors
-Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but was rejected by Hewitt: https://arxiv.org/vc/arxiv/papers/1008/1008.1459v8.pdf
+Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but was [[https://arxiv.org/vc/arxiv/papers/1008/1008.1459v8.pdf
+][rejected by Hewitt]].
 
 ** Montague Quantification vs. Continuations
-Natural language exhibiting continuations is described by Barker here: https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf
+Natural language exhibiting continuations is described by Barker [[https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf][here]].
 
 ** History
 
@@ -38,29 +39,29 @@ They used it to understand different programming language constructs popular at 
 
 Using these formalizations, one can start to reason about what different constructs in programming language mean (operation wise / structure preserving mapping wise) and conduct studies on them for discovering their properties and complexity parameters.
 
-Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling continuous lattices: https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat
+Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
 TODO: Understand how CPO figures in here
 
 There was a flurry of work in understanding how control flow constructs work post 1960s which is documented in the work of John Reynolds (See Resources section). There ensued work on denotational models of effectful (state, control flow, I/O) and non-deterministic (concurrency/parallelism) languages.
 
 This rise in complexity and clarity would lead to the use of topological/metric spaces to be brought to bear on studying computational structures.
 
-An important paper in this direction seems to be: http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf
+An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
-Moggi’s semantics is used by Philipp Wadler to simplify the API of Haskell from CPS-based to monad based: http://doi.acm.org/10.1145/143165.143169
+Moggi’s semantics is used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
 
-Eugenio Moggi brought together monads and control flow constructs in Lambda Calculus: https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf
+Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf
+][monads and control flow constructs in Lambda Calculus]].
 
-Andrzej Filinski and Olivier Danvy worked on unifying control concepts: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf
+Andrzej Filinski and Olivier Danvy worked on [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf][unifying control concepts]].
 
-Filinski found out about Symmetric Lambda Calculus during his Ph. D. work: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.8729&rep=rep1&type=pdf
-This paper detailed about the duality existing between values and continuations.
+Filinski found out about Symmetric Lambda Calculus during his Ph. D. work. [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.8729&rep=rep1&type=pdf][This paper]] detailed about the duality existing between values and continuations.
 
-Expressions can be thought of as producing data and continuations as consuming data: http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf
+Expressions can be thought of as [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf
+][producing data and continuations as consuming data]].
+Matija Pretnar uses Filinski’s representation theorem to [[https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf][invent *effect handlers*]].
 
-Matija Pretnar uses Filinski’s representation theorem to invent “effect handlers”: https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf
-
-These works leads up to formalizing computational effects in languages like Eff and Koka:http://lambda-the-ultimate.org/node/4481
+These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing computational effects]] in languages like Eff and Koka.
 
 A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
 
