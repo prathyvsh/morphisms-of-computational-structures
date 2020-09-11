@@ -25,7 +25,7 @@ Chris Okasaki has found the link between [[https://link.springer.com/article/10.
 Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but was [[https://arxiv.org/vc/arxiv/papers/1008/1008.1459v8.pdf][rejected by Hewitt]].
 
 ** Montague Quantification vs. Continuations
-Natural language exhibiting continuations is described by Barker [[https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf][here]].
+Natural language exhibiting continuations is described by Barker [[https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf][here]] and in [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.454.8690&rep=rep1&type=pdf][this book]].
 
 ** History
 
