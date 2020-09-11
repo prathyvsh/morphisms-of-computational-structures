@@ -86,6 +86,8 @@ A really nice essay by Garlandus outlining the role of Hilbert and Göttingen in
 
 ** Surveys
 
+*** [[http://okmij.org/ftp/continuations/][Oleg Kiselyov’s compilation on continuations]]
+
 *** [[https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-discoveries.pdf][Discovery of Continuations]]
 John Reynolds
 
