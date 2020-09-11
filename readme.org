@@ -12,6 +12,7 @@ These are the constructs that I have observed to display morphisms.
 - Algebraic Effects
 - Monads
 - Montague Quantification
+- Iterators/Generators
 
 ** Early pointers
 
@@ -63,6 +64,10 @@ A good bibliography of this chain can be found catalogued by Jeremy Yallop (See 
 TODO: Find out how the categorical duality between expressions and continuations can be grounded using initial and final algebras and co-algebras.
 
 TODO: Find out what how Plotkin and Power used Lawvere’s idea to model algebraic theory of effects in categorical semantics.
+
+TODO: Find out how yield/run maps to continuations
+
+TODO: Add Shift/Reset and Felleisen’s operator
 
 TODO: Investigate Call by Push Value by Paul Blain Levy
 
