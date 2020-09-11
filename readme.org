@@ -2,7 +2,41 @@
 
 This is a story about how control constructs in programming languages display (homo/iso)morphisms. I first came across this as I was exploring abstract features in computer programming languages and they started exhibiting parallels. Since 1900s there have been emergent fields like universal algebra and category theory that attempt to capture rigorously the parallels between different domains of study. Trying to read through these writings and observing my own work with programming languages helped me see how programming constructs have deep links in the way they make computational structures tractable. This article is an attempt at telling the (hi)story of how these emerged and what nature of morphisms/structure preserving mapping they display among each other.
 
+** Constructs under study
+These are the constructs that I have observed to display morphisms.
+
+- Continuations
+- Lazy Evaluation / Non-strictness
+- Actors
+- Closures
+- Algebraic Effects
+- Monads
+- Montague Quantification
+
+** Early pointers
+
+Some of these connections where what drew may attention to find that there is morphisms happening across different control constructs.
+
+** Continuations vs. Lazy Evaluation
+Chris Okasaki has found the link between Lazy Evaluation / Call by Need and Continuations: https://link.springer.com/article/10.1007/BF01019945
+
+** Closures vs. Actors
+Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but was rejected by Hewitt: https://arxiv.org/vc/arxiv/papers/1008/1008.1459v8.pdf
+
+** Montague Quantification vs. Continuations
+Natural language exhibiting continuations is described by Barker here: https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf
+
+** History
+
 * Resources
+
+** Talks
+*** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
+
 ** Surveys
+
 *** [[https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-discoveries.pdf][Discovery of Continuations]]
 John Reynolds
+
+*** [[https://github.com/yallop/effects-bibliography][Effects Bibliography]]
+Jeremy Yallop
