@@ -1,0 +1,8 @@
+* Morphisms of Control Constructs
+
+This is a story about how control constructs in programming languages display (homo/iso)morphisms. I first came across this as I was exploring abstract features in computer programming languages and they started exhibiting parallels. Since 1900s there have been emergent fields like universal algebra and category theory that attempt to capture rigorously the parallels between different domains of study. Trying to read through these writings and observing my own work with programming languages helped me see how programming constructs have deep links in the way they make computational structures tractable. This article is an attempt at telling the (hi)story of how these emerged and what nature of morphisms/structure preserving mapping they display among each other.
+
+* Resources
+** Surveys
+*** [[https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-discoveries.pdf][Discovery of Continuations]]
+John Reynolds
