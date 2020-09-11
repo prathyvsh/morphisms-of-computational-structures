@@ -54,7 +54,7 @@ Andrzej Filinski and Olivier Danvy worked on [[http://citeseerx.ist.psu.edu/view
 Filinski found out about Symmetric Lambda Calculus during his Ph. D. work. [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.8729&rep=rep1&type=pdf][This paper]] detailed about the duality existing between values and continuations.
 
 Expressions can be thought of as [[http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf][producing data and continuations as consuming data]].
-Matija Pretnar uses Filinski’s representation theorem to [[https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf][invent *effect handlers*]].
+Matija Pretnar uses Filinski’s representation theorem to [[https://homepages.inf.ed.ac.uk/slindley/papers/handlers.pdf][invent effect handlers]].
 
 These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing computational effects]] in languages like Eff and Koka.
 
