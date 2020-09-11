@@ -28,7 +28,30 @@ Natural language exhibiting continuations is described by Barker here: https://w
 
 ** History
 
+Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert programme to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it. They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
+
+Using these formalizations, one can start to reason about what different constructs in programming language mean (operation wise / structure preserving mapping wise) and conduct studies on them for discovering their properties and complexity parameters.
+
+Eugenio Moggi brought together monads and control flow constructs in Lambda Calculus: https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf
+There was a flurry of work in understanding how control flow constructs work post 1960s which is documented in the work of John Reynolds (See Resources section).
+
+Andrzej Filinski and Olivier Danvy worked on unifying control concepts: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf
+
+Filinski found out about Symmetric Lambda Calculus during his Ph. D. work: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.8729&rep=rep1&type=pdf
+This paper detailed about the duality existing between values and continuations.
+
+Expressions can be thought of as producing data and continuations as consuming data: http://www.cs.ox.ac.uk/ralf.hinze/WG2.8/27/slides/kenichi1.pdf
+
+These works leads up to formalizing computational effects in languages like Eff and Koka. A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
+
+TODO: Find out how the categorical duality between expressions and continuations can be grounded using initial and final algebras and co-algebras.
+
 * Resources
+
+** Posts
+
+*** [[https://jlongster.com/Whats-in-a-Continuation][Whats in a Continuation]]
+James Longster
 
 ** Talks
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
