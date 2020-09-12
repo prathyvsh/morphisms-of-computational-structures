@@ -97,6 +97,9 @@ James Longster
 *** [[https://garlandus.co/OfTablesChairsBeerMugsAndComputing.html][Of Tables, Chairs, Beers Mugs and Computing]]
 A really nice essay by Garlandus outlining the role of Hilbert and Göttingen in influencing the history of Computer Science
 
+*** [[http://pllab.is.ocha.ac.jp/~asai/cw2011tutorial/main-e.pdf][Introduciton to Programming with Shift/Reset]]
+Kenichi Asai, Oleg Kiselyov (2011)
+
 ** Talks
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
 
