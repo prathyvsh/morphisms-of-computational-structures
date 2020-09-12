@@ -6,13 +6,31 @@ This is a narrative on how control constructs in programming languages display (
 These are the constructs that I have observed to display morphisms.
 
 - Continuations
+Continuations can be thought of as a construct that carries with it the context that need to be evaluated.
+
 - Lazy Evaluation / Non-strictness
+Lazy evaluation also known as non-strictness, delays the evaluation of a program and lets a user derive the values on demand.
+
 - Actors
+Actors are models of concurrency devised by Hewitt. He found the aspect of lack of time in Lambda Calculus a setback and sought to amend it with his model.
+
 - Closures
+Closures are contexts of function execution stored for computational purposes
+
 - Algebraic Effects
+Algebraic Effects allow one to build up composable continuations.
+
 - Monads
+Originally deriving from abstract algebra, where they are structures that are endofunctors with two natural transformations.
+Monads when used in the programming context can be thought of as a way to bring in infrastructure needed for composing functions together.
+
 - Montague Quantification
-- Iterators/Generators
+Montague considered programming language and natural languages as being united with a universal grammar.
+His idea of quantification is thought to be parallel to continuations in programming languages.
+
+- Generators/Iterators
+Constructs that allows one to control the looping behaviour of a program.
+
 
 ** Early pointers
 
