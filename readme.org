@@ -1,4 +1,4 @@
-* Morphisms of Control Constructs
+* Morphisms of Computational Constructs
 
 This is a narrative on how control constructs in programming languages display (homo/iso)morphisms. I first came across this as I was exploring features in computer programming languages and I kept finding out that they started exhibited parallels when their theoretical standpoint is examined. Since 1900s there have been emergent fields like universal algebra and category theory that attempt to capture rigorously the parallels between different domains of study. Trying to read through these writings and observing my own work with programming languages helped me see how programming constructs have deep links in the way they make computational structures tractable. This article is an attempt at telling the (hi)story of how these emerged and what nature of morphisms/structure preserving maps they display among each other.
 
