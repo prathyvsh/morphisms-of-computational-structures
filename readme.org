@@ -1,6 +1,6 @@
 * Morphisms of Computational Constructs
 
-This is a narrative on how computational structures in programming languages (data structures, control constructs, deeper algebraic objects) display morphisms among them. I first came across this as as I was exploring features in computer programming languages and I kept finding out that they started exhibited parallels to very different domains when their theoretical standpoint is examined. Since 1900s there have been emergent fields like universal algebra and category theory that attempt to capture rigorously the parallels between different domains of study. Trying to read through these writings, discoveries happening in Computer Science, and observing my own work with programming languages helped me see how programming languages have deep connections when you remove the veil of their outward appearance. Programming languages act as a medium for our interaction with these computational structures and each of them differ in a way they provide tractability on these structures. This repository is an attempt at capturing the (hi)story of how these emerged and a catalogue of what kinds of morphisms/structure preserving maps they display among each other written in a manner communicable to someone who have sensed the resonance across very different fields of computatino. 
+This is a narrative on how computational structures in programming languages (data structures, control constructs, deeper algebraic objects) display morphisms among them. I first came across this as as I was exploring features in computer programming languages and I kept finding out that they started exhibited parallels to very different domains when their theoretical standpoint is examined. Since 1900s there have been emergent fields like universal algebra and category theory that attempt to capture rigorously the parallels between different domains of study. Trying to read through these writings, discoveries happening in Computer Science, and observing my own work with programming languages helped me see how programming languages have deep connections when you remove the veil of their outward appearance. Programming languages act as a medium for our interaction with these computational structures and each of them differ in a way they provide tractability on these structures. This repository is an attempt at capturing the (hi)story of how these emerged and a catalogue of what kinds of morphisms/structure preserving maps they display among each other written in a manner communicable to someone who have sensed the resonance across very different fields of computation. 
 
 ** Constructs under study
 These are the constructs that I have observed to display morphisms.
@@ -45,11 +45,11 @@ Natural language exhibiting continuations is described by Barker [[https://www.c
 
 ** History
 
-Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert programme to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it.
+Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert program to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it.
 
 Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
 
-Godemont invented monads in 1958 under the name “standard constrution”.
+Godemont invented monads in 1958 under the name “standard construction”.
 
 They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
 
@@ -104,7 +104,7 @@ Kenichi Asai, Oleg Kiselyov (2011)
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
 
 *** Hoare’s talks on unifying process calculus
-Hoare has given a set of three talks at Heidelberg Laurate Conferences where he talks about the coherence of logic, algebra, and geometry in Computer Science
+Hoare has given a set of three talks at Heidelberg Laureate Conferences where he talks about the coherence of logic, algebra, and geometry in Computer Science
 
 **** [[https://www.heidelberg-laureate-forum.org/video/lecture-pioneers-of-computer-science-aristotle-and-euclid.html][Talk 1: Pioneers of Computer Science: Aristotle and Euclid]]
 **** [[https://www.youtube.com/watch?v=wzd8BeVpQpw][Talk 2: A finite geometric representation of computer program behaviour]]
