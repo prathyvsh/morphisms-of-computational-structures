@@ -106,9 +106,9 @@ Kenichi Asai, Oleg Kiselyov (2011)
 *** Hoare’s talks on unifying process calculus
 Hoare has given a set of three talks at Heidelberg Laurate Conferences where he talks about the coherence of logic, algebra, and geometry in Computer Science
 
-[[https://www.heidelberg-laureate-forum.org/video/lecture-pioneers-of-computer-science-aristotle-and-euclid.html][Talk 1: Pioneers of Computer Science: Aristotle and Euclid]]
-[[https://www.youtube.com/watch?v=wzd8BeVpQpw][Talk 2: A finite geometric representation of computer program behaviour]]
-[[https://www.youtube.com/watch?v=S_mmMVoSW30][Talk 3: Algebra, Logic, Geometry at the Foundation of Computer Science]]
+**** [[https://www.heidelberg-laureate-forum.org/video/lecture-pioneers-of-computer-science-aristotle-and-euclid.html][Talk 1: Pioneers of Computer Science: Aristotle and Euclid]]
+**** [[https://www.youtube.com/watch?v=wzd8BeVpQpw][Talk 2: A finite geometric representation of computer program behaviour]]
+**** [[https://www.youtube.com/watch?v=S_mmMVoSW30][Talk 3: Algebra, Logic, Geometry at the Foundation of Computer Science]]
 
 ** Surveys
 
