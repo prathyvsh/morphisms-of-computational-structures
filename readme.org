@@ -4,7 +4,7 @@ This is a narrative on how computational structures in programming languages (da
 
 ** Notes to an enthusiast on how to learn these ideas
 
-When I was young, I found people talking about ideas like Curry-Howard isomorphism or arguing about the struggle about learning about monads pretty intriguing. Although, I lacked the technical know-how at that time to evaluate what was even being addressed, but as I started looking into these over a period of time, I slowly became immersed in the terminology enough to understand what was being referred to and what was at stake. If you find yourself puzzled about what all these ideas are about but at loss on how to proceed, let me share some of the things that have helped me in getting traction to understand [[./how-to-learn.org][these deeper]].
+When I was young, I found people talking about ideas like Curry-Howard isomorphism or arguing about the struggle about learning about monads pretty intriguing. Although, I lacked the technical know-how at that time to evaluate what was even being addressed, but as I started looking into these over a period of time, I slowly became immersed in the terminology enough to understand what was being referred to and what was at stake. If you find yourself puzzled about what all these ideas are about but at loss on how to proceed, let me share some of the things that have helped me in getting traction to [[./how-to-learn.org][understand them]].
 
 * Why study these?
 
