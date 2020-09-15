@@ -10,7 +10,7 @@ When I was young, I found people talking about ideas like Curry-Howard isomorphi
 
 My motivation towards studying these concepts is that they allow you to figure out the deep unity and distinction among different concepts in programming languages. Apart from programming languages, these studies also shine light on how natural language could be tied to programming languages. These I sense provide a  certain setting in which you can understand how language, grammar, mechanism, and mind are related.
 
-Also, it is of great value in doing advancing programming methods and is being actively researched. There has been a lot of activities in these domains and it is intimidating for an entrant to understand the who, what, how and why of these. This document is my humble attempt at trying to bring a structure to the sprawling field of development so that it might contribute towards someone undertaking a similar journey. Hope it helps!
+Also, it is of great value in doing advancing programming methods and is being actively researched. There has been a lot of activities in these domains and it is intimidating for an entrant to understand the who, what, how and why of these. This document is my humble attempt at trying to bring a structure to the sprawling field of development so that it might help someone to make sense when undertaking a similar journey. Hope it helps!
 
 I also keep a rough journal of how I came across the ideas [[./journal.org][here]].
 
