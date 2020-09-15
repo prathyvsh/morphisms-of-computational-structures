@@ -132,3 +132,5 @@ John Reynolds
 
 *** [[https://github.com/yallop/effects-bibliography][Effects Bibliography]]
 Jeremy Yallop
+
+*** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Stone-Scott-Tarski correspondences]]
