@@ -78,16 +78,6 @@ These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing 
 
 A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
 
-TODO: Find out how the categorical duality between expressions and continuations can be grounded using initial and final algebras and co-algebras.
-
-TODO: Find out what how Plotkin and Power used Lawvere’s idea to model algebraic theory of effects in categorical semantics.
-
-TODO: Find out how yield/run maps to continuations
-
-TODO: Add Shift/Reset and Felleisen’s operator
-
-TODO: Investigate Call by Push Value by Paul Blain Levy
-
 * Resources
 
 ** Posts
@@ -121,4 +111,4 @@ John Reynolds
 *** [[https://github.com/yallop/effects-bibliography][Effects Bibliography]]
 Jeremy Yallop
 
-*** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Stone-Scott-Tarski correspondences]]
+*** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Lambek-Stone-Scott-Tarski correspondences]]
