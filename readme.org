@@ -16,6 +16,16 @@ A common observation during these studies is that you’ll often become confused
 
 Hope that helps in giving a working base for people who are intrigued about these connections and feel free to touch base with me on [[https://twitter.com/prathyvsh][Twitter]] if you come across much difficulty when learning.
 
+* Why study these?
+
+My motivation towards studying these concepts is that they allow you to figure out the deep unity and distinction among different concepts in programming languages. Apart from programming languages, these studies also shine light on how natural language could be tied to programming languages. These I sense provide a  certain setting in which you can understand how language, grammar, mechanism, and mind are related.
+
+Also, it is of great value in doing advancing programming methods and is being actively researched. There has been a lot of activities in these domains and it is intimidating for an entrant to understand the who, what, how and why of these. This document is my humble attempt at trying to bring a structure to the sprawling field of development so that it might contribute towards someone undertaking a similar journey. Hope it helps!
+
+I also keep a rough journal of how I came across the ideas [[./journal.org][here]].
+
+And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
+
 ** Constructs under study
 
 - Continuations: Continuations can be thought of as a construct that carries with it the context that need to be evaluated.
@@ -33,28 +43,6 @@ Hope that helps in giving a working base for people who are intrigued about thes
 - Montague Quantification: Montague considered programming language and natural languages as being united with a universal grammar. His idea of quantification is thought to be parallel to continuations in programming languages.
 
 - Generators/Iterators: Constructs that allows one to control the looping behaviour of a program.
-
-* Why study these?
-
-My motivation towards studying these concepts is that they allow you to figure out the deep unity and distinction among different concepts in programming languages. Apart from programming languages, these studies also shine light on how natural language could be tied to programming languages. These I sense provide a  certain setting in which you can understand how language, grammar, mechanism, and mind are related.
-
-Also, it is of great value in doing advancing programming methods and is being actively researched. There has been a lot of activities in these domains and it is intimidating for an entrant to understand the who, what, how and why of these. This document is my humble attempt at trying to bring a structure to the sprawling field of development so that it might contribute towards someone undertaking a similar journey. Hope it helps!
-
-And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
-
-
-** Early pointers
-
-Some of these connections where what drew may attention to find that there is morphisms happening across different control constructs.
-
-*** Continuations vs. Lazy Evaluation
-Chris Okasaki has found the link between [[https://link.springer.com/article/10.1007/BF01019945][Lazy Evaluation / Call by Need and Continuations]].
-
-*** Closures vs. Actors
-Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but was [[https://arxiv.org/vc/arxiv/papers/1008/1008.1459v8.pdf][rejected by Hewitt]].
-
-*** Montague Quantification vs. Continuations
-Natural language exhibiting continuations is described by Barker [[https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf][here]] and in [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.454.8690&rep=rep1&type=pdf][this book]].
 
 ** History
 
