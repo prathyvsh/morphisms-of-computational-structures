@@ -46,6 +46,8 @@ They used it to understand different programming language constructs popular at 
 
 Using these formalizations, one can start to reason about what different constructs in programming language mean (operation wise / structure preserving mapping wise) and conduct studies on them for discovering their properties and complexity parameters.
 
+Scott set the stage for the work of semantics with his paper: [[https://ropas.snu.ac.kr/~kwang/520/readings/sco70.pdf][Outline of a Mathematical Theory of Computation]]
+
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
 TODO: Understand how CPO figures in here
 
