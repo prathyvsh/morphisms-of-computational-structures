@@ -16,7 +16,9 @@ I also keep a rough journal of how I came across the ideas [[./journal.org][here
 
 And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
 
-** Constructs under study
+** Concepts under study
+
+- Fixed Point
 
 - Continuations: Continuations can be thought of as a construct that carries with it the context that need to be evaluated.
 
@@ -32,7 +34,17 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 
 - Montague Quantification: Montague considered programming language and natural languages as being united with a universal grammar. His idea of quantification is thought to be parallel to continuations in programming languages.
 
-- Generators/Iterators: Constructs that allows one to control the looping behaviour of a program.
+- Generators/Iterators: Constructs that allows one to control the looping behaviour of a program
+
+- Data and Co-Data
+
+- Algebras and Co-Algebras
+
+- Initial and Final Algebras
+
+- Morphisms
+
+- Recursion Schemes
 
 ** History
 
@@ -69,6 +81,22 @@ Matija Pretnar uses Filinski’s representation theorem to [[https://homepages.i
 These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing computational effects]] in languages like Eff and Koka.
 
 A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
+
+** Recursion Schemes / Morphisms of F-algebras
+
+Morphism of F-Algebras
+
+Anamorphism: From co-algebra to a final co-algebra
+Used as unfolds
+
+Catamorphism: Initial algebra to an algebra
+Used as folds
+
+Hylomorphism: Anamorphism followed by a Catamorphism (Use Gibbons’ image)
+
+Paramorphism: Extension of Catamorphism
+Apomorphism: Extension of Anamorphism
+
 
 * Resources
 
