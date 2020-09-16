@@ -111,6 +111,9 @@ A really nice essay by Garlandus outlining the role of Hilbert and Göttingen in
 *** [[http://pllab.is.ocha.ac.jp/~asai/cw2011tutorial/main-e.pdf][Introduction to Programming with Shift/Reset]]
 Kenichi Asai, Oleg Kiselyov (2011)
 
+*** [[http://comonad.com/reader/2009/recursion-schemes/][Recursion Schemes: A Field Guide]]
+Edward Kmett (2009)
+
 ** Talks
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
 
