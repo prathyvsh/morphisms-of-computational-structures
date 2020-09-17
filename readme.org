@@ -38,7 +38,10 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 
 - Generators/Iterators: Constructs that allows one to control the looping behaviour of a program
 
-- Algebraic Structures: Magmas, Semigroup, Quasigroup, Loop, Monoid, Monad, Group, Abelian Groups, Ring, Fields, Lattice, Modules, Filters, Ideals, Groupoid, Setoid, Trees, Lists, Units
+- *Algebraic Structures*
+
+[[./img/birkhoff-universal-algebra.png]]
+Magmas, Semigroup, Quasigroup, Loop, Monoid, Monad, Group, Abelian Groups, Ring, Fields, Lattice, Modules, Filters, Ideals, Groupoid, Setoid, Trees, Lists, Units
 
 - Data and Co-Data
 
