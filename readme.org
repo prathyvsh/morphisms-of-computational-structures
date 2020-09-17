@@ -64,11 +64,25 @@ They have deep connections with computation as most of the structures that we de
 
 - Monotonicity
 
-** History
+* History
 
-Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica, which was a logicist undertaking in response to the Hilbert program to formalize effective calculability. Lambda Calculus became the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it.
+** Early History
 
-Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
+The study of computation is something that has deep roots into antiquity. A prototype of computation can be found in the ancient divination systems found in ancient Arab culture and medieval period. The 17th, and 18th century found many great minds setting a ground for the modern algebra to take roots and the break can be thought of as coming from the English school of logic. Post this period great advances where made throughout the 19th century and 20th century is when concepts like computation shape up.
+
+** The intellectual advancements of 20th century
+
+There are several works that contributed to the emergence of computer science but some of the figures that have had a salient early influence in shaping up the idea of computation were the works of Gödel, Frege, Hilbert, Russell, Post, Turing, and Whitehead.
+
+** Hilbert program and the birth of Lambda Calculus
+
+Towards 1910s, a framework called Lambda Calculus was invented by Alonzo Church, inspired by Principia Mathematica. Principia Mathematica was an undertaking to ground all of mathematics in logic. It was created in response to the Hilbert program to formalize effective calculability. Lambda Calculus became one of the standard environment to do work on computation in academic circles. This inspired Scott-Strachey-Landin line of investigations to base programming language studies on it.
+
+** Universal Algebra and Category Theory
+
+In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarified format by mathematicians like Oysten Ore, and Garrett Birkhoff. Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
+
+** Work post 1950s
 
 Godemont invented monads in 1958 under the name “standard construction”.
 
@@ -92,7 +106,6 @@ This work introduces the idea of defunctionalization: A method of converting a l
 Defunctionalization allows to treat programming languages as algebraic structures. In this sense, they are related to F-algebras.
 
 Reynolds also distinguishes in this paper between trivial and serious functions which would later transform into showing the duality between values and computations. The parallel here is that values are the results that have been acquired from processes that have terminated and computations are processes that needs to be computed. This idea is emphasized in Essence of Algol (1997): https://link.springer.com/chapter/10.1007%2F978-1-4612-4118-8_4 Continuations are the term for computations that remains to be processed and defunctionalization is the method by which you turn a computation into a value and refunctionalization the reverse process. Defunctionalization, so to speak, gives a handle on the underlying computation which is active at runtime.
-
 
 An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
