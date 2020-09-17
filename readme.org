@@ -68,7 +68,7 @@ They have deep connections with computation as most of the structures that we de
 
 ** Early History
 
-The study of computation is something that has deep roots into antiquity. A prototype of computation can be found in the ancient divination systems found in ancient Arab culture and medieval period. The 17th, and 18th century found many great minds setting a ground for the modern algebra to take roots and the break can be thought of as coming from the English school of logic. Post this period great advances where made throughout the 19th century and 20th century is when concepts like computation shape up.
+The study of computation is something that has deep roots into antiquity. Keeping in mind that it is anachronistic to ascribe modern concepts to describe what our ancestors did, some proto-form of computation can be seen in the ancient divination devices used in ancient Arab culture and medieval period. The 17th, and 18th century found many great minds setting a ground for modern algebra to take roots and a significant break in the tradition can be thought of as coming from the English school of logic where algebra and logic was combined. After this period great advances where made throughout the 19th century which set the stage for the intellectual advancements of the 20th century where the idea of computation takes shape.
 
 ** The intellectual advancements of 20th century
 
