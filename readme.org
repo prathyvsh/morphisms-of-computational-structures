@@ -69,6 +69,12 @@ There was a flurry of work in understanding how control flow constructs work pos
 
 This rise in complexity and clarity would lead to the use of topological/metric spaces to be brought to bear on studying computational structures.
 
+[[./img/john-reynolds.png]]
+In Definitional Interpreters for Higher Order Programming Languages (1972), John Reynolds brings out the relationship between Lambda Calculus, SECD, Morris-Wadsworth method and his own definition for GEDANKEN.
+This work introduces the idea of defunctionalization: A method of converting a language with higher order functions into first order data structures.
+
+Defunctionalization allows to treat programming languages as algebraic structures. In this sense, they are related to F-algebras.
+
 An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
 Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
