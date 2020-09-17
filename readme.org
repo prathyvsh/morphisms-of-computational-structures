@@ -81,6 +81,9 @@ This work introduces the idea of defunctionalization: A method of converting a l
 
 Defunctionalization allows to treat programming languages as algebraic structures. In this sense, they are related to F-algebras.
 
+Reynolds also distinguishes in this paper between trivial and serious functions which would later transform into showing the duality between values and computations. The parallel here is that values are the results that have been acquired from processes that have terminated and computations are processes that needs to be computed. This idea is emphasized in Essence of Algol (1997): https://link.springer.com/chapter/10.1007%2F978-1-4612-4118-8_4 Continuations are the term for computations that remains to be processed and defunctionalization is the method by which you turn a computation into a value and refunctionalization the reverse process. Defunctionalization, so to speak, gives a handle on the underlying computation which is active at runtime.
+
+
 An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
 Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
