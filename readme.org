@@ -111,7 +111,7 @@ An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk
 
 Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
 
-Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table to understand the duality between different ideas of universal algebra and universal co-algebra.
+Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
 [[./img/universal-co-algebra-chart.png]]
 
 
