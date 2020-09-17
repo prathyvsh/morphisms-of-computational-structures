@@ -41,7 +41,12 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 - *Algebraic Structures*
 
 [[./img/birkhoff-universal-algebra.png]]
+
 Magmas, Semigroup, Quasigroup, Loop, Monoid, Monad, Group, Abelian Groups, Ring, Fields, Lattice, Modules, Filters, Ideals, Groupoid, Setoid, Trees, Lists, Units
+
+Algebraic structures are studied under universal/abstract algebra with each species sharing a different structural property. They can be thought of as sharing a set with certain operations that gives them a particular nature.
+
+They have deep connections with computation as most of the structures that we deal with in computer science belongs to the algebraic species studied by mathematicians.
 
 - Data and Co-Data
 
