@@ -32,6 +32,8 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 
 - Closures: Closures are contexts of function execution stored for computational purposes
 
+- Automata Theory
+
 - Algebraic Effects: Algebraic Effects allow one to build up composable continuations.
 
 - Monads: Originally deriving from abstract algebra, where they are structures that are endofunctors with two natural transformations. Monads when used in the programming context can be thought of as a way to bring in infrastructure needed for composing functions together.
@@ -39,6 +41,16 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 - Montague Quantification: Montague considered programming language and natural languages as being united with a universal grammar. His idea of quantification is thought to be parallel to continuations in programming languages.
 
 - Generators/Iterators: Constructs that allows one to control the looping behaviour of a program
+
+- ACP
+
+- Pi Calculus / Calculus of Communicating Systems
+
+- Communicating Sequential Processes
+
+- Combinatory Logic
+
+- Lambda Calculus
 
 - *Algebraic Structures*
 
@@ -84,11 +96,11 @@ In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarif
 
 ** Work post 1950s
 
-[[./img/roger-godement.png]]
+#+BEGIN_HTML
+<img align="left" src="/img/roger-godement.png" alt="Roger Godement" />
+#+END_HTML
 
 Lattice Theory, Universal Algebra, Algebraic Topology, and Category Theory became fields with intense investigation into the mathematical structure. It is during this period of intense activity that Godemont invented monads under the name “standard construction” in his work [[https://amzn.to/2ZP167s][Théorie des faisceaux (Theory of Sheaves) (1958)]].
-
-This construction 
 
 They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
 
@@ -130,6 +142,18 @@ These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing 
 
 A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
 
+** Monads vs. Continuations
+
+There is a parallel between creating a continuation and bringing in monadic architecture around the program. Monads help in composing functions and gives control over their execution in calling and discard them. This architecture around the code enables creating performant changes such as discarding a certain fork of the search tree of the program if grows beyond a certain complexity or even allow to accept interrupts from outside the program execution to proceed a certain computation no further. This is the sort of tractable differences that monadic architecture and continuations grant to the programmer.
+
+** Process Algebras and Calculi
+
+Etymology of Algebra is to join together broken parts. Calculus, means small pebble. Etymology comes from counting stones that stand for things like sheeps.
+
+The terms process algebra and calculus are used interchangeably, though there is some distinction to be gained by understanding their etymological and mathematical viewpoint. Mathematically, algebras have closure, that is they are limited is limited to their domain of algebraic operations, while calculus is constructed for computation without algebraic laws in mind.
+
+In other words, Calculus is used for computation and algebra is mapping between different structures under study in it’s domain. There is a way in which Lambda Calculus can be seen as both. You can use it to map values and it can then be seen as an algebra that followers certain rules, but if you want to use these properties to perform computations that is follow the entailments of the laws to calculate, then it becomes a calculus.
+
 ** Recursion Schemes / Morphisms of F-algebras
 
 Morphism of F-Algebras
@@ -144,6 +168,14 @@ Hylomorphism: Anamorphism followed by a Catamorphism (Use Gibbons’ image)
 
 Paramorphism: Extension of Catamorphism
 Apomorphism: Extension of Anamorphism
+
+Proof Nets vs. Pi Calculus
+http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
+
+** Constraint Programming
+
+Answer Set Programming
+Logic for Computable Functions
 
 
 * Resources
@@ -163,6 +195,10 @@ Kenichi Asai, Oleg Kiselyov (2011)
 Edward Kmett (2009)
 
 *** Introduction to Recursion Schemes [[https://blog.sumtypeofway.com/posts/introduction-to-recursion-schemes.html][Part 1]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-2.html][Part 2]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-3.html][Part 3]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-4.html][Part 4]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-4-point-5.html][Part 4.5]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-5.html][Part 5]], [[https://blog.sumtypeofway.com/posts/recursion-schemes-part-6.html][Part 6]]
+
+** Slides
+
+*** [[https://www.ccs.neu.edu/home/types/resources/notes/call-by-name-call-by-value/extended-intro.pdf][An introduction to Call By Name, Call By Value and Lambda Calculus]]
 
 ** Talks
 *** [[https://www.youtube.com/watch?v=Ssx2_JKpB3U][A Categorical View of Computational Effects]]
