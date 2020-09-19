@@ -103,7 +103,10 @@ In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarif
 #+BEGIN_HTML
 <br/>
 <br/>
+<figure>
 <img align="right" src="./img/saunders-maclane.png" alt="Saunders Mac Lane" />
+<figcaption>Saunders Mac Lane</figcaption>
+</figure>
 <img align="right" src="./img/samuel-eilenberg.png" alt="Samuel Eilenberg" />
 #+END_HTML
 
