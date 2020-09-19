@@ -206,7 +206,7 @@ http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 ** Constraint Programming
 
 #+BEGIN_HTML
-<img align="left" src="/img/robin-milner.png" alt="Tony Hoare" />
+<img align="left" src="/img/tony-hoare.png" alt="Tony Hoare" />
 <img align="left" src="/img/robin-milner.png" alt="Robin Milner" />
 #+END_HTML
 
