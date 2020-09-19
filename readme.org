@@ -96,7 +96,18 @@ Towards 1910s, a framework called Lambda Calculus was invented by Alonzo Church,
 
 ** Universal Algebra and Category Theory
 
-In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarified format by mathematicians like Oysten Ore, and Garrett Birkhoff. Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
+
+In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarified format by mathematicians like Oysten Ore, and Garrett Birkhoff.
+
+
+#+BEGIN_HTML
+<br/>
+<br/>
+<img align="right" src="./img/samuel-eilenberg.png" alt="Saunders Mac Lane" />
+<img align="right" src="./img/samuel-eilenberg.png" alt="Samuel Eilenberg" />
+#+END_HTML
+
+Towards 1940s, one would see the development of Category Theory. A huge amount of intellectual advances are made from this theoretical vantage point that would contribute towards studying the morphisms between different theoretical models.
 
 ** Work post 1950s
 
@@ -108,9 +119,12 @@ Lattice Theory, Universal Algebra, Algebraic Topology, and Category Theory becam
 
 
 #+BEGIN_HTML
-<img align="center" src="/img/peter-landin.png" alt="Peter Landin" />
-<img align="center" src="/img/christopher-strachey.png" alt="Christopher Strachey" />
-<img align="center" src="/img/dana-scott.png" alt="Dana Scott" />
+<br/>
+<br/>
+<br/>
+<img align="right" src="/img/christopher-strachey.png" alt="Christopher Strachey" />
+<img align="right" src="/img/dana-scott.png" alt="Dana Scott" />
+<img align="right" src="/img/peter-landin.png" alt="Peter Landin" />
 #+END_HTML
 
 They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
@@ -126,7 +140,10 @@ There was a flurry of work in understanding how control flow constructs work pos
 
 This rise in complexity and clarity would lead to the use of topological/metric spaces to be brought to bear on studying computational structures.
 
-[[./img/john-reynolds.png]]
+#+BEGIN_HTML
+<img align="left" src="/img/john-reynolds.png" alt="John Reynolds" />
+#+END_HTML
+
 In Definitional Interpreters for Higher Order Programming Languages (1972), John Reynolds brings out the relationship between Lambda Calculus, SECD, Morris-Wadsworth method and his own definition for GEDANKEN.
 This work introduces the idea of defunctionalization: A method of converting a language with higher order functions into first order data structures.
 
@@ -136,11 +153,14 @@ Reynolds also distinguishes in this paper between trivial and serious functions 
 
 An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk/gdp/publications/Category_Theoretic_Solution.pdf][The Category-Theoretic Solution of Recursive Domain Equations]]
 
+#+BEGIN_HTML
+<img align="left" src="/img/eugenio-moggi.png" alt="Eugenio Moggi" />
+#+END_HTML
+
 Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]].
 
 Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
 [[./img/universal-co-algebra-chart.png]]
-
 
 Andrzej Filinski and Olivier Danvy worked on [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf][unifying control concepts]].
 
@@ -184,6 +204,11 @@ Proof Nets vs. Pi Calculus
 http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 
 ** Constraint Programming
+
+#+BEGIN_HTML
+<img align="left" src="/img/robin-milner.png" alt="Tony Hoare" />
+<img align="left" src="/img/robin-milner.png" alt="Robin Milner" />
+#+END_HTML
 
 Answer Set Programming
 
