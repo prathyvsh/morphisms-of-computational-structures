@@ -84,7 +84,11 @@ In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarif
 
 ** Work post 1950s
 
-Godemont invented monads in 1958 under the name “standard construction”.
+[[./img/roger-godement.png]]
+
+Lattice Theory, Universal Algebra, Algebraic Topology, and Category Theory became fields with intense investigation into the mathematical structure. It is during this period of intense activity that Godemont invented monads under the name “standard construction” in his work [[https://amzn.to/2ZP167s][Théorie des faisceaux (Theory of Sheaves) (1958)]].
+
+This construction 
 
 They used it to understand different programming language constructs popular at the time. Landin came up with operational semantics and Scott/Strachey with denotational semantics that modelled programming languages by mapping them to mathematical models.
 
