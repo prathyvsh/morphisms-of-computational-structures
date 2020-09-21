@@ -190,6 +190,16 @@ The terms process algebra and calculus are used interchangeably, though there is
 
 In other words, Calculus is used for computation and algebra is mapping between different structures under study in it’s domain. There is a way in which Lambda Calculus can be seen as both. You can use it to map values and it can then be seen as an algebra that followers certain rules, but if you want to use these properties to perform computations that is follow the entailments of the laws to calculate, then it becomes a calculus.
 
+** Utility of algebraic properties in computation
+
+*** Associativity
+Allows you to put the bracket anywhere. A chain of operation executed in any order or within any contextual boundaries give the same effect.
+
+*** Commutativity
+Wearing your undergarments first and then pants is the normal style (a op b), but superheroes for some reason prefer wearing your pants and then the undergarment (b op a).
+
+*** Transitivity
+Enables you to travel through the links
 
 ** Recursion Schemes / Morphisms of F-algebras
 
