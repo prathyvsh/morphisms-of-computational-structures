@@ -30,7 +30,7 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 
 #+BEGIN_HTML
 <details>
-<h2>Concepts under study<h2>
+<summary><h2>Concepts under study</h2></summary>
 #+END_HTML
 
 - Fixed Point
