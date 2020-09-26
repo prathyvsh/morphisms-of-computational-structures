@@ -282,3 +282,21 @@ Peter Landin (1996)
 Jeremy Yallop
 
 *** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Lambek-Stone-Scott-Tarski correspondences]]
+
+** Books
+
+#+BEGIN_HTML
+<details>
+<summary>Advanced</summary>
+#+END_HTML
+
+- [[https://www.irif.fr/~jep/PDF/MPRI/MPRI.pdf][Mathematical Foundations of Automata Theory]]
+J. E. Pin
+
+- [[http://www.sci.brooklyn.cuny.edu/~noson/TCStext.html][Theoretical Computer Science for the Working Category Scientist]]
+
+Noson Yanofsky
+
+#+BEGIN_HTML
+</details>
+#+END_HTML
