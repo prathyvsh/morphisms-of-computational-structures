@@ -12,3 +12,9 @@ Closures — Actor isomorphism was demonstrated by Guy Steele/Dan Friedman but w
 Natural language exhibiting continuations is described by Barker [[https://www.cs.bham.ac.uk/~hxt/cw04/barker.pdf][here]] and in [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.454.8690&rep=rep1&type=pdf][this book]].
 
 *** Initial/Final (Co)Algebras
+
+*** September 26
+
+There seems to be a link with sheafs, pre-sheaves, and computation. I think I need to make my understanding of how topology and algebra is related to ground exactly how these relationship is structured. I need to start collecting resources towards this end here.
+
+Learnt about [[https://en.wikipedia.org/wiki/B%C3%B6hm_tree][Böhm trees]]. Need to understand their relationship to topology of Lambda Calculus.
