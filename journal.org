@@ -22,3 +22,6 @@ Learnt that combinational logic is one level lower to regular languages in that,
 There seems to be a link with sheafs, pre-sheaves, and computation. I think I need to make my understanding of how topology and algebra is related to ground exactly how these relationship is structured. I need to start collecting resources towards this end here. Some details can be found here: https://en.wikipedia.org/wiki/Computable_topology
 
 Learnt about [[https://en.wikipedia.org/wiki/B%C3%B6hm_tree][Böhm trees]]. Need to understand their relationship to topology of Lambda Calculus.
+
+Noson Yanofsky seems to be treading similar space: http://www.sci.brooklyn.cuny.edu/~noson/MCbeginning.pdf
+There are a lot of neat diagrams here that shows how different ideas are related in a Pascal-esque espirite de geométrie.
