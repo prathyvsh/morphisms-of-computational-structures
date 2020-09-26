@@ -6,15 +6,15 @@ This is a narrative on how computational structures such as data structures, pro
 
 When I was young, I found people talking about ideas like Curry-Howard isomorphism or discussing the struggle about learning about monads pretty intriguing. Though, I lacked the technical know-how at that time to evaluate what was even being addressed. But as I started looking into these over a period of time, I slowly became immersed in the terminology enough to understand what was being referred to and what was at stake. If you find yourself puzzled about what all these ideas are about but are at loss on how to proceed, let me share some of the things that have helped me in gaining traction to understand them.
 
-** Significance of a mathematical outlook
+*** [[./how-to-learn.org][A short guide about learning these ideas]]
+
+** Preface
 
 Since 1900s there have been emergent fields in mathematics like universal algebra, category theory that attempt to capture rigorously the parallels between different domains of study. These studies along with the requirement for engineering complex systems and our drive to understand these ideas deeply, lead to setting up fields within computer science to examine them ideas closely. Some of these domains of inquiry include automata theory, algorithmic complexity, and different kinds of logical and (axiomatic/operational/denotational/categorical) semantic studies.
 
 Reading through this literature and paying attention to discoveries happening in Computer Science made me alert to the idea that something is up. There seems to be something strange and deep happening in the intersection of Computer Science and Mathematics. Observing my own work with programming languages made me see how they have deep congruences when you look closer at the surface structure of programming languages and use this to understand their deeper structures. Computing can bet hought of as a medium and programming languages as a way for interacting with these computational structures. Each of such structures that are constructed and deconstructed in the computers differ in the way they provide tractability and compositionality. Bringing together abstractions from mathematics and sciences help us see how each programming language differ and unite by casting them in a setting where their fundamental nature is made visible and can be tinkered with.
 
 This repository attempts to capture the (hi)story of how these emerged, and the key people who contributed to it. I intend to turn it into a visual catalogue of what kinds of morphisms/structure preserving maps computational structures display among each other written in a manner communicable to someone who have sensed a kind of resonance across very different fields of computation, but would like to explore if there is a meta-structure emerging here.
-
-*** [[./how-to-learn.org][A short guide about learning these ideas]]
 
 * Why study these?
 
@@ -26,7 +26,12 @@ I also keep a rough journal of how I came across the ideas [[./journal.org][here
 
 And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
 
-** Concepts under study
+
+
+#+BEGIN_HTML
+<details>
+<h2>Concepts under study<h2>
+#+END_HTML
 
 - Fixed Point
 
@@ -81,6 +86,10 @@ They have deep connections with computation as most of the structures that we de
 - Covariance and Contravariance
 
 - Monotonicity
+
+#+BEGIN_HTML
+</details>
+#+END_HTML
 
 * History
 
