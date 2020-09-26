@@ -13,6 +13,10 @@ Natural language exhibiting continuations is described by Barker [[https://www.c
 
 *** Initial/Final (Co)Algebras
 
+*** September 25
+
+Learnt that combinational logic is one level lower to regular languages in that, they don’t need memory. There is a finite set of combinations rather than a set of rules that have to recall what came before. I think this difference is apparent only at the hardware level. I need to poke deeper to understand if there’s a mathematically tractable divide between these two sections: Combinational Logic and Regular languages. The similarity I feel is that both have a set of preset rules which they carry in memory.
+
 *** September 26
 
 There seems to be a link with sheafs, pre-sheaves, and computation. I think I need to make my understanding of how topology and algebra is related to ground exactly how these relationship is structured. I need to start collecting resources towards this end here. Some details can be found here: https://en.wikipedia.org/wiki/Computable_topology
