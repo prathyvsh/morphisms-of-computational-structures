@@ -15,6 +15,6 @@ Natural language exhibiting continuations is described by Barker [[https://www.c
 
 *** September 26
 
-There seems to be a link with sheafs, pre-sheaves, and computation. I think I need to make my understanding of how topology and algebra is related to ground exactly how these relationship is structured. I need to start collecting resources towards this end here.
+There seems to be a link with sheafs, pre-sheaves, and computation. I think I need to make my understanding of how topology and algebra is related to ground exactly how these relationship is structured. I need to start collecting resources towards this end here. Some details can be found here: https://en.wikipedia.org/wiki/Computable_topology
 
 Learnt about [[https://en.wikipedia.org/wiki/B%C3%B6hm_tree][Böhm trees]]. Need to understand their relationship to topology of Lambda Calculus.
