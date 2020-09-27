@@ -1,20 +1,20 @@
 * Morphisms of Computational Constructs
 
-This is a narrative on how computational structures such as data structures, programming constructs, and deeper algebraic structures undergirding Computer Science display morphisms among them. Morphism can be thought of as the mathematical terminology for studying analogies across different categories rigourously by examining their underlying structure. I first came across this as as I was exploring features in computer programming languages and I kept finding out that they exhibited parallels to ideas in domains remote to Computer Science.
-
-Since 1900s there have been emergent fields in mathematics like universal algebra, category theory that attempt to capture rigorously the parallels between different domains of study. These studies along with the requirement for engineering complex systems and our drive to understand these ideas deeply, lead to setting up fields within computer science to examine these ideas closely. Some of them include automata theory, algorithmic complexity, and different kinds of logical and (axiomatic/operational/denotational/categorical) semantic studies.
-
-Reading through this literature and paying attention to discoveries happening in Computer Science made me alert to the idea that something is up. There seems to be something strange and deep happening in the intersection of Computer Science and Mathematics. Observing my own work with programming languages made me see how they have deep congruences when you look closer at the surface structure of programming languages and use this to understand their deeper structures. Programming languages act as a medium for our interaction with these computational structures and each of them differ in a way they provide tractability and compositionality of these structures. Bringing ideas from mathematics and sciences help us see how each programming language is different and united by casting them in a setting where their fundamental nature can be tinkered with.
-
-Programming seen in this sense can thought of as spawning different computational structures, giving them a name and then storing them in the memory. In this, it soon starts assuming the paradigm of a dictionary that has cross-references. The dynamic aspect of computation spawns even more names from the already existing corpus and the words that are important for the programmer are read back and interpreted vis a vis her real life needs. What I hope to achieve with this document is to show how this dictionaries themselves have cross-references, that the words described in one becomes an entirely different thing existing in another language and make these links (morphisms) rigorous, in the best way I can.
-
-This repository is an attempt at capturing the (hi)story of how these emerged, the key people, and a visual catalogue of what kinds of morphisms/structure preserving maps computational structures display among each other written in a manner communicable to someone who have sensed a kind of resonance across very different fields of computation, but would like to explore if there is a meta-structure emerging here.
+This is a narrative on how computational structures such as data structures, programming constructs, and algebraic structures undergirding Computer Science display deep parallels among them. The mathematical terminology for making the links between two objects of study is called a morphism. It allows one to study analogies occuring across different categories rigourously by examining their underlying structure. I first came across these as as I was exploring features in computer programming languages and I kept finding out that they exhibited parallels to ideas in domains remote to Computer Science.
 
 ** Notes to an enthusiast
 
 When I was young, I found people talking about ideas like Curry-Howard isomorphism or discussing the struggle about learning about monads pretty intriguing. Though, I lacked the technical know-how at that time to evaluate what was even being addressed. But as I started looking into these over a period of time, I slowly became immersed in the terminology enough to understand what was being referred to and what was at stake. If you find yourself puzzled about what all these ideas are about but are at loss on how to proceed, let me share some of the things that have helped me in gaining traction to understand them.
 
 *** [[./how-to-learn.org][A short guide about learning these ideas]]
+
+** Preface
+
+Since 1900s there have been emergent fields in mathematics like universal algebra, category theory that attempt to capture rigorously the parallels between different domains of study. These studies along with the requirement for engineering complex systems and our drive to understand these ideas deeply, lead to setting up fields within computer science to examine them ideas closely. Some of these domains of inquiry include automata theory, algorithmic complexity, and different kinds of logical and (axiomatic/operational/denotational/categorical) semantic studies.
+
+Reading through this literature and paying attention to discoveries happening in Computer Science made me alert to the idea that something is up. There seems to be something strange and deep happening in the intersection of Computer Science and Mathematics. Observing my own work with programming languages made me see how they have deep congruences when you look closer at the surface structure of programming languages and use this to understand their deeper structures. Computing can bet hought of as a medium and programming languages as a way for interacting with these computational structures. Each of such structures that are constructed and deconstructed in the computers differ in the way they provide tractability and compositionality. Bringing together abstractions from mathematics and sciences help us see how each programming language differ and unite by casting them in a setting where their fundamental nature is made visible and can be tinkered with.
+
+This repository attempts to capture the (hi)story of how these emerged, and the key people who contributed to it. I intend to turn it into a visual catalogue of what kinds of morphisms/structure preserving maps computational structures display among each other written in a manner communicable to someone who have sensed a kind of resonance across very different fields of computation, but would like to explore if there is a meta-structure emerging here.
 
 * Why study these?
 
@@ -26,7 +26,12 @@ I also keep a rough journal of how I came across the ideas [[./journal.org][here
 
 And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
 
-** Concepts under study
+
+
+#+BEGIN_HTML
+<details>
+<summary><strong>Concepts under study</strong></summary>
+#+END_HTML
 
 - Fixed Point
 
@@ -81,6 +86,10 @@ They have deep connections with computation as most of the structures that we de
 - Covariance and Contravariance
 
 - Monotonicity
+
+#+BEGIN_HTML
+</details>
+#+END_HTML
 
 * History
 
@@ -196,6 +205,16 @@ The terms process algebra and calculus are used interchangeably, though there is
 
 In other words, Calculus is used for computation and algebra is mapping between different structures under study in it’s domain. There is a way in which Lambda Calculus can be seen as both. You can use it to map values and it can then be seen as an algebra that followers certain rules, but if you want to use these properties to perform computations that is follow the entailments of the laws to calculate, then it becomes a calculus.
 
+** Utility of algebraic properties in computation
+
+*** Associativity
+Allows you to put the bracket anywhere. A chain of operation executed in any order or within any contextual boundaries give the same effect.
+
+*** Commutativity
+Wearing your undergarments first and then pants is the normal style (a op b), but superheroes for some reason prefer wearing your pants and then the undergarment (b op a).
+
+*** Transitivity
+Enables you to travel through the links
 
 ** Recursion Schemes / Morphisms of F-algebras
 
@@ -267,3 +286,21 @@ Peter Landin (1996)
 Jeremy Yallop
 
 *** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Lambek-Stone-Scott-Tarski correspondences]]
+
+** Books
+
+#+BEGIN_HTML
+<details>
+<summary>Advanced</summary>
+#+END_HTML
+
+- [[https://www.irif.fr/~jep/PDF/MPRI/MPRI.pdf][Mathematical Foundations of Automata Theory]]
+J. E. Pin
+
+- [[http://www.sci.brooklyn.cuny.edu/~noson/TCStext.html][Theoretical Computer Science for the Working Category Scientist]]
+
+Noson Yanofsky
+
+#+BEGIN_HTML
+</details>
+#+END_HTML
