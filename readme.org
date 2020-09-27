@@ -109,7 +109,7 @@ Towards 1910s, a framework called Lambda Calculus was invented by Alonzo Church,
 
 #+BEGIN_HTML
 <img align="right" src="./img/garrett-birkhoff.png" alt="Samuel Eilenberg" />
-<img align="right" src="./img/øyesten-ore.png" alt="Samuel Eilenberg" />
+<img align="right" src="./img/øysten-ore.png" alt="Samuel Eilenberg" />
 #+END_HTML
 
 In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarified format by mathematicians like Oysten Ore, and Garrett Birkhoff.
