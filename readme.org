@@ -6,6 +6,8 @@ Since 1900s there have been emergent fields in mathematics like universal algebr
 
 Reading through this literature and paying attention to discoveries happening in Computer Science made me alert to the idea that something is up. There seems to be something strange and deep happening in the intersection of Computer Science and Mathematics. Observing my own work with programming languages made me see how they have deep congruences when you look closer at the surface structure of programming languages and use this to understand their deeper structures. Programming languages act as a medium for our interaction with these computational structures and each of them differ in a way they provide tractability and compositionality of these structures. Bringing ideas from mathematics and sciences help us see how each programming language is different and united by casting them in a setting where their fundamental nature can be tinkered with.
 
+Programming seen in this sense can thought of as spawning different computational structures, giving them a name and then storing them in the memory. In this, it soon starts assuming the paradigm of a dictionary that has cross-references. The dynamic aspect of computation spawns even more names from the already existing corpus and the words that are important for the programmer are read back and interpreted vis a vis her real life needs. What I hope to achieve with this document is to show how this dictionaries themselves have cross-references, that the words described in one becomes an entirely different thing existing in another language and make these links (morphisms) rigorous, in the best way I can.
+
 This repository is an attempt at capturing the (hi)story of how these emerged, the key people, and a visual catalogue of what kinds of morphisms/structure preserving maps computational structures display among each other written in a manner communicable to someone who have sensed a kind of resonance across very different fields of computation, but would like to explore if there is a meta-structure emerging here.
 
 ** Notes to an enthusiast
@@ -96,6 +98,10 @@ Towards 1910s, a framework called Lambda Calculus was invented by Alonzo Church,
 
 ** Universal Algebra and Category Theory
 
+#+BEGIN_HTML
+<img align="right" src="./img/garrett-birkhoff.png" alt="Samuel Eilenberg" />
+<img align="right" src="./img/øyesten-ore.png" alt="Samuel Eilenberg" />
+#+END_HTML
 
 In 1930s, work on Universal Algebra, commenced by Whitehead, were given a clarified format by mathematicians like Oysten Ore, and Garrett Birkhoff.
 
