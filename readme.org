@@ -283,6 +283,9 @@ Hoare has given a set of three talks at Heidelberg Laureate Conferences where he
 *** [[https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/reynolds-discoveries.pdf][Discovery of Continuations]]
 John Reynolds
 
+** [[https://dl.acm.org/doi/10.5555/22584.24311][Monads and theories: a survey for computation]]
+D. E. Rydehead
+
 ** [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.9551&rep=rep1&type=pdf][Histories of Discoveries of Continuations: Belles-Lettres with Equivocal Tenses]]
 Peter Landin (1996)
 
