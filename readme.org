@@ -243,7 +243,6 @@ http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 ** Answer Set Programming
 ** Logic for Computable Functions
 
-
 * Resources
 
 ** Posts
@@ -293,6 +292,10 @@ Peter Landin (1996)
 Jeremy Yallop
 
 *** [[http://comonad.com/reader/2018/computational-quadrinitarianism-curious-correspondences-go-cubical/][A catalogue of the picture emerging among the Curry-Howard-Lambek-Stone-Scott-Tarski correspondences]]
+
+
+*** [[https://github.com/rain-1/continuations-study-group][Continuations Reading List]]
+A great set of papers for reading about continuations.
 
 ** Books
 
