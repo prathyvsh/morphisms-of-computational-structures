@@ -198,6 +198,19 @@ A nice overview on the work of John Reynolds towards his program for logical rel
 
 There is a parallel between creating a continuation and bringing in monadic architecture around the program. Monads help in composing functions and gives control over their execution in calling and discard them. This architecture around the code enables creating performant changes such as discarding a certain fork of the search tree of the program if grows beyond a certain complexity or even allow to accept interrupts from outside the program execution to proceed a certain computation no further. This is the sort of tractable differences that monadic architecture and continuations grant to the programmer.
 
+** Logical investigations
+
+To understand the link of logic with computation is this article by John F. Sowa: http://www.jfsowa.com/logic/theories.htm
+
+The idea of creating models and the metalogical implications of constructing such intricate lattices are detailed in an accessible manner in this post.
+
+The link with computation comes from the idea that when you construct a computational object it can resemble such a lattice from which you equationally/implicationally extract out the truths consistent in that system.
+
+TODO: Link this with Curry-Howard isomorphism
+
+Sowa also links the idea of meaning preserving transformations and Chomsky’s linguistic attempts here: http://users.bestweb.net/~sowa/logic/meaning.htm
+The new version of the article which locates it in a logical system is present here: http://www.jfsowa.com/logic/proposit.htm
+
 ** Process Algebras and Calculi
 
 #+BEGIN_HTML
