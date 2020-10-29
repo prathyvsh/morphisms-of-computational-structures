@@ -250,6 +250,11 @@ Hylomorphism: Anamorphism followed by a Catamorphism (Use Gibbons’ image)
 Paramorphism: Extension of Catamorphism
 Apomorphism: Extension of Anamorphism
 
+There is a speculative article by Chris Olah on the relation between neural network architectures and functional programming type signatures:
+https://colah.github.io/posts/2015-09-NN-Types-FP/
+
+[[./img/nn-types-fp.png]]
+
 Proof Nets vs. Pi Calculus
 http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 
