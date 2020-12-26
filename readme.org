@@ -33,7 +33,8 @@ And if you find any errors or have feedback, please reach out to me on [[https:/
 <summary><strong>Concepts under study</strong></summary>
 #+END_HTML
 
-- Fixed Point
+- Fixed Point: Fixed points can be thought of as the state when an input to a function returns itself as the output.
+This is an important idea in computation as fixed points can be thought of as modelling loops and recursion.
 
 - Continuations: Continuations can be thought of as a construct that carries with it the context that need to be evaluated.
 
