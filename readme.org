@@ -322,6 +322,19 @@ A great set of papers for reading about continuations.
 
 ** Books
 
+
+#+BEGIN_HTML
+<details>
+<summary>Intermediate</summary>
+#+END_HTML
+
+- [[Essentials of Programming Languages]]
+- [[Design Concepts of Programming Languages]]
+
+#+BEGIN_HTML
+</details>
+#+END_HTML
+
 #+BEGIN_HTML
 <details>
 <summary>Advanced</summary>
