@@ -333,7 +333,7 @@ Jeremy Yallop
 *** [[https://github.com/rain-1/continuations-study-group][Continuations Reading List]]
 A great set of papers for reading about continuations.
 
-** Papers
+** Original Works
 
 *** [[https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf][A Logical Calculus of Ideas Immanent in Nervous Activity]]
 Warren McCulloch, Walter Pitts (1943)
@@ -353,6 +353,8 @@ John McCarthy
 *** [[https://ropas.snu.ac.kr/~kwang/4190.310/mccarthy63basis.pdf][A Basis for a Mathematical Theory of Computation (1963)]]
 
 Another version: http://www.cs.cornell.edu/courses/cs4860/2018fa/lectures/Mathematical-Theory-of-Computation_McCarthy.pdf
+
+*** [[https://www.cs.cmu.edu/afs/cs/user/crary/www/819-f09/Landin64.pdf][The mechanical evaluation of expressions]]
 
 ** Books
 
