@@ -154,7 +154,9 @@ Using these formalizations, one can start to reason about what different constru
 Scott set the stage for the work of semantics with his paper: [[https://www.cs.ox.ac.uk/files/3222/PRG02.pdf][Outline of a Mathematical Theory of Computation]]
 
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
-TODO: Understand how CPO figures in here
+TODO: Understand how CPO figures in here.
+
+Inspired by Stephen Kleene’s characterization of events in Warren McCullough and Walter Pitts paper (that birthed the model of neural networks), Michael Rabin and Dana Scott showed that finite automata defined in the manner of Moore machines accepted a regular language (which algebraically correspond to free semigroups).
 
 There was a flurry of work in understanding how control flow constructs work post 1960s which is documented in the work of John Reynolds (See Resources section). There ensued work on denotational models of effectful (state, control flow, I/O) and non-deterministic (concurrency/parallelism) languages.
 
@@ -320,8 +322,18 @@ Jeremy Yallop
 *** [[https://github.com/rain-1/continuations-study-group][Continuations Reading List]]
 A great set of papers for reading about continuations.
 
-** Books
+** papers
 
+** [[https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf][A Logical Calculus of Ideas Immanent in Nervous Activity]]
+Warren McCulloch, Walter Pitts (1942)
+
+** Representation of events in nerve nets and finite automata (1956)
+Stephen Kleene
+
+* Finite automata and their decision problems (1959)
+Micheal Rabin and Dana Scott
+
+** Books
 
 #+BEGIN_HTML
 <details>
