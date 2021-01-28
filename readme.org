@@ -347,6 +347,13 @@ Micheal Rabin and Dana Scott
 *** [[https://www.cs.tau.ac.il/~nachumd/term/FloydMeaning.pdf][Assigning Meanings to Programs]]
 R. W. Floyd
 
+*** [[http://www-formal.stanford.edu/jmc/towards.ps][Towards a Mathematical Theory of Computation (1961)]]
+John McCarthy
+
+*** [[https://ropas.snu.ac.kr/~kwang/4190.310/mccarthy63basis.pdf][A Basis for a Mathematical Theory of Computation (1963)]]
+
+Another version: http://www.cs.cornell.edu/courses/cs4860/2018fa/lectures/Mathematical-Theory-of-Computation_McCarthy.pdf
+
 ** Books
 
 #+BEGIN_HTML
