@@ -325,7 +325,7 @@ A great set of papers for reading about continuations.
 ** papers
 
 ** [[https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf][A Logical Calculus of Ideas Immanent in Nervous Activity]]
-Warren McCulloch, Walter Pitts (1942)
+Warren McCulloch, Walter Pitts (1943)
 
 ** Representation of events in nerve nets and finite automata (1956)
 Stephen Kleene
