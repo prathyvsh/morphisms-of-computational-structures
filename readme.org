@@ -162,6 +162,8 @@ They used it to understand different programming language constructs popular at 
 
 Using these formalizations, one can start to reason about what different constructs in programming language mean (operation wise / structure preserving mapping wise) and conduct studies on them for discovering their properties and complexity parameters.
 
+In “Toward a Formal Semantics” Strachey distinguished between L-values and R-values. The computer’s memory was seen as a finite set of objects, which is well ordered in some way by a mapping that assigns each of them a name, their L-value. And also, each object is a binary array which may be seen as the R-value. A computer program can thus be seen as a mapping from a set of values and names to another set of values and names.
+
 Scott set the stage for the work of semantics with his paper: [[https://www.cs.ox.ac.uk/files/3222/PRG02.pdf][Outline of a Mathematical Theory of Computation]]
 
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
