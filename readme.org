@@ -227,6 +227,24 @@ TODO: Link this with Curry-Howard isomorphism
 Sowa also links the idea of meaning preserving transformations and Chomsky’s linguistic attempts here: http://users.bestweb.net/~sowa/logic/meaning.htm
 The new version of the article which locates it in a logical system is present here: http://www.jfsowa.com/logic/proposit.htm
 
+** Type Theory
+
+*** Origins of Type Theory
+
+Type theory was devised by Bertrand Russell to solve problems associated with impredicativity in the foundations of mathematics.
+
+TODO: Where did he borrow this notion from?
+
+TODO: Include the role of Brouwer here
+
+*** Martin Löf’s Intuitionistic Type Theory
+
+There’s [[https://www.youtube.com/watch?v=xRUPr322COQ&t=589s][a talk]] by Joseph Abrahamson on ”On the Meanings of the Logical Constants” paper by Martin Löf.
+
+TODO: Find out how Kolmogorov’s work figures in here
+
+*** Homotopy Type Theory
+
 ** Process Algebras and Calculi
 
 #+BEGIN_HTML
