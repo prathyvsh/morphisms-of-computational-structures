@@ -233,6 +233,9 @@ The new version of the article which locates it in a logical system is present h
 
 Type theory was devised by Bertrand Russell to solve problems associated with impredicativity in the foundations of mathematics.
 
+**** Law of Excluded Middle
+How this results in constructive algorithms.
+
 TODO: Where did he borrow this notion from?
 
 TODO: Include the role of Brouwer here
@@ -297,7 +300,9 @@ http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 ** Answer Set Programming
 ** Logic for Computable Functions
 
-** Constructive Mathematics and Computation
+** Topology and Computation
+
+*** Constructive Mathematics
 
 All computable functions are continuous.
 
