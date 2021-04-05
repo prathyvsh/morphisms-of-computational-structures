@@ -244,6 +244,21 @@ TODO: Include the role of Brouwer here
 
 There’s [[https://www.youtube.com/watch?v=xRUPr322COQ&t=589s][a talk]] by Joseph Abrahamson on ”On the Meanings of the Logical Constants” paper by Martin Löf.
 
+[[http://archive-pml.github.io/][Collected Works of Per Martin Löf]]
+
+[[https://web.archive.org/web/20160304130949/http://okmij.org/ftp/Computation/lem.html][Constructive Law of Excluded Middle]]
+
+[[http://www.cllc.vuw.ac.nz/talk-papers/whatisit.ps][Just What is it that Makes Martin Löf’s Type Theory so Different, so Appealing?]]
+Neil Leslie (1999)
+
+[[http://math.andrej.com/2008/08/13/intuitionistic-mathematics-for-physics/][Intuitionistic Mathematics for Physicists]]
+
+[[http://www.nuprl.org/documents/Constable/PrincipiaArticle.pdf][The Triumph of Types: Principia Mathematica’s Influence on Computer Science]]
+
+[[http://www.cs.uoregon.edu/research/summerschool/summer11/lectures/Triumph-of-Types-Extended.pdf][The Triumph of Types: Creating a Logic of Computational Reality]]
+
+[[http://www.cse.chalmers.se/~bengt/papers/vatican.pdf][Constructivism: A Computing Science Perspective]]
+
 TODO: Find out how Kolmogorov’s work figures in here
 
 *** Homotopy Type Theory
