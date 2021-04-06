@@ -259,6 +259,11 @@ Neil Leslie (1999)
 
 [[http://www.cse.chalmers.se/~bengt/papers/vatican.pdf][Constructivism: A Computing Science Perspective]]
 
+[[https://math.vanderbilt.edu/schectex/papers/difficult.html][Constructivism is Difficult]]
+
+[[https://www.jstor.org/stable/2321650?seq=1][Meaning and Information in Constructive Mathematics]]
+Fred Richman
+
 TODO: Find out how Kolmogorov’s work figures in here
 
 *** Homotopy Type Theory
