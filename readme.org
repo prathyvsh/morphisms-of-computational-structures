@@ -194,6 +194,12 @@ An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk
 
 Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]]. A good read in this direction to understand how monads can be used is the work on [[https://arxiv.org/abs/1702.08409][Query Combinators]] by Clark Evans and Kyrylo Simonov. They describe how their work on creating a database query language lead them to understand its denotation as (co)monads and (bi-)Kleisi arrows. Fong and Spivak in their book [[https://arxiv.org/abs/1803.05316][Seven Sketches in Compositionality]] also describe similar ideas.
 
+TODO: Discuss about how modal logic and monads are related. I got this idea from reading Data and Interpretation article here: https://medium.com/@bblfish/data-interpretation-b9273520735c
+What needs to be figured out is how this idea of bringing in determinacy in the computational context is linked to the geometrical idea of creating a standard construction as per Godement.
+Is the idea of creating a tree like structure(?) from an interconnected directed graph (possibly with loops) linked to how we study geometrical objects using these same ideas?
+I would have to understand the connection between analysis and geometry more to bring these insights back into a computational context.
+Explore how monadic API which makes state tractable is related to the semantic aspect of how functional programming has a syntactic notion of unfolding like a derivation tree of a grammar.
+
 Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
 [[./img/universal-co-algebra-chart.png]]
 
