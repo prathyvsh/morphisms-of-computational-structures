@@ -2,6 +2,21 @@
 
 This is a narrative on how computational structures such as data structures, programming constructs, and algebraic structures undergirding Computer Science display deep parallels among them. The mathematical terminology for making the links between two objects of study is called a morphism. It allows one to study analogies occuring across different categories rigourously by examining their underlying structure. I first came across these as as I was exploring features in computer programming languages and I kept finding out that they exhibited parallels to ideas in domains remote to Computer Science.
 
+I was able to understand the following subjects:
+
+| Logic | Language | Computation | Categories | Topology/Spaces | Quantum Mechanics |
+
+all have deep links with each other, which is being unravelled by multiple scientists all across the world. It is one of the most exciting things to be learning any one of these subjects and then finding out links about these in the other subjects. There is a popular term called Curry-Howard isomorphism, which has been getting expanded into various forms as new links are unearthed. One can see this elaborated as:
+
+Curry-Howard-Lambek
+Curry-Howard-Tait
+Curry-Howard-Lambek-Scott-Tarski-Stone
+Curry-Howard-Brouwer-Heyting-Kolmogorov
+
+and so on as the articles and papers touching upon these issues try to draw the parallels. It is safe to say that there is much happening in an interdisciplinary manner and this document attempts to give a partial documentation of some of the links the author has been able to patch together. Hope you enjoy finding the interconnections!
+
+TODO: Describe about Theory A and Theory B side of computation
+
 ** Notes to an enthusiast
 
 When I was young, I found people talking about ideas like Curry-Howard isomorphism or discussing the struggle about learning about monads pretty intriguing. Though, I lacked the technical know-how at that time to evaluate what was even being addressed. But as I started looking into these over a period of time, I slowly became immersed in the terminology enough to understand what was being referred to and what was at stake. If you find yourself puzzled about what all these ideas are about but are at loss on how to proceed, let me share some of the things that have helped me in gaining traction to understand them.
@@ -25,8 +40,6 @@ Also, it is of great value in doing advancing programming methods and the field 
 I also keep a rough journal of how I came across the ideas [[./journal.org][here]].
 
 And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
-
-
 
 #+BEGIN_HTML
 <details>
@@ -63,6 +76,12 @@ This is an important idea in computation as fixed points can be thought of as mo
 - Combinatory Logic
 
 - Lambda Calculus
+
+- Homotopy Type Theory
+
+- Constructive Mathematics
+
+- Game Semantics
 
 - *Algebraic Structures*
 
@@ -192,7 +211,9 @@ An important paper in this direction seems to be [[http://homepages.inf.ed.ac.uk
 <img align="left" src="/img/eugenio-moggi.png" alt="Eugenio Moggi" />
 #+END_HTML
 
-Eugenio Moggi brought together [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][monads and control flow constructs in Lambda Calculus]]. Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]]. A good read in this direction to understand how monads can be used is the work on [[https://arxiv.org/abs/1702.08409][Query Combinators]] by Clark Evans and Kyrylo Simonov. They describe how their work on creating a database query language lead them to understand its denotation as (co)monads and (bi-)Kleisi arrows. Fong and Spivak in their book [[https://arxiv.org/abs/1803.05316][Seven Sketches in Compositionality]] also describe similar ideas.
+Eugenio Moggi brought together [[https://www.irif.fr/~mellies/mpri/mpri-ens/articles/moggi-computational-lambda-calculus-and-monads.pdf][monads and control flow constructs in Lambda Calculus in late 1980s]]. This was further developed in his works: [[https://www.ics.uci.edu/~jajones/INF102-S18/readings/09_Moggi.pdf][An Abstract View on Programming Languages (1989)]] and [[http://www.cs.cmu.edu/~crary/819-f09/Moggi91.pdf][Notions of Computation and Monads (1991)]]. This paper tries to characterize various kinds of computations such as partial, non-deterministic, side-effecting, exceptions, continuations, and interactive I/O and supplies a framework from which it can be analyzed.
+
+Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]]. A good read in this direction to understand how monads can be used is the work on [[https://arxiv.org/abs/1702.08409][Query Combinators]] by Clark Evans and Kyrylo Simonov. They describe how their work on creating a database query language lead them to understand its denotation as (co)monads and (bi-)Kleisi arrows. Fong and Spivak in their book [[https://arxiv.org/abs/1803.05316][Seven Sketches in Compositionality]] also describe similar ideas.
 
 TODO: Discuss about how modal logic and monads are related. I got this idea from reading Data and Interpretation article here: https://medium.com/@bblfish/data-interpretation-b9273520735c
 What needs to be figured out is how this idea of bringing in determinacy in the computational context is linked to the geometrical idea of creating a standard construction as per Godement.
@@ -202,6 +223,29 @@ Explore how monadic API which makes state tractable is related to the semantic a
 
 Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
 [[./img/universal-co-algebra-chart.png]]
+
+TODO: Detail about bisimulation and coinduction
+
+[[http://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf][On the Origins of Bisimulation and Coinduction (2007)]] - Davide Sangiorgi
+
+[[https://www.cs.cornell.edu/~kozen/Papers/Structural.pdf][Practical Coinduction (2016)]]
+
+[[https://www.brics.dk/RS/94/6/BRICS-RS-94-6.pdf][Bisimulation, Games, and Logic (1994)]]
+Mogens Nielsen
+Christian Clausen
+
+[[https://www.sciencedirect.com/science/article/pii/S016800720300023X][Introduction to Computability Logic (2003)]]
+Giorgio Japaridze
+
+[[https://arxiv.org/pdf/cs/0507045.pdf][In the beginning was game semantics (2008)]]
+Giorgio Japaridze
+
+TODO: Discuss about sequent calculus and cirquent calculus
+
+[[https://www.researchgate.net/publication/227278992_Why_Play_Logical_Games][Why Play Logical Games (2009)]]
+Mathieu Marion
+
+Abramsky’s Game Theoretic Interpretation of Linear Logic
 
 Andrzej Filinski and Olivier Danvy worked on [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.6.960&rep=rep1&type=pdf][unifying control concepts]].
 
@@ -232,8 +276,19 @@ The link with computation comes from the idea that when you construct a computat
 
 TODO: Link this with Curry-Howard isomorphism
 
+TODO: Seek out if there’s a Curry-Howard isomorphism identified for classical logic
+
 Sowa also links the idea of meaning preserving transformations and Chomsky’s linguistic attempts here: http://users.bestweb.net/~sowa/logic/meaning.htm
 The new version of the article which locates it in a logical system is present here: http://www.jfsowa.com/logic/proposit.htm
+
+** Linear Logic
+
+TODO: Document how Girard arrived at the work on linear logic
+
+TODO: Detail how linear logic is a logic of resources
+
+TODO: Discuss the link between linear logic and constructive mathematics
+https://arxiv.org/pdf/1805.07518.pdf
 
 ** Type Theory
 
@@ -242,13 +297,27 @@ The new version of the article which locates it in a logical system is present h
 Type theory was devised by Bertrand Russell to solve problems associated with impredicativity in the foundations of mathematics.
 
 **** Law of Excluded Middle
-How this results in constructive algorithms.
 
-TODO: Where did he borrow this notion from?
+How does removing this results in constructive algorithms.
+
+TODO: Brief history of how Law of Excluded Middle figures in the history of logic with emphasis on computational aspects
 
 TODO: Include the role of Brouwer here
 
+*** Connection between type theory and language
+
+Type-Theoretical Grammar (1994) — Aarne Ranta
+
+[[https://www.researchgate.net/publication/307858446_Type_Theory_for_Natural_Language_Semantics][Type Theory for Natural Language Semantics (2016)]]
+Stergio Chatzikyriakidis, Robin Cooper
+
 *** Martin Löf’s Intuitionistic Type Theory
+
+TODO: Discuss about how Martin Löf’s work was inspired by Automath
+
+TODO: Discuss about the connection between game semantics and Martin Löf Type Theory
+https://arxiv.org/pdf/1610.01669.pdf
+
 
 There’s [[https://www.youtube.com/watch?v=xRUPr322COQ&t=589s][a talk]] by Joseph Abrahamson on ”On the Meanings of the Logical Constants” paper by Martin Löf.
 
@@ -274,7 +343,14 @@ Fred Richman
 
 TODO: Find out how Kolmogorov’s work figures in here
 
+[[https://towardsdatascience.com/gradient-descend-with-free-monads-ebf9a23bece5][Continuity in Type Theory Slides]]
+Martín Escardó
+
 *** Homotopy Type Theory
+
+TODO: Discuss Homotopy Hypothesis and Grothendieck’s work
+
+TODO: Discuss the work in [[www.math.mcgill.ca/makkai/folds/foldsinpdf/FOLDS.pdf][FOLDS paper]]. How it was inspired from Martin Löf’s work
 
 ** Process Algebras and Calculi
 
@@ -297,8 +373,27 @@ Allows you to put the bracket anywhere. A chain of operation executed in any ord
 *** Commutativity
 Wearing your undergarments first and then pants is the normal style (a op b), but superheroes for some reason prefer wearing your pants and then the undergarment (b op a).
 
+If both of these operations result in the same end result, then the operation is said to be commutative otherwise, it is non-commutative
+
+In terms of computational processes, these allow you to perform an operation in any order.
+This could be important when asynchrony is present. If you don't know when your inputs are going to arrive, but you know that the end result is going to be commutative, you can arrange the processes to be executed in any order.
+
 *** Transitivity
 Enables you to travel through the links
+
+** Game Semantics
+
+*** [[https://www.cs.bham.ac.uk/~drg/papers/lics09tut.pdf][Applications of Game Semantics: From Program Analysis to Hardware Synthesis (2009)]]
+Dan Ghica
+
+*** [[https://arxiv.org/pdf/1908.04291.pdf][The Far Side of the Cube: An elementary introduction to game semantics (2019)]]
+Dan Ghica
+
+** Hypernet semantics
+
+Graphs provide a convenient formalism for providing operational semantics and for reasoning about observational equivalence.
+
+Abstract semantic graph
 
 ** Recursion Schemes / Morphisms of F-algebras
 
@@ -332,11 +427,34 @@ http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 
 *** Constructive Mathematics
 
-All computable functions are continuous.
+Employing constructive logic ensures that law of excluded middle is not used.
+Axiom of choice is also restricted in this framework (TODO: Have to clarify exactly how).
+
+Avoiding the use of these, ensures that the propositions(is this the right term?) in this logic would result in “construction” of objects which guarantee an existence proof. This is in stark contrast with classical logic, where you can make the proposition to stand for truth values and then prove existence of objects by using reductio ad absurdum statements. This is a method by which you start with a set of postulates and then you derive a contradiction on deducing from these initial starting point. By showing such a contradiction, if the postulates was about the non-existence of some mathematical object, you have said that the contradictory is true, which establishes its existence. This flipping of logic so as to establish existence is thought to be insufficient and constructive logic ensures that existence of an object is to be ensured by supplying a construction of the object within some specified precision or assumed semantics (TODO: Verify if it is the right terminology).
+
+*** [[http://math.andrej.com/2006/03/27/sometimes-all-functions-are-continuous/][Sometimes all functions are continuous]]
+Blogpost detailing how all computable functions are continuous
 
 *** [[http://www.cse.chalmers.se/~coquand/esop.pdf][Constructive Mathematics and Functional Programming]]
 
 *** [[https://www.youtube.com/watch?v=zmhd8clDd_Y][Five stages of accepting constructive mathematics]]
+
+** Automatic Differentiation
+
+TODO: The role of dual numbers
+
+TODO: The link with nilpotents developed by Benjamin Peirce
+
+** Categorical Logic
+
+*** [[https://en.wikipedia.org/wiki/Pregroup_grammar][Pregroup grammar]]
+
+** Quantum Mechanics
+
+*** ZX Calculus
+
+**** [[https://arxiv.org/pdf/0908.1787.pdf][Quantum Picturalism (2009)]]
+Bob Coecke
 
 * Resources
 
