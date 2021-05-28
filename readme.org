@@ -8,10 +8,13 @@ I was able to understand the following subjects:
 
 all have deep links with each other, which is being unravelled by multiple scientists all across the world. It is one of the most exciting things to be learning any one of these subjects and then finding out links about these in the other subjects. There is a popular term called Curry-Howard isomorphism, which has been getting expanded into various forms as new links are unearthed. One can see this elaborated as:
 
-Curry-Howard-Lambek
-Curry-Howard-Tait
-Curry-Howard-Lambek-Scott-Tarski-Stone
-Curry-Howard-Brouwer-Heyting-Kolmogorov
+- Curry-Howard-Lambek
+
+- Curry-Howard-Tait
+
+- Curry-Howard-Lambek-Scott-Tarski-Stone
+
+- Curry-Howard-Brouwer-Heyting-Kolmogorov
 
 and so on as the articles and papers touching upon these issues try to draw the parallels. It is safe to say that there is much happening in an interdisciplinary manner and this document attempts to give a partial documentation of some of the links the author has been able to patch together. Hope you enjoy finding the interconnections!
 
@@ -82,6 +85,8 @@ This is an important idea in computation as fixed points can be thought of as mo
 - Constructive Mathematics
 
 - Game Semantics
+
+- Domain Theory
 
 - *Algebraic Structures*
 
@@ -186,7 +191,59 @@ In “Toward a Formal Semantics” Strachey distinguished between L-values and R
 Scott set the stage for the work of semantics with his paper: [[https://www.cs.ox.ac.uk/files/3222/PRG02.pdf][Outline of a Mathematical Theory of Computation]]
 
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
+
+** Domain Theory
 TODO: Understand how CPO figures in here.
+
+Domain theory resulted from the attempt of Dana Scott to supply Lambda Calculus with a model.
+
+He arrived at this by using a particular kind of partial orders (directed acyclic graphs) called lattices.
+
+Within this theory, we are trying to construct a model or a type of space (decide which), where you can give an
+interpretation for the lambda term morphisms. That is, Lambda Calculus, on composition takes one lambda term as an input
+and generates another by way of evaluations. Domain Theory tries to give it a model theoretic interpretation.
+
+TODO: Rewrite the above paragraph once you achieve more clarity.
+
+A semi-lattice is a structure in which each pair of elements either have a common ancestor or a common descendant. A complete lattice is a structure which has both.
+If you think about these structures as sort of rivers that originate from a common point and then finally culminate in a common end point, that would be a somewhat close metaphor.
+
+The central idea with a complete lattice is that for any pair of elements, you would be able to find both a common ancestor node upstream and a common descendant node downstream..
+
+TODO: Add an illustrated image of a lattice here.
+
+Scott identified continuous partial orders as the domain he want to work with and equipped it with a bottom type, which stood for undefined values. This undefined value, enables one to represent the computations which are partial: that is, once that have not terminated or has a value, like 1 divided by 0.
+
+Domains are structures which are characterized as directed-complete partially ordered sets.
+
+*** Supremum/Meet/Upper Bound and Infimum/Join/Lower Bound
+To get an idea of what joins and meets are:
+
+Say we have 3 elements with some information in them.
+Joins roughly correspond to the smallest element which contains all the information present in the three nodes
+Meets roughly correspond to the largest element such that every element contains more information than the 3 elements.
+
+If you think in set theoretic terms, they correspond to the intersection and union operations.
+
+TODO: I think there’s something to be talked about distributivity here on how it impinges on the nature of information.
+
+Directed set is a partial order which doesn't necessarily have a supremum/meet. Think of a total order (which also makes it a partial order) which doesn't have a top element such as the natural numbers.  Here, there’s no top element, which makes it a directed set. But if we equip it with an top element, we now have a partial order that is completed.
+
+By having a supremum for any two elements, we are having a system in which there’s a third one encapsulating the information content of both of them.
+
+Any finite poset fulfills the supremum property, but there may be interesting cases when you move to infinite domains.
+
+The next property needed is continuity. Besides, the ordering >=, there’s a >> which corresponds to approximation. x approximates y iff for all directed sets A, where supremum(A) >= y, there’s a z in A such that z >= x. An element that approximates itself is compact.
+
+A continuous directed-complete partial order is one where for all points, the supremum approximates it.
+
+These dcpos are also equipped with a ⊥ element which is at the bottom of every element. Which makes it a pointed set. So, domains are continuous dcpops that is, continuous direct-completed partially ordered pointed set, where ⊥ is the basepoint.
+
+TODO: Clarify, what it means for a supremum to approximate it.
+
+This is a [[https://www.lesswrong.com/posts/4C4jha5SdReWgg7dF/a-brief-intro-to-domain-theory][nice post]] to get an understanding of some of the basics.
+
+** Work in automata theory
 
 Inspired by Stephen Kleene’s characterization of events in Warren McCullough and Walter Pitts paper (that birthed the model of neural networks), Michael Rabin and Dana Scott showed that finite automata defined in the manner of Moore machines accepted a regular language (which algebraically correspond to free semigroups).
 
@@ -448,6 +505,8 @@ TODO: The link with nilpotents developed by Benjamin Peirce
 ** Categorical Logic
 
 *** [[https://en.wikipedia.org/wiki/Pregroup_grammar][Pregroup grammar]]
+
+*** [[https://www.cs.cmu.edu/~fp/courses/15816-f16/misc/Lambek58.pdf][The Mathematics of Sentence Structure (1958)]]
 
 ** Quantum Mechanics
 
