@@ -1,10 +1,11 @@
 * Morphisms of Computational Constructs
 
-This is a narrative on how computational structures such as data structures, programming constructs, and algebraic structures undergirding Computer Science display deep parallels among them. The mathematical terminology for making the links between two objects of study is called a morphism. It allows one to study analogies occuring across different categories rigourously by examining their underlying structure. I first came across these as as I was exploring features in computer programming languages and I kept finding out that they exhibited parallels to ideas in domains remote to Computer Science.
 
-I was able to understand the following subjects:
+This is a narrative on how computational structures such as data structures, programming constructs, and algebraic structures undergirding Computer Science display deep parallels among them. The mathematical terminology for making the links between two objects of study is called a morphism. It allows one to study analogies occuring across different categories rigourously by examining their underlying structure. I first came across these as as I was exploring features in computer programming languages and I kept finding out that they exhibited parallels to ideas in domains remote to Computer Science. It is designed to act as compilation of the rich skein of conceptual coherences and interconnections of computation as unearthed by research scientists across the globe.
 
-| Logic | Language | Computation | Categories | Topology/Spaces | Quantum Mechanics |
+I was able to understand that the following subjects:
+
+| Logic | Algebra | Language | Computation | Categories | Topology/Spaces | Quantum Mechanics |
 
 all have deep links with each other, which is being unravelled by multiple scientists all across the world. It is one of the most exciting things to be learning any one of these subjects and then finding out links about these in the other subjects. There is a popular term called Curry-Howard isomorphism, which has been getting expanded into various forms as new links are unearthed. One can see this elaborated as:
 
@@ -18,7 +19,35 @@ all have deep links with each other, which is being unravelled by multiple scien
 
 and so on as the articles and papers touching upon these issues try to draw the parallels. It is safe to say that there is much happening in an interdisciplinary manner and this document attempts to give a partial documentation of some of the links the author has been able to patch together. Hope you enjoy finding the interconnections!
 
+TODO: Role of Analysis / Synthesis
+TODO: Might have to go into cybernetics for a bit when mentioning synthesis
+TODO: This would tie in with the genesis of the ideas of entropy in the Macy Circles
+TODO: Discuss what ideas the second generation cybernetists uncovered (Foerster, Pask, Varela, Maturana etc.)
+TODO: Add in Baez-Stay Rosetta work here
 TODO: Describe about Theory A and Theory B side of computation
+
+Theory A concentrates on Programming Languages
+Theory B concentrates on complexity theory
+
+One of the prominent ideas in complexity theory is that once you have a description of a computational process, you can now have a way in which to compare these algorithms with each other.
+
+If you have an algorithmic process to solve it, then it comes down into polynomial time.
+
+The problem that is opened up when something is not polynomial time is that you would have to search throughout the computational universe in an enumerative fashion for the solution. This means that it could take a lot of time. Even for creating a simple image, like say 32 x 32 with 2 colors could take an astronomical amount of time. And if we even just increase the amount a tiny bit, you could even go beyond the number of seconds till predicted lifespan of the Universe, even with the fastest computer.
+
+TODO: Mention this thought experiment
+
+So, polynomial time is associated with algorithms which we have been able to device for computationally tractable problems and NP is the time usually (Verify if this is a true claim), with ones where we don't have a proper algorithm to solve it.
+
+TODO: Discuss if the whole problem can be devised in a way so as to arrive at way to falsify it.
+
+The place where this matters is that for the number of open problems in mathematics and computer science, you have P associated with the problems for which we have been able to find a way to traverse the space of possibilities in a way so that we achieve neat time metrics and the intractable ones for which we still haven't been able to study/understand the space in which they are inhabited except traversing it one unit at a time which presents us a problem in the presence of finite space, time and computational resources.
+
+TODO: Describe about P vs. NP
+TODO: Shannon’s role
+TODO: Diagram showing how Curry to Howard to De Bruijn AUTOMATH, Kolmogorov to Martin Löf to FOLDs to Voevodsky (Homotopy Type Theory) + Graphic Formalisms + Work in Quantum Mechanics
+
+TODO: Note how propositions are now types, but types are not propositions. And types are the concepts used in a synthetic manner
 
 ** Notes to an enthusiast
 
@@ -74,6 +103,10 @@ This is an important idea in computation as fixed points can be thought of as mo
 
 - Pi Calculus / Calculus of Communicating Systems
 
+- Full Abstraction
+
+- Bisimulation
+
 - Communicating Sequential Processes
 
 - Combinatory Logic
@@ -83,6 +116,14 @@ This is an important idea in computation as fixed points can be thought of as mo
 - Homotopy Type Theory
 
 - Constructive Mathematics
+
+- Ludics
+
+- Linear Logic
+
+- Geometry of Interaction
+
+- Transcendental Syntax
 
 - Game Semantics
 
@@ -171,6 +212,8 @@ Lattice Theory, Universal Algebra, Algebraic Topology, and Category Theory becam
 #+END_HTML
 
 John McCarthy was one of the first persons to attempt to give a mathematical basis for programming. In his paper Towards a mathematical science of computation (1961), he discussed the then three current directions of numerical analysis, complxity theory and automata theory as inadequate to give a firm footing to software engineering as practiced in the day and attempted to give his ideas on building a firm foundation.
+
+TODO: Add in image of John McCarthy
 
 Three approaches to programming language semantics emerged in the 1960s. Mathematical semantics attempted to act as a metalanguage to talk about the programs, their structures, and data handled by them. This in turn would also act as a precise way to provide specification for compilers.
 
@@ -275,13 +318,109 @@ Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell fr
 TODO: Discuss about how modal logic and monads are related. I got this idea from reading Data and Interpretation article here: https://medium.com/@bblfish/data-interpretation-b9273520735c
 What needs to be figured out is how this idea of bringing in determinacy in the computational context is linked to the geometrical idea of creating a standard construction as per Godement.
 Is the idea of creating a tree like structure(?) from an interconnected directed graph (possibly with loops) linked to how we study geometrical objects using these same ideas?
+
 I would have to understand the connection between analysis and geometry more to bring these insights back into a computational context.
+
 Explore how monadic API which makes state tractable is related to the semantic aspect of how functional programming has a syntactic notion of unfolding like a derivation tree of a grammar.
+
+** Coalgebra
+
+The area of coalgebra hopes to aim the subjects of various formal structures that capture the essence of state-based computational dynamics such as automata, tranistion systems, Petri nets, event systems etc.
+
+It promises a perspective on uniting, say, the theory of differential equations with automata and process theory and with biological and quantum computing, by providing an appropriate semantical basis with associated logic.
+
+Coalgebras are about behaviour and dual to algebras which are about structure.
+
+The central emphasis is between observables and internal states.
+
+If a program can be understood as an element in an inductively defined set P of terms:
+F(P) -> P where the functor F captures the signature of the operations for fomring programs,
+
+Coalgebra is the dual G(P) -> where the functor G catpruse the kind of behaviour that can be displayed — such as deterministic, or with exceptions.
+
+A generate computer behaviour amounts to the repeated evaluation of an (inductively defined) coalgebra structure on an algebra of terms.
+
+VERIFY: OOP is coalgebraic, FP is algebraic
+
+Every programming language consists of an algebra, the structured elements (so called initial algebra). And each language corresponds to certain dynamical behaviour captured by a coalgebra acting on the state space of the computer.
+
+Structural operational semantics is used to study this coalgebraic behaivour.
+
+In coalgebra, it could be the case that internal states are different, but the observables are indistinguishable. This is called bisimilarity or observational equivalence.
+
+There could also be the inverse case that the internal states are the same, but the observable properties are different, such as in an algebra, which have two different valid interpretive frames.
+
+TODO: Is this called congruence?
+
+TODO: Describe about bialgebras
+
+** Historical Sketch
+
+*** Categorical approch to mathematical system theory
+Work of Arbib, Manes and Goguen and also Adámek who analyzed Kalman’s work on linear dynamical systems, in relation to automata theory. This lead to a formulation for placing sequential machines and control systems in a unified framework by developing a notion of ”machine in a category”. This lead to general notions of state, behaviour, reachability, observability and realization of behaviour. The notion of coalgebra did not emerge here probably because the setting of modules and vector spaces from which this work arose rpovided too little categorical infrastructure (especially: no cartesian closure) to express these results purely coalgebraically.
+39
+263
+12
+13
+
+** Non-well-founded sets
+Aczel formed a crucial step with his set theory that allows infinitely descending ∈-chains, because it used coalgebraic terminology right from the beginning. The development of this theory was motivated by the desire to provide meaning to Milner’s theory of CCS of concurrent processes with potentially infinite behaviour. Therefore, the notion of bisimulation from process theory played a crucial role. Aczel showed how to treat bisimulation in a coalgebraic setting by establishing the first link between proofs by bisimulations and finality of coalgebras.
+
+11
+9
+
+** Data types of infinite objects
+The first approaches to data types in computing relied on initiality of algebras.
+The use of final coalgebras in [423, 40, 181, 347] to capture infinite structures provided an important next step. Such infinite structures can be represented using lazy evaluation or in logical programming languages.
+396
+178
+179
+
+** Initial and final semantics
+In semantics of programm and process languages it appeared that the relevant semantical domains carry the structure of a final coalgebra (sometimes in combination with an initial algebra structure). Especially in the metric space based tradition [50]. This techinque was combined with Aczel’s techniques by Rutten and Turi in ?. It culminated in the recognition that “compatible” algebra-coalgebra pairs (called bialgebras) are highly releant structures, described via distributive laws. The basic observation of [413, 412] further elaborated in [59], is that such laws correspond to specification formats for operation rules on (inductively defined) programs (274). These bialgebras satisfy elementary properties like: observational equivalence (i.e. bisimulation wrt. the coalgebra) is a congruence (wrt. the algebra).
+
+135, 123
+
+** Behavioural approach in specification
+
+Reichel [364] was the first to use so-called behavioural validity of equations in the specification of algebraic structures that are computationally relevant. The basic idea is to divide one types (also called sorts) into ‘visible’ and ‘hidden’ ones. The latter are supposed to capture sattes, and are not directly accessible. Equality is only used for the “observable” elements of visible types. The idea is further elaborated in what has become known as hidden algebra [154, 142, 384, 69], and has been applied to describe classes in OOP languages, which have an encapsulated state space. It was later realised that behavioural equlity is essentially bisimilarity in a coalgebraic context [311] and it was again Reichel [366] who first used coalgebras for the semantics of OOP languages. [244]
+
+** Modal logic
+
+Modal logics qualify the truth conditions of statements, concerning knowledge, belief and time.  Temporal logic is a part of modal logic which is particularly suitable for reasoning about (reactive) state-based systems. [356, 357].
+
+Moss [328] first associated a sutable modal logic to coalgebras inspired much subsequent work.
+370, 371, 294, 216, 229, 343, 289
+
+Overview in 290
+
+The idea is that the role of equational formulas in algebra is played by modal formulas in coalgebra.
+
+** Coalgebra and Category Theory
+
+
+
+TODO: Give example of a multicoded / many-sorted? syntactical representation of an algebra
+Different process, same structure: 3 + 5 = 4 * 2 = 8
+Same process, multiple structure: sqrt(4) = 2 in Z+ and sqrt(4) = -2 in Z-
+
+
+TODO: Learn about the distributive laws connecting algebra-coalgebra pairs
+
+TODO: I need to understand the algebra/co-algebra duality deeply and how it connects with
+model theory, modal logic, linear logic, and topology
 
 Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
 [[./img/universal-co-algebra-chart.png]]
 
+Bisimulation was coined by David Park and Robin Milner during a walk when earlier that day David Park showed how there was a mistake in Robin Milner’s work on CCS. This story is told in [[https://users.sussex.ac.uk/~mfb21/interviews/milner/][his interview with Martin Berger]].
+
+TODO: Detail about full abstraction and how it is related to game semantics. I might also have to link it up with CCS.
+
+*** [[https://homepages.cwi.nl/~janr/papers/files-of-papers/2011_Jacobs_Rutten_new.pdf][An introduction to (co)algebra and (co)induction]]
+
 TODO: Detail about bisimulation and coinduction
+TODO: Frame how hypersets and non-well founded set theory are used to provide a foundation for bisimulation
 
 [[http://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf][On the Origins of Bisimulation and Coinduction (2007)]] - Davide Sangiorgi
 
@@ -339,6 +478,12 @@ Sowa also links the idea of meaning preserving transformations and Chomsky’s l
 The new version of the article which locates it in a logical system is present here: http://www.jfsowa.com/logic/proposit.htm
 
 ** Linear Logic
+
+Girard’s work can be thought as an attempt to create types out of the structure created from the dynamical interactions among players. It is possible to reconstrut Martin Löf’s type theory within Linear Logic framework.
+
+Recreating MLTT in Ludics: https://arxiv.org/abs/1402.2511
+
+TODO: Can the move from Ludics to Transcendental Syntax be thought of as a move from thinking in trees to thinking in graphs?
 
 TODO: Document how Girard arrived at the work on linear logic
 
@@ -438,7 +583,84 @@ This could be important when asynchrony is present. If you don't know when your 
 *** Transitivity
 Enables you to travel through the links
 
+** Linear Logic
+
+** Geometry of Interaction
+
+A semantics of linear logic proofs.
+
+It acts as a framework for studying the trade-off between time and space efficiency
+
+*** [[https://dl.acm.org/doi/10.1145/199448.199483][The Geometry of Interaction machine]]
+I. Mackie (1995)
+
+*** [[http://sro.sussex.ac.uk/id/eprint/69302/][A Geometry of Interaction Machine for Gödel’s System T]]
+I. Mackie (2017)
+
+*** [[https://www.researchgate.net/publication/257642501_Reversible_Irreversible_and_Optimal_l-machines][Reversible, Irreversible, and Optimal Lambda-Machines]]
+Vincent Danos and Laurent Regnier (1996)
+
 ** Game Semantics
+
+TODO: Document the Dana Scott manuscript to LCF to PCF story
+
+TODO: Document the role of Kohei Honda: http://mrg.doc.ic.ac.uk/kohei/koheis_games.pdf
+
+TODO: Detail a bit about full abstraction problem
+
+TODO: Create a visualization of the influential papers in this domain
+
+We know that many expressions can evaluate to the same output.
+For example, 1 + 5 = 4 + 2 = 3 + 3 = 2 + 4 = 5 + 1 = 6
+
+What about sequential programs? How do we understand equivalence between two sequential programs that generate the same output?
+What is the underlying mathematical object here?
+
+With denotational semantics, we understand that programs are continuous functions on a topological spaces called Scott Domains.
+
+But there are sequential, parallel, and non-sequential computations in this space.
+
+Full abstract model tries to capture just the sequential programs and tries to identify what mathematical object that corresponds to.
+
+TODO: Detail about parallel or and or tester
+
+In 1993, full abstraction was achieved using Game Semantics
+
+Games can be quotiented to give a topological space a la Scott.
+
+[[http://moscova.inria.fr/~levy/courses/X/M1/lambda/bib/90abramskylazy.pdf][The Lazy Lambda Calculus]] was introduced by Abramsky in 1987. See also [[https://www.sciencedirect.com/science/article/pii/S0890540183710448][Full Abstraction in the Lazy Lambda Calculus]] by C.H. Luke Ong and Samson Abramsky
+
+In it, the function application was identified as the fundamental interaction between contexts and fragments. After this work the full abstraction problem was solved.
+
+Since game semantics solved the full abstraction problem for PCF, it was adapted to accommodate ground state in Call-by-Value games (1998), Control by Laird in Full abstraction for functional languages with control (1997), and general references by Abramsky, Kosei Honda, and G. McCusker A fully abstract game semantics for general references in 1998.
+
+While ground state only allows data, such as natural numbers, to be stored, general references (also called higher-order state) has no restrictions as to what can be stored, general references (also called higher-order state) has no restriction as to what can be stored.
+
+In 1993 Abramsky, Jagadeeshan and Malacaria, Hyland and Ong, and Nickau created models solved the questions for call-by-name computations. Full abstraction for call-by-value was solved by Kohei and Nobuko in 1997.
+
+For logical relations, which is a type based inductive proof method for observational equivalence, higher-order state poses a challenge by introducing types that are not inductive. To deal with non-inductive types, namely recursive and quantified types, logical relations equipped with step indices were introduced.
+
+[[http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.28.5695][An Indexed Model of Recursive Types for Foundational Proof-Carrying Code]] - Andrew W. Appel, David Mcallester (2000)
+[[https://www.ccs.neu.edu/home/amal/papers/lr-recquant-techrpt.pdf][Step-indexed syntactic logical relations for recursive and quantified types]] — A. Ahmed (2006)
+
+Step-indexed logical relations were then used to model higher-order state together with abstract types in [[http://www.ccs.neu.edu/home/amal/papers/sdri.pdf][State-Dependent Representation Independence]] in 2009 by Amal Ahmed, Derek Dreyer, and Andreas Rossberge and to model higher-order state as well as control in 2012 by Derek Dreyer, Georg Neis, and Lars Birkedal in [[https://people.mpi-sws.org/~dreyer/papers/stslr/icfp.pdf][The Impact of Higher-Order State and Control Effects on Local Reasoning]].
+
+Environmental bisimulations in contrast with applicative bisimulations were developed to deal with more distinguishing power of contexts for instance caused by abstract types and recursive types in [[https://www.cis.upenn.edu/~bcpierce/papers/infohide5-jacm.pdf][A bisimulation for type abstraction and recursion]] by Eijiro Sumii and Benjamin C. Pierce
+
+Environmental bisimulations were used to study higher-order state in [[http://www.cs.unibo.it/~sangio/DOC_public/env.pdf][Environmental Bisimulations for Higher-Order Languages]] in 2007 by Davide Sangiorgi, Naoki Kobayashi, and Eijiro Sumii. Another paper in this direction is [[Small Bisimulations for Reasoning About Higher-Order Imperative Programs][https://www.ccs.neu.edu/home/wand/papers/popl-06.pdf]] by Vasileios Koutavas and Mitchell Wand.
+
+TODO: Understand what higher order imperative programs are.
+
+Environmental bisimulation for state and polymorphism was studied in [[https://www.researchgate.net/publication/220370562_From_Applicative_to_Environmental_Bisimulation][From Applicative to Environmental Bisimulation]] in 2011 by Vasileios Koutavas, Paul Levy and Eijiro Sumii.
+
+Another variant of environmental bisimulation in [[https://link.springer.com/chapter/10.1007%2F978-3-319-47958-3_10][A Sound and Complete Bisimulation for Contextual Equivalence in Lambda-Calculus with Call/cc]] in 2016 by Taichi Yachi and Eijiro Sumii
+
+The detailed studies in game semantics resulted in the so-called Abramksy’s cube, first proposed in Linearity, Sharing and State by Samson Abramsky and G. McCusker and developed in their Marktoberdorf Summer School lectures of 1997. This was condesned and released as [[https://www.irif.fr/~mellies/mpri/mpri-ens/articles/abramsky-mccusker-game-semantics.pdf][Game Semantics (1999)]].
+
+Abramsky’s cube was also studied in terms of logical relations in [[https://people.mpi-sws.org/~dreyer/papers/stslr/icfp.pdf][The impact of higher-order state and control effects on local relational reasoning]] by Derek Dreyer, Georg Neis, and Lars Birkedal in 2010
+
+*** [[https://www.dpmms.cam.ac.uk/~martin/Research/Oldpapers/gamesemantics97scan.pdf][Game Semantics]]
+Martin Hyland (2007)
 
 *** [[https://www.cs.bham.ac.uk/~drg/papers/lics09tut.pdf][Applications of Game Semantics: From Program Analysis to Hardware Synthesis (2009)]]
 Dan Ghica
@@ -446,11 +668,36 @@ Dan Ghica
 *** [[https://arxiv.org/pdf/1908.04291.pdf][The Far Side of the Cube: An elementary introduction to game semantics (2019)]]
 Dan Ghica
 
+*** [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.676.7186&rep=rep1&type=pdf][Notes on Game Semantics]]
+Pierre-Louis Curien (February 28, 2015)
+
+** Abstract Machines
+
+Taxonomy of complexity of abstract machines was given by Beniamino Accattoli in [[https://arxiv.org/abs/1701.00649][The complexity of abstract machines (2016)]].
+
 ** Hypernet semantics
 
-Graphs provide a convenient formalism for providing operational semantics and for reasoning about observational equivalence.
+Graphs provide a convenient formalism for providing operational semantics and for reasoning about observational equivalence. Translating inductively structured programs into graphs as the representation enables fine control over resources and introduces the novel concept of locality in program execution.
+
+Due to the control the token holds over graph rewriting, program execution can be described loclaly in terms of the token and its neigbourhood. The rewrites happen around the regions through which the token passes.
+
+TODO: Elaborate a bit about robustness here.
+
+Robustness provides a sufficient condition of observational equivalence.
+
+*** Dynamic Geometry of Interaction Machine
+Different specifiactions of time and space cost can be given in a uniform fashion.
+
+Cost measure of a DGoIM can be used as a generic measure for programming languages.
+
+**** [[https://arxiv.org/abs/1803.00427][The Dynamic Geometry of Interaction Machine: A Token-guided Graph Rewriter]]
+Dan Ghica, Koko Muroya (2018)
+
+*** Universal Abstract Machine
 
 Abstract semantic graph
+
+TODO: Discuss about characterisation theorem
 
 ** Recursion Schemes / Morphisms of F-algebras
 
