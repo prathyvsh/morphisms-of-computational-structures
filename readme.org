@@ -19,12 +19,12 @@ all have deep links with each other, which is being unravelled by multiple scien
 
 and so on as the articles and papers touching upon these issues try to draw the parallels. It is safe to say that there is much happening in an interdisciplinary manner and this document attempts to give a partial documentation of some of the links the author has been able to patch together. Hope you enjoy finding the interconnections!
 
-** TODO: Role of Analysis / Synthesis
-** TODO: Might have to go into cybernetics for a bit when mentioning synthesis
-** TODO: This would tie in with the genesis of the ideas of entropy in the Macy Circles
-** TODO: Discuss what ideas the second generation cybernetists uncovered (Foerster, Pask, Varela, Maturana etc.)
-** TODO: Add in Baez-Stay Rosetta work here
-** TODO: Describe about Theory A and Theory B side of computation
+- TODO: Role of Analysis / Synthesis
+- TODO: Might have to go into cybernetics for a bit when mentioning synthesis
+- TODO: This would tie in with the genesis of the ideas of entropy in the Macy Circles
+- TODO: Discuss what ideas the second generation cybernetists uncovered (Foerster, Pask, Varela, Maturana etc.)
+- TODO: Add in Baez-Stay Rosetta work here
+- TODO: Describe about Theory A and Theory B side of computation
 
 Theory A concentrates on Programming Languages. Theory B concentrates on complexity theory
 
@@ -42,11 +42,11 @@ So, polynomial time is associated with algorithms which we have been able to dev
 
 The place where this matters is that for the number of open problems in mathematics and computer science, you have P associated with the problems for which we have been able to find a way to traverse the space of possibilities in a way so that we achieve neat time metrics and the intractable ones for which we still haven't been able to study/understand the space in which they are inhabited except traversing it one unit at a time which presents us a problem in the presence of finite space, time and computational resources.
 
-TODO: Describe about P vs. NP
-TODO: Shannon’s role
-TODO: Diagram showing how Curry to Howard to De Bruijn AUTOMATH, Kolmogorov to Martin Löf to FOLDs to Voevodsky (Homotopy Type Theory) + Graphic Formalisms + Work in Quantum Mechanics
+- TODO: Describe about P vs. NP
+- TODO: Shannon’s role
+- TODO: Diagram showing how Curry to Howard to De Bruijn AUTOMATH, Kolmogorov to Martin Löf to FOLDs to Voevodsky (Homotopy Type Theory) + Graphic Formalisms + Work in Quantum Mechanics
 
-TODO: Note how propositions are now types, but types are not propositions. And types are the concepts used in a synthetic manner
+- TODO: Note how propositions are now types, but types are not propositions. And types are the concepts used in a synthetic manner
 
 ** Notes to an enthusiast
 
@@ -212,7 +212,7 @@ Lattice Theory, Universal Algebra, Algebraic Topology, and Category Theory becam
 
 John McCarthy was one of the first persons to attempt to give a mathematical basis for programming. In his paper Towards a mathematical science of computation (1961), he discussed the then three current directions of numerical analysis, complxity theory and automata theory as inadequate to give a firm footing to software engineering as practiced in the day and attempted to give his ideas on building a firm foundation.
 
-TODO: Add in image of John McCarthy
+- TODO: Add in image of John McCarthy
 
 Three approaches to programming language semantics emerged in the 1960s. Mathematical semantics attempted to act as a metalanguage to talk about the programs, their structures, and data handled by them. This in turn would also act as a precise way to provide specification for compilers.
 
@@ -235,7 +235,7 @@ Scott set the stage for the work of semantics with his paper: [[https://www.cs.o
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
 
 ** Domain Theory
-TODO: Understand how CPO figures in here.
+- TODO: Understand how CPO figures in here.
 
 Domain theory resulted from the attempt of Dana Scott to supply Lambda Calculus with a model.
 
@@ -245,14 +245,14 @@ Within this theory, we are trying to construct a model or a type of space (decid
 interpretation for the lambda term morphisms. That is, Lambda Calculus, on composition takes one lambda term as an input
 and generates another by way of evaluations. Domain Theory tries to give it a model theoretic interpretation.
 
-TODO: Rewrite the above paragraph once you achieve more clarity.
+- TODO: Rewrite the above paragraph once you achieve more clarity.
 
 A semi-lattice is a structure in which each pair of elements either have a common ancestor or a common descendant. A complete lattice is a structure which has both.
 If you think about these structures as sort of rivers that originate from a common point and then finally culminate in a common end point, that would be a somewhat close metaphor.
 
 The central idea with a complete lattice is that for any pair of elements, you would be able to find both a common ancestor node upstream and a common descendant node downstream..
 
-TODO: Add an illustrated image of a lattice here.
+- TODO: Add an illustrated image of a lattice here.
 
 Scott identified continuous partial orders as the domain he want to work with and equipped it with a bottom type, which stood for undefined values. This undefined value, enables one to represent the computations which are partial: that is, once that have not terminated or has a value, like 1 divided by 0.
 
@@ -267,7 +267,7 @@ Meets roughly correspond to the largest element such that every element contains
 
 If you think in set theoretic terms, they correspond to the intersection and union operations.
 
-TODO: I think there’s something to be talked about distributivity here on how it impinges on the nature of information.
+- TODO: I think there’s something to be talked about distributivity here on how it impinges on the nature of information.
 
 Directed set is a partial order which doesn't necessarily have a supremum/meet. Think of a total order (which also makes it a partial order) which doesn't have a top element such as the natural numbers.  Here, there’s no top element, which makes it a directed set. But if we equip it with an top element, we now have a partial order that is completed.
 
@@ -281,7 +281,7 @@ A continuous directed-complete partial order is one where for all points, the su
 
 These dcpos are also equipped with a ⊥ element which is at the bottom of every element. Which makes it a pointed set. So, domains are continuous dcpops that is, continuous direct-completed partially ordered pointed set, where ⊥ is the basepoint.
 
-TODO: Clarify, what it means for a supremum to approximate it.
+- TODO: Clarify, what it means for a supremum to approximate it.
 
 This is a [[https://www.lesswrong.com/posts/4C4jha5SdReWgg7dF/a-brief-intro-to-domain-theory][nice post]] to get an understanding of some of the basics.
 
@@ -314,7 +314,7 @@ Eugenio Moggi brought together [[https://www.irif.fr/~mellies/mpri/mpri-ens/arti
 
 Moggi’s semantics was used by Philipp Wadler to simplify the API of Haskell from [[http://doi.acm.org/10.1145/143165.143169][CPS-based to monad based]]. A good read in this direction to understand how monads can be used is the work on [[https://arxiv.org/abs/1702.08409][Query Combinators]] by Clark Evans and Kyrylo Simonov. They describe how their work on creating a database query language lead them to understand its denotation as (co)monads and (bi-)Kleisi arrows. Fong and Spivak in their book [[https://arxiv.org/abs/1803.05316][Seven Sketches in Compositionality]] also describe similar ideas.
 
-TODO: Discuss about how modal logic and monads are related. I got this idea from reading Data and Interpretation article here: https://medium.com/@bblfish/data-interpretation-b9273520735c
+- TODO: Discuss about how modal logic and monads are related. I got this idea from reading Data and Interpretation article here: https://medium.com/@bblfish/data-interpretation-b9273520735c
 What needs to be figured out is how this idea of bringing in determinacy in the computational context is linked to the geometrical idea of creating a standard construction as per Godement.
 Is the idea of creating a tree like structure(?) from an interconnected directed graph (possibly with loops) linked to how we study geometrical objects using these same ideas?
 
@@ -349,9 +349,9 @@ In coalgebra, it could be the case that internal states are different, but the o
 
 There could also be the inverse case that the internal states are the same, but the observable properties are different, such as in an algebra, which have two different valid interpretive frames.
 
-TODO: Is this called congruence?
+- TODO: Is this called congruence?
 
-TODO: Describe about bialgebras
+- TODO: Describe about bialgebras
 
 ** Historical Sketch
 
@@ -397,16 +397,14 @@ The idea is that the role of equational formulas in algebra is played by modal f
 
 ** Coalgebra and Category Theory
 
-
-
-TODO: Give example of a multicoded / many-sorted? syntactical representation of an algebra
+- TODO: Give example of a multicoded / many-sorted? syntactical representation of an algebra
 Different process, same structure: 3 + 5 = 4 * 2 = 8
 Same process, multiple structure: sqrt(4) = 2 in Z+ and sqrt(4) = -2 in Z-
 
 
-TODO: Learn about the distributive laws connecting algebra-coalgebra pairs
+- TODO: Learn about the distributive laws connecting algebra-coalgebra pairs
 
-TODO: I need to understand the algebra/co-algebra duality deeply and how it connects with
+- TODO: I need to understand the algebra/co-algebra duality deeply and how it connects with
 model theory, modal logic, linear logic, and topology
 
 Investigations into the computational setting for abstract algebra would see emergence of fields of study like Universal Co-algebra that captures the duality in computation and values. This is a neat table from J.J.M.M Rutten’s [[https://homepages.cwi.nl/~janr/papers/files-of-papers/universal_coalgebra.pdf][paper on Universal Coalgebra: a theory of systems]] to understand the duality between different ideas of universal algebra and universal co-algebra.
@@ -414,12 +412,12 @@ Investigations into the computational setting for abstract algebra would see eme
 
 Bisimulation was coined by David Park and Robin Milner during a walk when earlier that day David Park showed how there was a mistake in Robin Milner’s work on CCS. This story is told in [[https://users.sussex.ac.uk/~mfb21/interviews/milner/][his interview with Martin Berger]].
 
-TODO: Detail about full abstraction and how it is related to game semantics. I might also have to link it up with CCS.
+- TODO: Detail about full abstraction and how it is related to game semantics. I might also have to link it up with CCS.
 
 *** [[https://homepages.cwi.nl/~janr/papers/files-of-papers/2011_Jacobs_Rutten_new.pdf][An introduction to (co)algebra and (co)induction]]
 
-TODO: Detail about bisimulation and coinduction
-TODO: Frame how hypersets and non-well founded set theory are used to provide a foundation for bisimulation
+- TODO: Detail about bisimulation and coinduction
+- TODO: Frame how hypersets and non-well founded set theory are used to provide a foundation for bisimulation
 
 [[http://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf][On the Origins of Bisimulation and Coinduction (2007)]] - Davide Sangiorgi
 
@@ -435,7 +433,7 @@ Giorgio Japaridze
 [[https://arxiv.org/pdf/cs/0507045.pdf][In the beginning was game semantics (2008)]]
 Giorgio Japaridze
 
-TODO: Discuss about sequent calculus and cirquent calculus
+- TODO: Discuss about sequent calculus and cirquent calculus
 
 [[https://www.researchgate.net/publication/227278992_Why_Play_Logical_Games][Why Play Logical Games (2009)]]
 Mathieu Marion
@@ -453,7 +451,8 @@ These works leads up to [[http://lambda-the-ultimate.org/node/4481][formalizing 
 
 A good bibliography of this chain can be found catalogued by Jeremy Yallop (See Resources).
 
-A nice overview on the work of John Reynolds towards his program for logical relations is [[https://www.cs.bham.ac.uk/~udr/papers/logical-relations-and-parametricity.pdf][given by Uday Reddy]]. TODO: Include Uday Reddy et al.’s Category Theory programme for programming languages.
+A nice overview on the work of John Reynolds towards his program for logical relations is [[https://www.cs.bham.ac.uk/~udr/papers/logical-relations-and-parametricity.pdf][given by Uday Reddy]].
+- TODO: Include Uday Reddy et al.’s Category Theory programme for programming languages.
 
 ** Monads vs. Continuations
 
@@ -469,9 +468,8 @@ The idea of creating models and the metalogical implications of constructing suc
 
 The link with computation comes from the idea that when you construct a computational object it can resemble such a lattice from which you equationally/implicationally extract out the truths consistent in that system.
 
-TODO: Link this with Curry-Howard isomorphism
-
-TODO: Seek out if there’s a Curry-Howard isomorphism identified for classical logic
+- TODO: Link this with Curry-Howard isomorphism
+- TODO: Seek out if there’s a Curry-Howard isomorphism identified for classical logic
 
 Sowa also links the idea of meaning preserving transformations and Chomsky’s linguistic attempts here: http://users.bestweb.net/~sowa/logic/meaning.htm
 The new version of the article which locates it in a logical system is present here: http://www.jfsowa.com/logic/proposit.htm
@@ -482,13 +480,13 @@ Girard’s work can be thought as an attempt to create types out of the structur
 
 Recreating MLTT in Ludics: https://arxiv.org/abs/1402.2511
 
-TODO: Can the move from Ludics to Transcendental Syntax be thought of as a move from thinking in trees to thinking in graphs?
+- TODO: Can the move from Ludics to Transcendental Syntax be thought of as a move from thinking in trees to thinking in graphs?
 
-TODO: Document how Girard arrived at the work on linear logic
+- TODO: Document how Girard arrived at the work on linear logic
 
-TODO: Detail how linear logic is a logic of resources
+- TODO: Detail how linear logic is a logic of resources
 
-TODO: Discuss the link between linear logic and constructive mathematics
+- TODO: Discuss the link between linear logic and constructive mathematics
 https://arxiv.org/pdf/1805.07518.pdf
 
 ** Type Theory
@@ -501,9 +499,9 @@ Type theory was devised by Bertrand Russell to solve problems associated with im
 
 How does removing this results in constructive algorithms.
 
-TODO: Brief history of how Law of Excluded Middle figures in the history of logic with emphasis on computational aspects
+- TODO: Brief history of how Law of Excluded Middle figures in the history of logic with emphasis on computational aspects
 
-TODO: Include the role of Brouwer here
+- TODO: Include the role of Brouwer here
 
 *** Connection between type theory and language
 
@@ -514,9 +512,9 @@ Stergio Chatzikyriakidis, Robin Cooper
 
 *** Martin Löf’s Intuitionistic Type Theory
 
-TODO: Discuss about how Martin Löf’s work was inspired by Automath
+- TODO: Discuss about how Martin Löf’s work was inspired by Automath
 
-TODO: Discuss about the connection between game semantics and Martin Löf Type Theory
+- TODO: Discuss about the connection between game semantics and Martin Löf Type Theory
 https://arxiv.org/pdf/1610.01669.pdf
 
 
@@ -542,16 +540,16 @@ Neil Leslie (1999)
 [[https://www.jstor.org/stable/2321650?seq=1][Meaning and Information in Constructive Mathematics]]
 Fred Richman
 
-TODO: Find out how Kolmogorov’s work figures in here
+- TODO: Find out how Kolmogorov’s work figures in here
 
 [[https://towardsdatascience.com/gradient-descend-with-free-monads-ebf9a23bece5][Continuity in Type Theory Slides]]
 Martín Escardó
 
 *** Homotopy Type Theory
 
-TODO: Discuss Homotopy Hypothesis and Grothendieck’s work
+- TODO: Discuss Homotopy Hypothesis and Grothendieck’s work
 
-TODO: Discuss the work in [[www.math.mcgill.ca/makkai/folds/foldsinpdf/FOLDS.pdf][FOLDS paper]]. How it was inspired from Martin Löf’s work
+- TODO: Discuss the work in [[www.math.mcgill.ca/makkai/folds/foldsinpdf/FOLDS.pdf][FOLDS paper]]. How it was inspired from Martin Löf’s work
 
 ** Process Algebras and Calculi
 
@@ -601,13 +599,13 @@ Vincent Danos and Laurent Regnier (1996)
 
 ** Game Semantics
 
-TODO: Document the Dana Scott manuscript to LCF to PCF story
+- TODO: Document the Dana Scott manuscript to LCF to PCF story
 
-TODO: Document the role of Kohei Honda: http://mrg.doc.ic.ac.uk/kohei/koheis_games.pdf
+- TODO: Document the role of Kohei Honda: http://mrg.doc.ic.ac.uk/kohei/koheis_games.pdf
 
-TODO: Detail a bit about full abstraction problem
+- TODO: Detail a bit about full abstraction problem
 
-TODO: Create a visualization of the influential papers in this domain
+- TODO: Create a visualization of the influential papers in this domain
 
 We know that many expressions can evaluate to the same output.
 For example, 1 + 5 = 4 + 2 = 3 + 3 = 2 + 4 = 5 + 1 = 6
@@ -621,7 +619,7 @@ But there are sequential, parallel, and non-sequential computations in this spac
 
 Full abstract model tries to capture just the sequential programs and tries to identify what mathematical object that corresponds to.
 
-TODO: Detail about parallel or and or tester
+- TODO: Detail about parallel or and or tester
 
 In 1993, full abstraction was achieved using Game Semantics
 
@@ -648,7 +646,7 @@ Environmental bisimulations in contrast with applicative bisimulations were deve
 
 Environmental bisimulations were used to study higher-order state in [[http://www.cs.unibo.it/~sangio/DOC_public/env.pdf][Environmental Bisimulations for Higher-Order Languages]] in 2007 by Davide Sangiorgi, Naoki Kobayashi, and Eijiro Sumii. Another paper in this direction is [[Small Bisimulations for Reasoning About Higher-Order Imperative Programs][https://www.ccs.neu.edu/home/wand/papers/popl-06.pdf]] by Vasileios Koutavas and Mitchell Wand.
 
-TODO: Understand what higher order imperative programs are.
+- TODO: Understand what higher order imperative programs are.
 
 Environmental bisimulation for state and polymorphism was studied in [[https://www.researchgate.net/publication/220370562_From_Applicative_to_Environmental_Bisimulation][From Applicative to Environmental Bisimulation]] in 2011 by Vasileios Koutavas, Paul Levy and Eijiro Sumii.
 
@@ -680,7 +678,7 @@ Graphs provide a convenient formalism for providing operational semantics and fo
 
 Due to the control the token holds over graph rewriting, program execution can be described loclaly in terms of the token and its neigbourhood. The rewrites happen around the regions through which the token passes.
 
-TODO: Elaborate a bit about robustness here.
+- TODO: Elaborate a bit about robustness here.
 
 Robustness provides a sufficient condition of observational equivalence.
 
@@ -696,7 +694,7 @@ Dan Ghica, Koko Muroya (2018)
 
 Abstract semantic graph
 
-TODO: Discuss about characterisation theorem
+- TODO: Discuss about characterisation theorem
 
 ** Recursion Schemes / Morphisms of F-algebras
 
@@ -744,9 +742,9 @@ Blogpost detailing how all computable functions are continuous
 
 ** Automatic Differentiation
 
-TODO: The role of dual numbers
+- TODO: The role of dual numbers
 
-TODO: The link with nilpotents developed by Benjamin Peirce
+- TODO: The link with nilpotents developed by Benjamin Peirce
 
 ** Categorical Logic
 
