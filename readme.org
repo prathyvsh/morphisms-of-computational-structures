@@ -19,15 +19,14 @@ all have deep links with each other, which is being unravelled by multiple scien
 
 and so on as the articles and papers touching upon these issues try to draw the parallels. It is safe to say that there is much happening in an interdisciplinary manner and this document attempts to give a partial documentation of some of the links the author has been able to patch together. Hope you enjoy finding the interconnections!
 
-TODO: Role of Analysis / Synthesis
-TODO: Might have to go into cybernetics for a bit when mentioning synthesis
-TODO: This would tie in with the genesis of the ideas of entropy in the Macy Circles
-TODO: Discuss what ideas the second generation cybernetists uncovered (Foerster, Pask, Varela, Maturana etc.)
-TODO: Add in Baez-Stay Rosetta work here
-TODO: Describe about Theory A and Theory B side of computation
+** TODO: Role of Analysis / Synthesis
+** TODO: Might have to go into cybernetics for a bit when mentioning synthesis
+** TODO: This would tie in with the genesis of the ideas of entropy in the Macy Circles
+** TODO: Discuss what ideas the second generation cybernetists uncovered (Foerster, Pask, Varela, Maturana etc.)
+** TODO: Add in Baez-Stay Rosetta work here
+** TODO: Describe about Theory A and Theory B side of computation
 
-Theory A concentrates on Programming Languages
-Theory B concentrates on complexity theory
+Theory A concentrates on Programming Languages. Theory B concentrates on complexity theory
 
 One of the prominent ideas in complexity theory is that once you have a description of a computational process, you can now have a way in which to compare these algorithms with each other.
 
@@ -35,11 +34,11 @@ If you have an algorithmic process to solve it, then it comes down into polynomi
 
 The problem that is opened up when something is not polynomial time is that you would have to search throughout the computational universe in an enumerative fashion for the solution. This means that it could take a lot of time. Even for creating a simple image, like say 32 x 32 with 2 colors could take an astronomical amount of time. And if we even just increase the amount a tiny bit, you could even go beyond the number of seconds till predicted lifespan of the Universe, even with the fastest computer.
 
-TODO: Mention this thought experiment
+- TODO: Mention this thought experiment
 
 So, polynomial time is associated with algorithms which we have been able to device for computationally tractable problems and NP is the time usually (Verify if this is a true claim), with ones where we don't have a proper algorithm to solve it.
 
-TODO: Discuss if the whole problem can be devised in a way so as to arrive at way to falsify it.
+- TODO: Discuss if the whole problem can be devised in a way so as to arrive at way to falsify it.
 
 The place where this matters is that for the number of open problems in mathematics and computer science, you have P associated with the problems for which we have been able to find a way to traverse the space of possibilities in a way so that we achieve neat time metrics and the intractable ones for which we still haven't been able to study/understand the space in which they are inhabited except traversing it one unit at a time which presents us a problem in the presence of finite space, time and computational resources.
 
