@@ -70,7 +70,7 @@ Also, it is of great value in doing advancing programming methods and the field 
 
 I also keep a rough journal of how I came across the ideas [[./journal.org][here]].
 
-And if you find any errors or have feedback, please reach out to me on [[https://twitter.com/prathyvsh][@prathyvsh]]
+And if you find any errors or have feedback, please reach out to me on Twitter: [[https://twitter.com/prathyvsh][@prathyvsh]]
 
 #+BEGIN_HTML
 <details>
