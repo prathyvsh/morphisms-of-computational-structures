@@ -576,7 +576,7 @@ A nice overview on the work of John Reynolds towards his program for logical rel
 
 There is a parallel between creating a continuation and bringing in monadic architecture around the program. Monads help in composing functions and gives control over their execution in calling and discard them. This architecture around the code enables creating performant changes such as discarding a certain fork of the search tree of the program if grows beyond a certain complexity or even allow to accept interrupts from outside the program execution to proceed a certain computation no further. This is the sort of tractable differences that monadic architecture and continuations grant to the programmer.
 
-TODO: I need to describe how call/cc is connected with classical logic and how double elimination / law of excluded middle / Peirce’s Law figures in here.
+- TODO: I need to describe how call/cc is connected with classical logic and how double elimination / law of excluded middle / Peirce’s Law figures in here.
 
 ** Logical investigations
 
