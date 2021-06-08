@@ -357,41 +357,159 @@ There could also be the inverse case that the internal states are the same, but 
 
 *** Categorical approch to mathematical system theory
 Work of Arbib, Manes and Goguen and also Adámek who analyzed Kalman’s work on linear dynamical systems, in relation to automata theory. This lead to a formulation for placing sequential machines and control systems in a unified framework by developing a notion of ”machine in a category”. This lead to general notions of state, behaviour, reachability, observability and realization of behaviour. The notion of coalgebra did not emerge here probably because the setting of modules and vector spaces from which this work arose rpovided too little categorical infrastructure (especially: no cartesian closure) to express these results purely coalgebraically.
-39
-263
-12
-13
+
+**** [[https://core.ac.uk/download/pdf/82763466.pdf][Machines in a Category (1980)]]
+Michael A. Arbib and Ernest G. Manes
+
+**** [[https://dml.cz/bitstream/handle/10338.dmlcz/105583/CommentatMathUnivCarol_015-1974-4_2.pdf][Free algebras and automata realizations in the language of categories (1974)]]
+Jiří Adámek
+
 
 ** Non-well-founded sets
 Aczel formed a crucial step with his set theory that allows infinitely descending ∈-chains, because it used coalgebraic terminology right from the beginning. The development of this theory was motivated by the desire to provide meaning to Milner’s theory of CCS of concurrent processes with potentially infinite behaviour. Therefore, the notion of bisimulation from process theory played a crucial role. Aczel showed how to treat bisimulation in a coalgebraic setting by establishing the first link between proofs by bisimulations and finality of coalgebras.
 
-11
-9
+*** [[https://link.springer.com/chapter/10.1007%2FBFb0018361][A final coalgebra theorem (1989)]]
+Peter Aczel, Nax Mendler
+
+*** [[https://www.escholar.manchester.ac.uk/uk-ac-man-scw:2h4][Final universes of processes (February 16, 1994)]]
+Peter Aczel
 
 ** Data types of infinite objects
+
 The first approaches to data types in computing relied on initiality of algebras.
-The use of final coalgebras in [423, 40, 181, 347] to capture infinite structures provided an important next step. Such infinite structures can be represented using lazy evaluation or in logical programming languages.
-396
-178
-179
+The use of final coalgebras in
+
+*** [[https://core.ac.uk/download/pdf/82297461.pdf][Parametrized datat ypes do not need highly constrained parameters (1982)]]
+Michael A. Arbib, Ernest G. Manes
+
+*** [[http://www.lfcs.inf.ed.ac.uk/reports/88/ECS-LFCS-88-44/ECS-LFCS-88-44.pdf][A Typed Lambda Calculus with Categorical Type Constructors (1988)]]
+Tatsuya Hagino
+
+*** [[http://it.mmcs.sfedu.ru/_files/ct_seminar/articles/The%20continuum%20as%20a%20final%20coalgebra.pdf][The continuum as a final coalgebra (2002)]]
+Dusko Pavlović, Vaughan Pratt
+
+*** [[https://www.sciencedirect.com/science/article/pii/0022000079900114][Final algebra semantics and data type extensions (1979)]]
+Mitchell Wand
+
+to capture infinite structures provided an important next step. Such infinite structures can be represented using lazy evaluation or in logical programming languages.
+
+*** [[https://personal.utdallas.edu/~gupta/iclp07paper.pdf][Coinductive programming and its applications (2007)]]
+Gopal Gupta, Ajay Bansal, Richard Min, Luke Simon, and Ajay Mallya
+
+*** [[https://personal.utdallas.edu/~gupta/calco11.pdf][Infinite computation, co-induction and computational logic (2011)]]
+Gopal Gupta, Neda Saeedloei, Brian DeVries, Richard Min, Kyle Marple, Feliks Kluźniak
+
+Talk available here: https://www.microsoft.com/en-us/research/video/logic-co-induction-and-infinite-computation/
+
+*** [[https://www.researchgate.net/publication/220985840_Coinductive_Logic_Programming][Coinductive Logic Programming (2006)]]
+Luke Simon, Ajay Mallya, Ajay Bansal, Gopal Gupta
 
 ** Initial and final semantics
-In semantics of programm and process languages it appeared that the relevant semantical domains carry the structure of a final coalgebra (sometimes in combination with an initial algebra structure). Especially in the metric space based tradition [50]. This techinque was combined with Aczel’s techniques by Rutten and Turi in ?. It culminated in the recognition that “compatible” algebra-coalgebra pairs (called bialgebras) are highly releant structures, described via distributive laws. The basic observation of [413, 412] further elaborated in [59], is that such laws correspond to specification formats for operation rules on (inductively defined) programs (274). These bialgebras satisfy elementary properties like: observational equivalence (i.e. bisimulation wrt. the coalgebra) is a congruence (wrt. the algebra).
+In semantics of programm and process languages it appeared that the relevant semantical domains carry the structure of a final coalgebra (sometimes in combination with an initial algebra structure). Especially in the metric space based tradition [50].
 
-135, 123
+*** [[https://mitpress.mit.edu/books/control-flow-semantics][Control Flow Semantics (1996)]]
+J. de Bakker and E. Vink
+
+This techinque was combined with Aczel’s techniques by Rutten and Turi.
+
+- TODO: Find out the work in which Rutten and Turi combined these techniques.
+
+It culminated in the recognition that “compatible” algebra-coalgebra pairs (called bialgebras) are highly releant structures, described via distributive laws. The basic observation of
+
+*** [[http://www.dcs.ed.ac.uk/home/dt/thesis.html][Functional operational semantics and its denotational dual (1996)]]
+Daniele Turi
+
+
+*** [[http://www.dcs.ed.ac.uk/home/dt/towards.html][Towards a mathematical operational semantics (1997)]]
+Daniele Turi and Gordon Plotkin
+
+further elaborated in:
+
+*** [[https://research.vu.nl/en/publications/on-generalised-coinduction-and-probabilistic-specification-format-2][On generalized coiduction and probabilistic specification formats: Distributive laws in coalgebraic modelling (2004)]]
+F. Bartels
+
+, is that such laws correspond to specification formats for operation rules on (inductively defined) programs.
+
+*** [[https://core.ac.uk/download/pdf/82824249.pdf][Bialgebras for structural operational semantics: An introduction (2011)]]
+B. Klin
+
+These bialgebras satisfy elementary properties like: observational equivalence (i.e. bisimulation wrt. the coalgebra) is a congruence (wrt. the algebra).
+
+*** [[https://link.springer.com/chapter/10.1007%2FBFb0084215][Algebraically complete categories (1991)]]
+P. Freyd
+
+*** [[https://era.ed.ac.uk/handle/1842/406][Axiomatic Domain Theory in Categories of Partial Maps (1994)]]
+M. Fiore
 
 ** Behavioural approach in specification
 
-Reichel [364] was the first to use so-called behavioural validity of equations in the specification of algebraic structures that are computationally relevant. The basic idea is to divide one types (also called sorts) into ‘visible’ and ‘hidden’ ones. The latter are supposed to capture sattes, and are not directly accessible. Equality is only used for the “observable” elements of visible types. The idea is further elaborated in what has become known as hidden algebra [154, 142, 384, 69], and has been applied to describe classes in OOP languages, which have an encapsulated state space. It was later realised that behavioural equlity is essentially bisimilarity in a coalgebraic context [311] and it was again Reichel [366] who first used coalgebras for the semantics of OOP languages. [244]
+Horst Reichel in [[https://www.researchgate.net/publication/266957938_Behavioural_equivalence_-_a_unifying_concept_for_initial_and_final_specification_methods][Behavioural Equivalence — a unifying concept for initial and final specifications (1981)]] was the first to use so-called behavioural validity of equations in the specification of algebraic structures that are computationally relevant. The basic idea is to divide one types (also called sorts) into ‘visible’ and ‘hidden’ ones. The latter are supposed to capture sattes, and are not directly accessible. Equality is only used for the “observable” elements of visible types. The idea is further elaborated in what has become known as hidden algebra
+
+*** [[https://www.sciencedirect.com/science/article/pii/S0304397599002753?via%3Dihub][A Hidden Agenda (2000)]]
+Joseph Goguen, Grant Malcom
+
+*** [[https://link.springer.com/chapter/10.1007%2F3-540-07854-1_231][Observability concepts in abstract data specifications (1976)]]
+V. Giarrantana, F. Gimona, U. Montanari
+
+There seems to be a 30 years later retrospect [[https://www.semanticscholar.org/paper/Observability-Concepts-in-Abstract-Data-Type-30-Sannella-Tarlecki/7c26d5071be3a815877ce0baeb7e12219e5541ce][here]].
+
+*** [[https://www.sciencedirect.com/science/article/pii/016764239090057K][Behavioural correctness of data representations (1990)]]
+Oliver Schoett
+
+*** [[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.56.4105&rep=rep1&type=pdf][Proving the correctness of behavioural implementations (1995)]]
+Michel Bidiot, Rolf Hennicker
+
+and has been applied to describe classes in OOP languages, which have an encapsulated state space. It was later realised that behavioural equality is essentially bisimilarity in a coalgebraic context
+*** [[https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.43.5273&rep=rep1&type=pdf][Behavioural Equivalence, Bisimulation, and Minimal Realisation (19 September, 1995)]]
+Grant Malcolm
+
+The original title of this paper was apparently “Objects as algebra-coalgebra pairs” which was replaced on the suggestion of Rod Burstall.
+
+and it was again Reichel
+*** [[https://www.researchgate.net/publication/220173547_An_Approach_to_Object_Semantics_based_on_Terminal_Co-Algebras][An approach to object semantics based on terminal co-algebras (1995)]]
+who first used coalgebras for the semantics of OOP languages.
+
+*** [[https://www.sciencedirect.com/science/article/pii/S0304397502003663/pdf][Coalgebras and monads in the semantics of Java (2003)]]
+Bart Jacobs
 
 ** Modal logic
 
-Modal logics qualify the truth conditions of statements, concerning knowledge, belief and time.  Temporal logic is a part of modal logic which is particularly suitable for reasoning about (reactive) state-based systems. [356, 357].
+Modal logics qualify the truth conditions of statements, concerning knowledge, belief and time.  Temporal logic is a part of modal logic which is particularly suitable for reasoning about (reactive) state-based systems.
 
-Moss [328] first associated a sutable modal logic to coalgebras inspired much subsequent work.
-370, 371, 294, 216, 229, 343, 289
+*** [[https://fi.ort.edu.uy/innovaportal/file/20124/1/49-pnueli_temporal_logic_of_programs.pdf][The temporal logic of programs (1971)]]
 
-Overview in 290
+Amir Pnueli
+
+*** [[The temporal semantics of concurrent programs (1981][The temporal semantics of concurrent programs (1981)]]
+
+Amir Pnueli
+
+Lawrence S. Moss in [[https://www.sciencedirect.com/science/article/pii/S0168007298000426][Coalgebraic Logic (1999)]] first associated a suitable modal logic to coalgebras which inspired much subsequent work.
+
+*** [[https://www.sciencedirect.com/science/article/pii/S1571066105803536][Coalgebras and modal logic (2000)]]
+Martin Rößiger
+
+*** [[https://www.sciencedirect.com/science/article/pii/S0304397500001286/pdf][From modal logics to terminal coalgebras (2001)]]
+Martin Rößiger
+
+*** [[https://www.sciencedirect.com/science/article/pii/S1571066104000532/pdf][Specifying coalgebras with modal logic (2001)]]
+Alexander Kurz
+
+*** [[https://www.sciencedirect.com/science/article/pii/S1571066104809095/pdf][Modal operators for coequations (2001)]]
+Jesse Hughes
+
+*** [[https://www.semanticscholar.org/paper/The-temporal-logic-of-coalgebras-via-Galois-Jacobs/d58370736cc5063f1af99580a87cdfdbccfe06b4][The temporal logic of coalgebras via Galois algebras (2002)]]
+Bart Jacobs
+
+*** [[https://www.sciencedirect.com/science/article/pii/S0304397503002019][Coalgebraic modal logic: Soundness, completeness and decidability of local consequence (2003)]]
+Dirk Pattinson
+
+*** [[https://staff.science.uva.nl/y.venema/papers/stone.pdf][Stone Coalgebras]]
+Clemens Kupke, Alexander Kurz, Yde Venema
+
+Overview in
+*** [https://www.sciencedirect.com/science/article/pii/S0304397511003215][Coalgebraic semantics of modal logic: An overview (2011)]]
+Clemens Kupke, Dirk Pattinson
 
 The idea is that the role of equational formulas in algebra is played by modal formulas in coalgebra.
 
