@@ -508,7 +508,7 @@ Dirk Pattinson
 Clemens Kupke, Alexander Kurz, Yde Venema
 
 Overview in
-*** [https://www.sciencedirect.com/science/article/pii/S0304397511003215][Coalgebraic semantics of modal logic: An overview (2011)]]
+*** [[https://www.sciencedirect.com/science/article/pii/S0304397511003215][Coalgebraic semantics of modal logic: An overview (2011)]]
 Clemens Kupke, Dirk Pattinson
 
 The idea is that the role of equational formulas in algebra is played by modal formulas in coalgebra.
