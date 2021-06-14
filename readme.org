@@ -219,6 +219,22 @@ Three approaches to programming language semantics emerged in the 1960s. Mathema
 ** Operational Semantics
 The operational approach took the compiler itself to constitute a definition of the semantics of the language.
 
+There are three kinds:
+
+1/ Small Step or Structural Operational Semantics
+
+It was introduced by Gordon Plotkin.
+
+This method makes use of a transition relation to ddefine behaviour of programs. SOS specifications make use of inference rules that derive the valid transitions of a composite syntax in terms of the transitions of its components.
+
+2/ Reduction Semantics by Matthias Felleisen and Robert Hieb
+
+This is devised an equational theoy for control and state. It uses the idea of contexts where terms can be plugged in.
+
+3/ Big Step Semantics or Natural Semantics
+
+This method was invented by Gillies Kahn. It describes in a divide and conquer manner how the final evaluation results of language constructs can be obtained by combining the evaluation results of their syntactic counterparts.
+
 ** Denotational Semantics
 
 ** Deductive Approach
