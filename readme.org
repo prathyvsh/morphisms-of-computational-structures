@@ -237,6 +237,16 @@ This method was invented by Gillies Kahn. It describes in a divide and conquer m
 
 ** Denotational Semantics
 
+Denotational Semantics was pioneered by Christopher Strachey and Dana Scott in the 1970s.
+
+Denotational Semantics is powered by Domain Theory, which is a Tarskian style semantics for understanding programming language constructs. By providing models for programming language constructs, it acts as a ground to understand what each kind of programming languages translate into a mathematical object setting. This has the advantage that now models for PL constructs can now be interpreted as mathematical entities and any two language can now be compared for equivalence and relationships by looking at the mathematical objects they desugar/translate into. The mathematical setting initially (currently?) adopted is that of set-theoretic objects but I think its not fully tied to that and the language can be changed to that of say hypersets or categories.
+
+Denotational Semantics uses this framework for understanding programming language semantics. Programming language constructs are understood as objects with well-defined extensional meaning in terms of sets.
+
+We make use of structural induction to provide denotational semantics for expressions.
+
+TODO: Somehow diagonalization proof of D → (D → E) is used to hint at the idea almost all functions are uncomputable. I need to understand this proof to address this idea of how it connects up with the well-foundedness(?) nature of (co)domains. Hint from [[https://www.cs.cornell.edu/courses/cs6110/2013sp/lectures/lec19-sp13.pdf][document]]
+
 ** Deductive Approach
 Pioneered by R. W. Floyd in 1967, it linked logical statements to the steps of the program thereby specifying its behaviour as well as providing a means of verifying the program.
 
@@ -251,6 +261,7 @@ Scott set the stage for the work of semantics with his paper: [[https://www.cs.o
 Scott’s work resulted in domain theory where lambda calculus was interpreted as modelling [[https://epubs.siam.org/doi/abs/10.1137/0205037?journalCode=smjcat][continuous lattices]].
 
 ** Domain Theory
+
 - TODO: Understand how CPO figures in here.
 
 Domain theory resulted from the attempt of Dana Scott to supply Lambda Calculus with a model.
@@ -300,6 +311,26 @@ These dcpos are also equipped with a ⊥ element which is at the bottom of every
 - TODO: Clarify, what it means for a supremum to approximate it.
 
 This is a [[https://www.lesswrong.com/posts/4C4jha5SdReWgg7dF/a-brief-intro-to-domain-theory][nice post]] to get an understanding of some of the basics.
+
+*** Ideas to Explain
+
+**** Partial Orders
+- Discrete
+- Lifting
+- Flat
+- Completed
+- ⍵-Chain
+- Algebraic
+
+**** Properties
+
+- Ordering
+- Partial Ordering
+- Continuity
+- Monotonicity
+- Completeness
+- Compactness
+- Compositionality
 
 ** Work in automata theory
 
