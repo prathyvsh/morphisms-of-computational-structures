@@ -315,11 +315,27 @@ This is a [[https://www.lesswrong.com/posts/4C4jha5SdReWgg7dF/a-brief-intro-to-d
 *** Ideas to Explain
 
 **** Partial Orders
+
+These are some of the properties commonly assumed by the partial orders used in Domain Theory. One or more of these properties can inhere in the structures studied. For example there can be a pointed completed partial order or a lifted discrete partial order as per the context demands.
+
 - Discrete
 - Lifting
 - Flat
+- Pointed
 - Completed
+- Chain
+A chain is a total order in which all elements are comparable.
+
+- Antichain
+
+TODO: Insert image
+Antichain is the collection of elements which are not comparable. It can roughly be thought of as the “width” of the partial order.
+Think elements in two separate branches of a tree such as Chennai and London in (Countries, (India, (Tamil Nadu, Chennai)), (United Kingdom, (England, London))).
+
 - ⍵-Chain
+
+Infinite chains indexed by natural numbers.
+
 - Algebraic
 
 **** Properties
