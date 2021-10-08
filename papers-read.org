@@ -1,4 +1,4 @@
-* The Algebraic View of Computation: Implementation, Interpretation and Time
+* [[https://mdpi-res.com/d_attachment/philosophies/philosophies-03-00015/article_deploy/philosophies-03-00015.pdf][The Algebraic View of Computation: Implementation, Interpretation and Time]]
 Attila Egri-Nagy
 2018
 14 Pages
@@ -52,3 +52,47 @@ Numbers measure size, groups measure symmetry.
 
 M. Armstrong, Groups and Symmetry (1988)
 #+END_QUOTE
+
+The general idea of measuring is that we assign a mathematical object to the thing to be measured. In the everyday sense, the assigned object is a number, but for measuring more complicated properties, we need more structured objects. In this sense, we say that semigroups measure computation. Turing completeness is just a binary measure, hence the need for a more fine-grained scale. Thus, we can ask questions like “What is the smallest semigroup that can represent a particular computation?”
+
+*** 1.3 Computation as Accretion of Structure
+
+The idea of accretion has a clear algebraic description: the set of generators. These are elements of a group whose combinations can generate the whole table.
+
+** 2. Computation and Time
+
+*** 2.1 Different Times
+
+An extreme difference between logical time and actual time is that computation can be suspended
+
+*** 2.2 Not Enough Time
+
+If there were infinite time available for computation, or equivalently, infinitely fast computers, we would not need to do any programming at all, brute-force would suffice (time travel even changes computability). A possible shortcute to the future would render the P vs. NP problem meaningless with enormous consequences.
+
+*** 2.2 Timeless Computation?
+
+Memory space can often be exchanged for time and the limit of this process is the lookup table, the precomputed result. Taking the abstraction process to its extreme, we can replace the 2D composition table with a 1D look up table with keys as pairs (x,y) and values xy.
+
+Computation, completely stripped off any locality the process may have, is just an association of keys to values.
+
+We can talk about static computational structures, composition tables, and we can also talk about computational processes, sequences of events tracing a path in the composition table.
+
+If computation is information processing, then information is frozen computation.
+
+For a Rubik’s Cube, one can specify a particular state either by describing the positions and orientations of the cubelets or by giving a sequence of moves from the initial ordered configuration. This is another example of the state-event abstraction (Principle 1).
+
+** 3. Homomorphism — The Algebraic Notion of Implementation
+
+“A physical system implements a given computation when the causal structure of the physical system mirrors the formal structure of the computation.”
+
+*** 3.1 Homomorphisms
+Homomorphism is a knowledge extension tool: we can apply knowledge about one system to another. It is a way to predict outcomes of events in one dynamical system based on what we known about what happens in another one, given that a homomorphic relationship has been established. This is also a general trick for problem solving, widely used in mathematics. When obtaining a solution is not feasible in one problem domain, we can use easier operations by transferring the problem to another domain — assuming that we can move between the domains with structure preserving maps.
+
+What does it mean to be in a homomorphic relationship for computational structures? Using the composition table definition, we can now define their structure preserving maps. If in a systems S event x combined with event y yields the event z = xy, then by a homomorphism φ : S → T, then in another system T the outcome of φ(x) combined with φ(y) is bound to be φ(z) = φ(xy), so the following equation holds
+
+φ(xy) = φ(x)φ(y)
+
+On the left hand side, composition happens in S, while on the right hand side composition is done in T.
+
+
+
