@@ -94,5 +94,36 @@ What does it mean to be in a homomorphic relationship for computational structur
 
 On the left hand side, composition happens in S, while on the right hand side composition is done in T.
 
+A distinguished class of homomorphisms is isomorphisms, where the correspondence is one-to-one. In other words, isomorphisms are strictly structure preserving, while homomorphisms can be structure forgetting down to the extreme of mapping everything to a single state and to the identity operation. The technical details can be complicated due to clustering states (surjective homomorphism) and by the need of turning around homomorphism we also consider homomorphic relations.
+
+By turning around implementations we can define computational models. We can say that a physical system implements an abstract computer, or we can say that the abstract computer is a computational model of the physical system.
+
+*** 3.2 Computers as Physical systems
+
+Definition 1 (vague). Computers are physical systems that are homomorphic images of computational structures (semigroups).
+
+The first definition begs the questoin, how can a physical system be an image of a homomorphism, i.e., a semigroup itself? How can we cross the boundary between the mathematical realm and the external reality? First, there is an easy but hypothetical answer. According to the Mathematical Universe Hypothesis, all physical systems are mathematical structures, so we never actually leave the mathematical realm.
+
+Secondly, the implementation relation can be turned around. Implementation and modeling are the 2 directions of the same isomorphic relation. If T implements S, then S is a computational model of T. Again, we stay in the mathematical realm, we just need to study mappings between semigroups.
+
+Definition 2. Computers are physical systems whose computational models are homomorphic images of semigroups.
+
+This definition of computers is orthogonal to the problem of whether mathematics is an approximation or a perfect description of a physical reality, and the definition does not depend on how physical systems are characterized.
+
+Biological systems are also good candidates for hosting computation, since they’re already doing some information processing. However, it is radically different from digital computation. The computation in digital computers is like toppling dominoes, a single sequence of chain reactions of bit-flips. Biological computation is done in a massively parallel way (e.g., all over in a cell), more in a statistical mode.
+
+*** 3.3 Difficulty in Programming
+
+*** 3.4 Interpretations
+
+Computational implementation is a homomorphism, while an arbitrary function with no homomorphic properties is an interpretation. We can take a computational structure and assign freely some meaning to its elements, which we call the semantic content. Interpretations look more powerful since they can bypass limitations imposed by the morphic nature of implementations. However, since they are not necessarily structure preserving, the knowledge transfer is just one way. Changes in the underlying system may not be meaningful in the target system. If we ask a new question, then we have to devise a new encoding for the possible solutions.
+
+For instance, reversible system can carry out irreversible computation by a carefully chose output encoding. A morphism can only produce irreversible systems out of irreversible(?) systems. This in turn demonstrates that today's computers are not based on the reversible laws of physics. From the logic gates up, we have proper morphic relations, but the gates themselves are not homomorphic images of the underlying physics. When destroying information, computers dissipate heat. Whether we can implement group computation with reversible transformations and hook on a non-homomorphic function to extract semantic content is an open engineering problem. In essence, the problem of reversible computation implementing programs with memory erasure is similar to trying to explain the arrow of time arising from the symmetrical laws of physics.
+
+Throwing computing into reverse (2017) — M. P. Frank
+
+** 4. High-Level Structure: Hierarchies
+
+Composition and lookup tables are the “ultimate reality” of computation, but they are not adequate descriptions of practical computing. The low-level process in a digital computer, the systematic bit flips in a vast array of memory, is not very meaningful. The usefulness of a computation is expressed at several hierarchical layers above (e.g., computer architecture, operating system, and end user applications). 
 
 
