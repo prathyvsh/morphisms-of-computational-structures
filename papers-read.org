@@ -139,3 +139,81 @@ A recurring question in philosophical conversations is the possibility of the sa
 * 6. Summary
 
 In the opinion of the author, philosophy should be ahead of mathematics, as it deals with more difficult questions, and it should not be bogged down by the shortcomings of terminology. In philosophy, we want to deal with the inherent complexity of the problem, not the incidental complexity caused by the chosen tool. The algebraic viewpoint provides a solid base for further philosophical investigations of the computational phenomena.
+
+* Finite Computational Structures and Implementations
+Attila Egri-Nagy
+2016
+
+12 Pages
+
+** Abstract
+
+What is computable with limited resources?
+How can we verify the correctness of computations?
+How to measure computational power with precision?
+
+Despite the immense scientific and engineering progress in computing, we still have only partial answers to these questions. In order to make these problems more precise, we describe an abstract algebraic definition of classical computation, generalizing traditional models to semigroups.
+
+** 1. Introduction
+
+The exponential growth of the computing power of hardware (colloquially known as Moore’s Law) seems to be ended by reaching its physical and economical limits. In order to keep up technological development, producing more mathematical knowledge about digital computation is crucial for improving the efficiency of software.
+
+** 2. Computational Structures
+
+Our computers are physical devices ad the theory of computation is abstracted from physical processes. Mathematical models clearly define the notion of computation, but mapping the abstract computation back to teh physical realm is often considered problematic. It is argued that structure-preserving maps between computations work from one mathematical model to another just as well as from the abstract to the concrete physical implementation, easily crossing any ontological borderline one might assume between the two.
+
+Since abstract algebra provides the required tools, suggestion is made for further abstractions to the models of computations to reach the algebraic level safe for discussing implementations. It is also suitable for capturing the hierarchical structure of computers. Finiteness and the abstract algebraic approach paint a picture where universal computation becomes relative and the ‘mathematical versus physical’ distinction less important.
+
+First it is attempted to define computations and implementations purely as abstract functions, then the need for combining functions leads us to definition of computational structures.
+
+*** 2.1 Computation as a function: input-output mappings
+
+Starting from the human perspective, computation is a tool. We want a solution for some problem: the input is the question, the output is the answer. Formally, the input-output pairs are represented as a function f : X → Y, and computation is function evaluation f(x) = y, x ∈ X, y ∈ Y. As an implementation of f, we need a dynamical system whose behaviour can be modelled by another function g, which is essentially the same as f.
+
+Computation can be described by a mapping
+f : { 0, 1 }^ m → { 0, 1 }^n , m,n ∈ ℕ
+
+According to the fundamental theorem of reversible computing, any finite function can be computed by an invertible function. This apparently contradicts the idea of implementation, that important properties of functions have to be preserved.
+
+Embedding XOR:
+
+[00] ↦ [0]0
+[01] ↦ [1]1
+[10] ↦ [1]0
+[11] ↦ [0]1
+
+Embedding FAN-OUT:
+
+[0]0 ↦ [00]
+0[1] ↦ [11]
+10 ↦ 10
+11 ↦ 01
+
+into the same bijective function. By putting information into the abstract elements, any function can ‘piggyback’ even on the identity function.
+
+These ‘tricks’ work by composing the actual computations with special input and output functions, that might have different properties. In reversible computing the readout operation may not be a reversible function.
+
+*** 22 Computation as a process: state transitions
+
+Focussing on the process view, what is the most basic unit of computation? A state transition: an event changes the current state of a system. A state is defined by a configuration of a system’s components, or some other distinctive properties the system may have.
+
+Let’s say the current state is x, then event s happens changing the state to y. We might write y = s(x) emphasizing that s is a function, but it is better to write xs = y meaning that s happens in state x yielding state y. Why? Because combining events as they happen one after the other, e.g. xst = z, is easier to read following our left to right convention.
+
+State-event abstraction: We can identify an event with its resulting state: state x is where we end up when event x happens.
+
+According to the action interpretation, xs = y can be understood as event s changes the current state x to the next state y. But xs = y can also be read as event x combined with event s yields the composite event y, the event algebra interpretation. We can combine abstract events into longer sequences. These can also be considered as a sequence of instructions, i.e. an algorithm. These sequences of events should have the property of associativity
+
+(xy)z = x(yz) for all abstract events x, y, z
+
+since a given sequence xyz should be a well-defined algorithm.
+
+We can put all event combinations into a table. These are the rules describing how to combine any two events.
+
+Computational Structure: A finite set X and a rule for combining elements of X that assigns a value x' for each two-element sequence, written as xy = x', is a computational structure if (xy)z = x(yz) for all x, y, z ∈ X.
+
+In mathematics, a set closed under an associative binary operation is an abstract algebraic structure called semigroup.
+
+Computation is a process in time — an obvious assumption, since most of engineering and complexity studies are about doing computation in shorter time. Combining two events yield a third one (which can be the same), and we can continue with combining them to have an ordered sequence of events. This ordering may be referred as time. However, at the abstraction level of the state transition table, time is not essential. The table implicitly describes all possible sequences of events, it defines the rules how to combine any two events, but it is a timeless entity. This is similar to some controversial ideas in theoretical physics such as the idea of “The End of Time” by D. M. Barbour of Shape Dynamics fame.
+
+*** 2.3 The computation spectrum
+
