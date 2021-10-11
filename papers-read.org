@@ -217,3 +217,49 @@ Computation is a process in time — an obvious assumption, since most of en
 
 *** 2.3 The computation spectrum
 
+How are the function and the process view of computation related? They are actually the same. Given a computable function, we ca construct a computational structure capable of computing the function. An algorithm (a sequence of state transition events) takes an initial state (encoded input) into a final state (encoded output). The simplest way to achieve this is by a lookup table.
+
+Lookup table semigroup: Let f : X → Y be a function, where X ∩ Y = ∅. Then the semigroup S = X ∩ Y ∩ {l} consists of resets X ∪ Y and the lookup operation l defined by xl = y if f(x) = y for all x ∈ X and ul = u for all u ∈ S \ X.
+
+Is it associative? Let v ∈ X ∪ Y be an arbitrary reset element, and s, t ∈ S any element. Since the rightmost event is a reset, we have (st)v = v and s(tv) = sv = v. For (sv)l = vl = s(vl) since vl is also a reset. For (vl)l = vl, since l does not change anything in S \ X and v(ll) = vl since l is an idempotent (ll = l). Separating the domain and the codomain of f is crucial, for function X → X we can simply have a separate copy of elements of X. When trying to make it more economical associativity may not be easy to achieve.
+
+Turning a computational structure into a function is also easy. Pick any algorithm (a composite event), and that is also a function from states to states.
+
+Information storage and retrieval are forms of computation. By the same token computation can be considered as a general form of information storage and retrieval, where looking up the required piece of data may need many steps. We can say that if computation is information processing, then information is frozen computation.
+
+*** 2.4 Traditional mathematical models of computation
+
+From finite state automata, we abstract away the initial and accepting states. Those special states are needed only for the important application of recognizing languages. Input symbols of a finite state automaton are fully defined transformations (total functions) of its state set.
+
+A transformation is a function f : X → X from a set to itself, and a transformation semigroup (X, S) of degree n is a collection S of transformations of an n-element set closed under function composition.
+
+If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbols. These semigroups are very special representations of abstract semigroups, where state transition is realized by composing functions.
+
+If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbols. These semigroups are very special representations of abstract semigroups, where state transition is realized by composig functions.
+
+In general, if we take the models of computation that describe the detailed dynamics of computation, and remove all the model specific decorations, we get a semigroup.
+
+*** 2.5 Computers: physical realizations of computation
+
+Intuitively, a computer is a physical system whose dynamics at some level can be described as a computational structure. For any equation xy = z in the computational structure, we should be able to induce in the physical system an event corresponding to x and another one corresponding to y such that their overall effect corresponds to z. Algebraically, this special correspondence is a structure-preserving map, a homomorphism. If we want exact realizations, not just approximations, then we need stricter one-to-one mappings, isomorphisms. However, for computational structures we need to use relations instead of functions.
+
+Isomorphic relations of computational structures: Let S and T be computational structures (semigroups). A relation ɸ : S → T is an isomorphic relation if it is:
+
+1) homomorphic: ɸ(s)ɸ(t) ⊆ ɸ(st)
+2) fully defined: ɸ(s) ≠ ∅ for all s ∈ Structures
+3) losseless: ɸ(s) ∩ ɸ(t) ≠ ∅ ⇒ s = t
+for all s, t ∈ S. We also say that T emulates, or implements S.
+
+Homomorphic is the key property, it ensures that similar computation is done in T by matching individual state transitions. Here ɸ(s) and ɸ(t) are subsets of T (not just single elements), and ɸ(s)ɸ(t) denotes all possible state transitions induced by these subsets (element-wise product of two sets). Fully defined meas that we assign some state(s) of T for all elements of S, so we account for everything that can happen in S. In general, homomorphic maps are structure-forgetting, since we can map several states to a single one. Being lossless excludes loosing information about state transitions. In semigroup theory, isomorphic relations are called divisions, a special type of relational morphisms.
+
+What happens if we turn an implementation around? It becomes a computational model.
+
+Modelling of computational structures. Let S and T be computational structures (semigroups). A function µ : T → S is a modelling if it is:
+
+1) homorophism µ(u)µ(v) = µ(uv) for all u, v ∈ T,
+2) onto: for all s ∈ S there exists a u ∈ T such that µ(u) = s.
+
+We also say that S is a computational model of T. In algebra, functions of this kind are called surjective homomorphisms.
+
+A modelling is a function, so it is fully defined. A modelling µ turned around µ^-1 is an implementation, and an implementation ɸ turned around is a modelling ɸ^-1. This is an asymmetric relation, naturally we assume that a model of any system is smaller in some sense than the system itself. Also, to implement a computational structure completely we need another structure at least as big.
+
