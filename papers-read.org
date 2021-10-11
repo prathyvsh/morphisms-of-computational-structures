@@ -193,7 +193,7 @@ into the same bijective function. By putting information into the abstract eleme
 
 These ‘tricks’ work by composing the actual computations with special input and output functions, that might have different properties. In reversible computing the readout operation may not be a reversible function.
 
-*** 22 Computation as a process: state transitions
+*** 2.2 Computation as a process: state transitions
 
 Focussing on the process view, what is the most basic unit of computation? A state transition: an event changes the current state of a system. A state is defined by a configuration of a system’s components, or some other distinctive properties the system may have.
 
@@ -235,7 +235,7 @@ A transformation is a function f : X → X from a set to itself, and a transform
 
 If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbols. These semigroups are very special representations of abstract semigroups, where state transition is realized by composing functions.
 
-If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbols. These semigroups are very special representations of abstract semigroups, where state transition is realized by composig functions.
+If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbols. These semigroups are very special representations of abstract semigroups, where state transition is realized by composing functions.
 
 In general, if we take the models of computation that describe the detailed dynamics of computation, and remove all the model specific decorations, we get a semigroup.
 
@@ -247,7 +247,7 @@ Isomorphic relations of computational structures: Let S and T be computational s
 
 1) homomorphic: ɸ(s)ɸ(t) ⊆ ɸ(st)
 2) fully defined: ɸ(s) ≠ ∅ for all s ∈ Structures
-3) losseless: ɸ(s) ∩ ɸ(t) ≠ ∅ ⇒ s = t
+3) lossless: ɸ(s) ∩ ɸ(t) ≠ ∅ ⇒ s = t
 for all s, t ∈ S. We also say that T emulates, or implements S.
 
 Homomorphic is the key property, it ensures that similar computation is done in T by matching individual state transitions. Here ɸ(s) and ɸ(t) are subsets of T (not just single elements), and ɸ(s)ɸ(t) denotes all possible state transitions induced by these subsets (element-wise product of two sets). Fully defined meas that we assign some state(s) of T for all elements of S, so we account for everything that can happen in S. In general, homomorphic maps are structure-forgetting, since we can map several states to a single one. Being lossless excludes loosing information about state transitions. In semigroup theory, isomorphic relations are called divisions, a special type of relational morphisms.
@@ -256,7 +256,7 @@ What happens if we turn an implementation around? It becomes a computational mod
 
 Modelling of computational structures. Let S and T be computational structures (semigroups). A function µ : T → S is a modelling if it is:
 
-1) homorophism µ(u)µ(v) = µ(uv) for all u, v ∈ T,
+1) homomorphism µ(u)µ(v) = µ(uv) for all u, v ∈ T,
 2) onto: for all s ∈ S there exists a u ∈ T such that µ(u) = s.
 
 We also say that S is a computational model of T. In algebra, functions of this kind are called surjective homomorphisms.
