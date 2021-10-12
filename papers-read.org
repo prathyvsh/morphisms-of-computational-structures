@@ -332,3 +332,58 @@ Since abstract algebra provides the required tools, we suggest further abstracti
 A composition table of groups that are semigroups with an identity and a unique inverse for each element is always a Latin square.
 
 **** 2.2.1 The computation spectrum
+
+*** 2.3 Traditional mathematical models of computation
+
+Finite State Automata is considered to be a discrete dynamical system.
+
+By a finite state automaton, we mean a triple (X, Σ, δ) where
+
+1. X is the finite state set
+2. Σ is the finite input alphabet
+3. δ : X × Σ → X is the transition function
+How is this a definition of a semigroup? For each state x ∈ X an input symbol σ ∈ Σ gives the resulting state δ(X, σ) = (δ(x_1, σ), δ(x_2, σ), …, δ(x_n, σ)). Therefore, input symbols of a finite state automaton are fully defined transfomaitons (total functions) of its state set.
+
+A transformation is a function f : X → X from a set to itself, and a transformation semigroup (X, S) of degree n is a collection S of transformations of an n-element set closed under function composition.
+
+If we focus on the possible state transitions of a finite state automaton only, we get a transformation semigroup with a generator set corresponding to the input symbol.s These semigroups are very special representations of abstract semigroups, where state transitions is realized by composing functions. It turns out that any semigroup can be represented as a transformation semigroup (Cayley’s Theorem for semigroups).
+
+Transformation semigroup realization of the flip-flop semigroup. The set being transformed is simply  X = { 0, 1 } also called the set of states.
+
+s0 = { 0 ↦ 0, 1 ↦ 0 }
+s1 = { 0 ↦ 1, 1 ↦ 1 }
+r = { 0 ↦ 0, 1 ↦ 1 }
+
+The events can be denoted algebraically by listing the images s0 = [0, 0], s1 = [1, 1], r = [0, 1].
+
+*** 2.4 Computers: physical realizations of computation
+
+
+**** 2.4.1 Morphic relations of computational structures
+
+First, we give an algebraic definition of computational implementations, then we justify the choices in the definitions by going through the alternatives.
+
+Emulation, isomorphic relation of computational strucutres. Let S and T be computational structures (semigroups). A relation ɸ : S → T is an isomorphic relation if it is:
+
+1. homomorphic: ɸ(s)ɸ(t) ⊆ ɸ(st)
+2. fully defined: ɸ(s) ≠ ∅ for all s ∈ S
+3. lossless: ɸ(s) ∩ ɸ(t) ≠ ∅ ⇒ s = t
+
+Homomorphism is a fundamental algebraic concept often described by the equation:
+
+ɸ(s)ɸ(t) = ɸ(st),
+
+where the key idea is hidden in the algebraic generality. We have two semigroups S and T, in which the actions of computations are the composition of elements. In both semigroups these are denoted by juxtaposition of their elements. This obscures the fact that computations in S and in T are different. Writing ∘S for composition in S and ∘_T for composition in T we can make the homomorphism equation more transparent:
+
+ɸ(s) ∘_T ɸ(t) = ɸ(s ∘_S t)
+
+This shows the underlying idea clearly: it does not matter whether we convert the inputs in S to the corresponding inputs in T and do the computation, in T (left hand side), or do the computation in S then send the outputs in S to its counterpart in T (right hand side), we will get the same result. In the above definition, ɸ(s) and ɸ(t) are subsets of T (not just single elements), and ɸ(s)ɸ(t) denotes all possible state transitions induced by these subsets (element-wise product of two sets).
+
+S : s ----------------------------> st
+    |            t                  |
+    |            |                  |
+    | ɸ          | ɸ                | ɸ
+    |            |                  |
+    |            v                  |
+    v           ɸ(t)                v
+T : ɸ(s) ------------->ɸ(s)ɸ(t) = ɸ(st)
