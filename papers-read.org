@@ -67,7 +67,7 @@ An extreme difference between logical time and actual time is that computation c
 
 *** 2.2 Not Enough Time
 
-If there were infinite time available for computation, or equivalently, infinitely fast computers, we would not need to do any programming at all, brute-force would suffice (time travel even changes computability). A possible shortcute to the future would render the P vs. NP problem meaningless with enormous consequences.
+If there were infinite time available for computation, or equivalently, infinitely fast computers, we would not need to do any programming at all, brute-force would suffice (time travel even changes computability). A possible shortcut to the future would render the P vs. NP problem meaningless with enormous consequences.
 
 *** 2.2 Timeless Computation?
 
@@ -102,7 +102,7 @@ By turning around implementations we can define computational models. We can say
 
 Definition 1 (vague). Computers are physical systems that are homomorphic images of computational structures (semigroups).
 
-The first definition begs the questoin, how can a physical system be an image of a homomorphism, i.e., a semigroup itself? How can we cross the boundary between the mathematical realm and the external reality? First, there is an easy but hypothetical answer. According to the Mathematical Universe Hypothesis, all physical systems are mathematical structures, so we never actually leave the mathematical realm.
+The first definition begs the question, how can a physical system be an image of a homomorphism, i.e., a semigroup itself? How can we cross the boundary between the mathematical realm and the external reality? First, there is an easy but hypothetical answer. According to the Mathematical Universe Hypothesis, all physical systems are mathematical structures, so we never actually leave the mathematical realm.
 
 Secondly, the implementation relation can be turned around. Implementation and modeling are the 2 directions of the same isomorphic relation. If T implements S, then S is a computational model of T. Again, we stay in the mathematical realm, we just need to study mappings between semigroups.
 
@@ -263,3 +263,72 @@ We also say that S is a computational model of T. In algebra, functions of this 
 
 A modelling is a function, so it is fully defined. A modelling µ turned around µ^-1 is an implementation, and an implementation ɸ turned around is a modelling ɸ^-1. This is an asymmetric relation, naturally we assume that a model of any system is smaller in some sense than the system itself. Also, to implement a computational structure completely we need another structure at least as big.
 
+According to the mathematical universal hypothesis, we have nothing more to do, since we covered mappings from one mathematical structure to another one. In practice, we do seem to have a distinction between mathematical models of computations and actual computers, since abstract models by definition are abstracted away from reality, they do not have any inherent dynamical force to carry out state transitions. Even pen and paper calculations require a driving force, the human hand and the pattern matching capabilities of the brain. But we can apply a simple strategy: we treat a physical system as a mathematical structure, regardless its ontological status. Building a computer then becomes the task of constructing an isomorphic relation.
+
+Computer: An implementation of a computational structure by a physical system is a computer.
+
+Anything that is capable of state transition can be used for some computation. The question is how useful that computation is? We can always map the target system’s mathematical model onto itself. In this sense the cosmos can be considered as a giant computer computing itself. However, this statement is a bit hollow since we don to have a complete mathematical model of the universe. Every physical system computes, at least its future states, but not everything does useful calculation. Much like entropy is heat not available for useful work. The same way as steam and combustion engines exploit physical processes to process materials and move things around, computers exploit physical process to transfer and transform information.
+
+*** 2.6 Hierarchical structure
+
+Huge state transition tables are not particularly useful to look at; they are like quark-level descriptions for trying to understand living organisms. Identifying substructures and their interactions is needed. Hierarchical levels of organizations provide an important way to understand computers. Information flow is limited to one-way only along a partial order, thus enabling functional abstraction. According to Krohn-Rhodes theory, any computational structure can be built by using destructive memory storage and the reversible computational structures in a hierarchical manner. The way the components are put together is the cascade product which is a substructure of the algebraic wreath product. The distinction between reversible and irreversible is sharp: there is no way to embed state collapsing into a permutation structure. Reversible computing seems to contradict this. The trick there is to put information into states and then selectively read off partial information from the resulting states. This selection of required information can be done by another computational structure. We can have a reversible computational structure on the top, and one at the bottom that implements the readout. We can have many transitions in the reversible part without a readout. Reversible implementations may prove to be decisive in terms of power efficiency of computers, but it does not erase the difference between reversible and irreversible computations.
+
+Important to note that hierarchical decompositions are possible even when the computational structure is not hierarchical itself. on of the research directions is the study of how it is possible to understand loopback systems in a hierarchical manner.
+
+*** 2.7 Universal computers
+
+What is the difference between a piece of rock and a silicon chip? They are made of the same material, but they have different computational power. The rock only computes its next state (its temperature, all wiggling of its atoms), so the only computation we can map to it homomorphically is its own mathematical description. While the silicon chip admits other computational structures. General purpose processors are homomorphic images of universal computers.
+
+** 3. Open problems
+
+The main topics where further research needs to be done are:
+
+1) exploring the space of possible computations
+2) measuring finite computational power
+3) computational correctness
+
+*** 3.1 What are the possible computational structures and implementations?
+
+Cataloguing stocktaking are basic human activities for answering the question What do we have exactly? For the classification of computational structures and implementations, we need to explore the space of all computational structures and their implementations, starting from the small examples. Looking at those is the same as asking the questions What can we compute with limited resources? What is computable with n states? This is a complementary approach to computational complexity, where the emphasis is on the growth rate of resource requirements.
+
+*** 3.2 How to measure the amount of computational power?
+
+
+Given an abstract or physical computer, what computations can it perform? The algebraic description gives a clear definition of emulation, when one computer can do the job of some other computer. This is a crude form of measuring computational power, in the sense of the ‘at least as much as’ relation. This way computational power can be measured on a partial order (the lattice of all finite semigroups).
+
+The remaining problem is to bring some computation into the common denominator semigroup form. For example, if we have a finite piece of cellular automata grid, what can we calculate with it? If the cellular automata is universal and big enough we might be able to fit in a universal Turing machine that would do the required computation. However, we might be able to run a computation directly on the cellular automata instead of a bulky construct.
+
+Extending the slogan, “Numbers measure size, groups measure symmetry.”, we can say that semigroups measure computation.
+
+*** How can we trust computers?
+
+Computations can differ by:
+
+1) having different intermediate results
+2) applying different operations
+3) having different modular structure
+
+*** 4. Conclusion
+
+* Finite Computational Structures and Implementations: Semigroups and Morphic Relations
+
+Attila Egri-Nagy
+2017
+
+18 pages
+
+** 1 Introduction
+
+Computational complexity studies the asymptotic behaviour of algorithms. Complementing that, it is here suggested to focus on small theoretical computing devices, and study of the possibilities of limited finite computations. Instead of asking what resources we need in order to solve bigger instances of a computational problem, we restrict the resources and ask what can we compute within those limitations. The practical benefit of such an approach is that we get to know the lowest number of states required to execute a given algorithm and having the minimal example are useful for low-level optimizations. Another example of such a reversed question is asking what is the total set of all possible solutions for a problem instead of looking for the single right solution. The mathematical formalism turns this into a well-defined combinatorial question, and the payoff could be that we will find solutions we had never thought of.
+
+** 2 Computational Structures
+
+Since abstract algebra provides the required tools, we suggest further abstractions to the models of computations to reach the algebraic level safe for discussing implementations. It is also suitable for capturing the hierarchical structure of computers. Finiteness and the abstract algebraic approach paint a picture where universal computation becomes relative and the ‘mathematical versus physical’ distinction less important.
+
+*** 2.1 Computation as function: input-output mappings
+
+*** 2.2 Computation as a process: state transitions
+
+A composition table of groups that are semigroups with an identity and a unique inverse for each element is always a Latin square.
+
+**** 2.2.1 The computation spectrum
