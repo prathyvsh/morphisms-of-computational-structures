@@ -429,7 +429,7 @@ Some practical problems of finite computation which are the difficult ones, that
 
 *** 3.1 Enumeration and classification of computational structures
 
-The method of enumerating certain types of semigroups by enumerating all subsemigroups of relatively universal semigroup of that type has been applied to a wider class of semigroups, called diagram semigroups. These generalize function composition to other combinatorial structures (partial functions, binary relations, partitions, etc.), while keeping the possibility of representing the semigroup operation as stacking diagrams. These can be considered as ‘unconventional’ mathematical models of computaitons (e.g. computing with binary relations or partitions instead of functions). The existence of different types of computers leads to the problem of comparing their power.
+The method of enumerating certain types of semigroups by enumerating all subsemigroups of relatively universal semigroup of that type has been applied to a wider class of semigroups, called diagram semigroups. These generalize function composition to other combinatorial structures (partial functions, binary relations, partitions, etc.), while keeping the possibility of representing the semigroup operation as stacking diagrams. These can be considered as ‘unconventional’ mathematical models of computations (e.g. computing with binary relations or partitions instead of functions). The existence of different types of computers leads to the problem of comparing their power.
 
 *** 3.2 Measuring finite computational power
 
@@ -448,3 +448,40 @@ When are two solutions really different? The differences can be on the level of 
 
 An algorithmic solution space is a set of computer programs solving a computational problem, i.e. realizing a function described by input-output mappings.
 
+* Algebraic Models for Understanding: Coordinate Systems and Cognitive Empowerment
+C. Lev Nehaniv
+16 pages
+1997
+
+** Abstract
+
+We identify certain formal algebraic models affording understanding (including positional number systems, conservation laws in physics, and spatial coordinate systems) that have empowered humans when we have augmented ourselves using them. We survey how, by explicit mathematical constructions, that such algebraic models can be algorithmically derived for all finite-state systems and give examples illustrating this including coordinates for the rigid symmetries of a regular polygon, and recovery of the decimal expansion and coordinates arising from conserved quantities in physics.
+
+Coordinate systems derived by algebra or computation for affordances of the understanding and manipulation of physical and conceptual worlds are thus a ‘natural’ step in the use of ‘tools’ by biological systems as they/we learn to modify selves and identities appropriately and dynamically.
+
+* Introduction
+
+Throughout the history of science, the greatest advances have come about when human beings came to realizations about how to think about their subject “correctly”. The deepest such advances have resulted from the advent of appropriate coordinate systems for a phenomenon to be understood. Some obvious and familiar examples include the decimal or binary expansions of the real numbers, Cartesian coordinate in analytic geometry, Galilean or Newtonian spatial coordinates, the periodic table in chemistry, conservation laws in physics, locally Euclidean coordinates in Riemannian geometry, and more recently, the idea of object-orientation.
+
+Our chief claims in this paper are that:
+
+1) such appropriate coordinate systems generally share certain crucial properties that explain their usefulness
+2) such coordinate systems for understanding and manipulating a given system at least in the case of finite-state systems (such as our present day digital computers) can be generated algorithmically for use by humans or machines.
+
+Such models for understanding may empower a human being to manipulate real, abstract, or synthetic worlds. It is important to note that to exploit or access formal models constructed with the aid of computers, a human being need not understand the algebraic theory behind their construction and should be free from such intellectual and computational encumbrances; however, mastering manipulation and application of a coordinate system e.g. the decimal number system may require some effort.
+
+** 2 Properties of Understanding in Coordinates
+
+When we reflect on how we understand a system using any of the historically useful coordinate systems mentioned above, certain properties of the coordinate systems are evident:
+
+- *Globality*: we have some sort of description of essential characteristics of the system and can describe or predict how it will change with occurrences of events important for that system.
+
+- *Hierarchy*: Except in the simplest cases, the whole is broken down into component parts, which themselves may consist of other parts, and so on, resulting in an ordering that encodes the dependencies among parts. Information from higher levels of the hierarchy gives good approximate knowledge, while “lower order” details are fleshed at subordinate levels
+
+- *Simplicity of Components*: The smallest component parts are by themselves easy to understand
+
+- *Covering*: We have implicitly or explicitly a knowledge of how to map the coordinate representation of the system to the system we are trying to understand.
+
+A non-required property is that of a one-to-one correspondence between possible coordinate states and states of the system. Indeed, there is usually a many-to-one relationship between representations in coordinates and states of the system (as for example, with real numbers and their decimal representations).
+
+Taking these properties as axiomatic for appropriate coordinate systems on understanding, we note that such understanding of a system is something quite different from knowledge (but may be related to such knowledge) of how the original system can be built or efficiently emulated, nor is it the same as knowledge of how the system is really structured. It is the utility afforded by such coordinate systems as tools for understanding which interests humans, but we shall also be concerned with the nature of affordance in cognitive (and physical) environments that are created, affected, or manipulated by these systems, as well as with explicit methods to construct these systems.
