@@ -379,6 +379,8 @@ where the key idea is hidden in the algebraic generality. We have two semigroups
 
 This shows the underlying idea clearly: it does not matter whether we convert the inputs in S to the corresponding inputs in T and do the computation, in T (left hand side), or do the computation in S then send the outputs in S to its counterpart in T (right hand side), we will get the same result. In the above definition, ɸ(s) and ɸ(t) are subsets of T (not just single elements), and ɸ(s)ɸ(t) denotes all possible state transitions induced by these subsets (element-wise product of two sets).
 
+#+BEGIN_SRC
+
 S : s ----------------------------> st
     |            t                  |
     |            |                  |
@@ -387,6 +389,8 @@ S : s ----------------------------> st
     |            v                  |
     v           ɸ(t)                v
 T : ɸ(s) ------------->ɸ(s)ɸ(t) = ɸ(st)
+
+#+END_SRC
 
 Fully defined means that we assign some state(s) of T for all elements of S, so we account for everything that can happen in S. This is just a technical, not a conceptual requirement, since we can always restricte a morphism to a substructure of S.
 
