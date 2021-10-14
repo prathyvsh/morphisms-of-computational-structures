@@ -175,6 +175,8 @@ f : { 0, 1 }^ m → { 0, 1 }^n , m,n ∈ ℕ
 
 According to the fundamental theorem of reversible computing, any finite function can be computed by an invertible function. This apparently contradicts the idea of implementation, that important properties of functions have to be preserved.
 
+#+BEGIN_SRC
+
 Embedding XOR:
 
 [00] ↦ [0]0
@@ -188,6 +190,8 @@ Embedding FAN-OUT:
 0[1] ↦ [11]
 10 ↦ 10
 11 ↦ 01
+
+#+END_SRC
 
 into the same bijective function. By putting information into the abstract elements, any function can ‘piggyback’ even on the identity function.
 
@@ -350,9 +354,13 @@ If we focus on the possible state transitions of a finite state automaton only, 
 
 Transformation semigroup realization of the flip-flop semigroup. The set being transformed is simply  X = { 0, 1 } also called the set of states.
 
+#+BEGIN_SRC
+
 s0 = { 0 ↦ 0, 1 ↦ 0 }
 s1 = { 0 ↦ 1, 1 ↦ 1 }
 r = { 0 ↦ 0, 1 ↦ 1 }
+
+#+END_SRC
 
 The events can be denoted algebraically by listing the images s0 = [0, 0], s1 = [1, 1], r = [0, 1].
 
@@ -389,7 +397,6 @@ S : s ----------------------------> st
     |            v                  |
     v           ɸ(t)                v
 T : ɸ(s) ------------->ɸ(s)ɸ(t) = ɸ(st)
-
 #+END_SRC
 
 Fully defined means that we assign some state(s) of T for all elements of S, so we account for everything that can happen in S. This is just a technical, not a conceptual requirement, since we can always restricte a morphism to a substructure of S.
