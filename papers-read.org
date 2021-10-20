@@ -561,7 +561,7 @@ For semigroups, a homomorphism (or, more briefly, a morphism) from S to T is a f
 
 Thought: If something does not have a closure, then it is not a subsemigroup, but rather a partial section of the original space. A complete partition of the space into subsemigroups I think is an equivalence partition, so in that sense, closure is an important property for obtaining the subsemigroups. Verify this claim when exploring these ideas further.
 
-We write T ≤ S if T is a subsemigroup of S or, more generally, embeds in S. If there is a bijective (one-to-one and onto) morphism from S to T, we say that S and T are isomorphic and write S ≅ T. The notation S ≺ T means S is a homomorphic image of a subsemigroup of T. Intuitiveyl, T can emulate any computation of S. In such a case, we say S divides T.
+We write T ≤ S if T is a subsemigroup of S or, more generally, embeds in S. If there is a bijective (one-to-one and onto) morphism from S to T, we say that S and T are isomorphic and write S ≅ T. The notation S ≺ T means S is a homomorphic image of a subsemigroup of T. Intuitively, T can emulate any computation of S. In such a case, we say S divides T.
 
 If X = (Q, S) and Y = (U, T) are automata or transformation semigroups a morphism ɸ from X to Y consists of a function ɸ_1 : Q → U and a mapping ɸ_2: S → T (which is required to a semigroup morphism in the transformation semigroup case), such that for all q ∈ :Q and s ∈ S, one has ɸ_1(q.s) = ɸ_1(q).ɸ_2(s). Surmorphism, embedding, isomorphism, and division of transformation semigroups are defined analogously. If Y divides X, it is also common to say that X covers Y and that X emulates Y.
 
@@ -580,3 +580,31 @@ More generally, transformation semigroups (X_α, S_α) generically combined with
 The usual wreath product of n transformation semigroups is just a cascade integral over a finite total order. Since the hierarchies we allow for formal models of understanding permit components to be combined according to a partial ordering, the above generalized form of wreath product is very useful. For computational applications, one would evidently most often restrict to finite partial orders (as for Cartesian coordinates) or finitely many coordinates of an infinite partial order (as for the decimal expansion of the integers).
 
 To read: Cascade decomposition of arbitrary semigroups - C. L. Nehaniv (1995)
+
+The wreath product of faithful transformation semigroups is easily seen to be faithful. Notice that there is a hierarchical dependence of Y and on X. By iterating this construction, one may take the wreath product of any sequence of components.
+
+The direct product (U, T) × (Q, S) of automata [resp. transformation semigroups] has state U × Q and inputs [resp. semigroup] T × S with component-wise action: (u,q) . (t, s) = (u . t, q . s). This is the case of no interaction between components.
+
+A cascade of automata X and Y as above has states U × Q and any set of inputs (f, s) with f : Q → T and s ∈ S, acting on the states as for the wreath product. The wreath product is the transformation semigroup version of a generic cascade of automata: It is easy to see that every cascade of two automata (including of course their product) embeds in the wreath product of their associated transformation semigroups. Thus, the wreath product provides the formal algebraic framework for the notion of hierarchical combination of automata.
+
+Given a semigroup S, we define S* to be S if S contains an identity element 1 ∈ S with s1 = 1s = s for all in S, otherwise take S* to be S with new identity element 1 adjoined. If X = (Q, S) is an automaton or transformation semigroup, we define X* = (Q, S*), where the identity of S* acts as the identity function on all states in Q. Also X^c = (Q, S^c), where for each state q ∈ Q a constant map taking value q has been adjoined as an element of S.
+
+The disjoint union of automata X ⊔ Y has state set Q × U and inputs S ⊔ T, with
+
+(q, u) . i = { (q.i, u) if i ∈ S | (q, u.i) if i ∈ T }
+
+Observe that this automaton generates the direct product at the associated transformation semigroup level if X and Y contain identity transformations. Whence, X ⊔ Y embeds in X* ⊔ Y.
+
+For a semigroup S, one obtains a canonically its so-called right regular representation (S*, S), with states S*, semigroup S and action s.s' = ss' for all s ∈ S* and s' ∈ S. If S and T are semigroups, we shall write S ≀ T for the wreath product of their right regular representations.
+
+A group is a semigroup S of a very special (symmetric and reversible) kind: S has an identity e and for each element s in S, there exists an inverse s' in S with ss' = s's = e. Generally, a semigroup may contain many groups (having unrelated structures) as subsemigroups. A group is called simple if its homomorphic images are just itself and the one element group (up to isomorphism). A finite semigroup each of whose subgroups have only one element is called aperiodic.
+
+Relational Morphisms. A relational morphism of ɸ : (X, S) ◁ (Y, T) is a subtransformation semigroup (Q, R) of (X, S) × (Y, T), thus,
+
+(x, y) ∈ Q and (s, t) ∈ T implies (x.s, y.t) ∈ Q
+
+and Q and R project fully onto X and S, respectively. A relational morphism is a morphism if each Q and R are [graphs of] functions, an embedding if Q and R are injective functions, or is an approximation [or simulation] of (X, S) by (Y, T) if it is a surjective morphism. It is an emulation or covering of (X, S) by (Y, T) if Q and R are injective relations: ((x, y) ∈ Q and (x', y) ∈ Q) ⇒ x = x'
+
+and similarly for R. If (Y, T) covers (X, S) we write (X, S) ≺ (Y, T), and often say that (X, S) divides (Y, T). Also in the case of semigroups, we write S ≺ T (S divides T) if S is a homomorphic image of a subsemigroup of T.
+
+In the case of covering, one can use (Y, T) in place of (X, S): given x ∈ X and s ∈ S, we choose (x, y) ∈ Q and (s, t) ∈ T. The elements y and t are called lifts of x and of s, respectively. Now the state x.s is uniquely determined from y.t by the injectivity condition. If (Y, T) has a nice form, say as a wreath product of simpler transformation semigroups, then this covering provides a global hierarchical coordinate system on (X, S), which may be more convenient to manipulate and provide insights into the original (X,S).
