@@ -608,3 +608,30 @@ and Q and R project fully onto X and S, respectively. A relational morphism is a
 and similarly for R. If (Y, T) covers (X, S) we write (X, S) ≺ (Y, T), and often say that (X, S) divides (Y, T). Also in the case of semigroups, we write S ≺ T (S divides T) if S is a homomorphic image of a subsemigroup of T.
 
 In the case of covering, one can use (Y, T) in place of (X, S): given x ∈ X and s ∈ S, we choose (x, y) ∈ Q and (s, t) ∈ T. The elements y and t are called lifts of x and of s, respectively. Now the state x.s is uniquely determined from y.t by the injectivity condition. If (Y, T) has a nice form, say as a wreath product of simpler transformation semigroups, then this covering provides a global hierarchical coordinate system on (X, S), which may be more convenient to manipulate and provide insights into the original (X,S).
+
+5.2 Systems & Formal Models for Understanding
+
+A system (X, A, λ) consists of a state spac X, inputs A, and a transition function λ : X × A → X. Traditional physics considers (or hopes) that physical phenomenon are faithfully modelled as such systems: knowing the current state x and what happens a, one can determine the resultig state as λ(x, a). Note that for a sequence of events a_1, …, a_n+1 one has a recursive description of the behaviour of the system (as λ induces an action of the free semigroup A^+ on X):
+
+x.a_1 … a_n a_n+1 = λ(x.a_1 ... a_n, a_n+1)
+
+Crucially, such a description of the system is not a model of understanding rather only a starting point for analysis. However, such a system, if modelling real world phenomena, abstracts essential features of state and events while ignoring others. This abstraction from the real world is one property of understanding that our formalism does not address. We shall always assume the system (X, A, λ) to be available before beginning any formalization for understanding it or we shall construct it from other, already available, systems.
+
+Indeed, A may consist of tiny intervals of time and λ describe the evolution of a physical situation accordign to a set of differential equations, e.g. determining the position and momentum of a set of point masses according to Newtonian mechanics. Such recursive descriptions including descriptions in terms of differential equations ar often the beginning of analysis of a physical system and precede formal understanding.
+
+From (X, A, λ) one derives a transformation semigroup (X, S) by making that induced action of A^+ faithful
+w ≡ w' ⇔ forAll(x ∈ X, x.w = x.w').
+
+Here S = A^+ / ≡.
+
+A formal model of understanding for a system (X, A, λ) is a covering of the induced transformation semigroup (X, S) by a wreath product of “simpler” transformation semigroups over a partial ordering.
+
+** 6. Examples of Formal Models Affording Understanding
+
+Cartesian Coordinates on Euclidean n-Space.
+
+The n “simple” coordinates used to coordinatize Euclidean space are copies of the real numbers under addition. These copies are partially ordered by the empty partial order (no dependencies between them). In this case, there is a one-to-one correspondence from coordinates for points to points of the space, and points (or vectors) are added component-wise without regard to other components.
+
+Symmetries of a Hexagon.
+
+Let us imagine a regular polygon with n vertices in the plane with one vertex topmost. Let ℤ_n detone the cyclic gorup of order n (corresponding to a modulo n counting circuit). By our convention ℤ_n ≀ ℤ_2 denotes the wreath product of the right rectangular representations of ℤ_n and ℤ_2. Symmetries of a hexagon comprises the dihedral group D_6 (resp. D_n for the regular n-gon), which is covered by such a wreath product. If we paint one side of the hexagon white and the other black, and number the vertices of the hexagon clockwise on the white side from 0 to 5, then a pair (k, color) determines a configuration of the hexagon where we understand k ∈ ℤ_6 as the number on the currently topmost vertex and color ∈ ℤ_2 as the color of the face we see, either 0 denoting white or 1 denoting black. This gives a coordinate representation of the state of the hexagon.
