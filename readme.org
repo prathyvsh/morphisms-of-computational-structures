@@ -385,6 +385,17 @@ I would have to understand the connection between analysis and geometry more to 
 
 Explore how monadic API which makes state tractable is related to the semantic aspect of how functional programming has a syntactic notion of unfolding like a derivation tree of a grammar.
 
+** Algebra of Programming School
+
+TODO: Add some details on the Dutch School
+
+** [[http://www.ii.uib.no/~wagner/MNotes/adjrun.ps][Algebraic Specifications: some old history, and new thoughts]]
+Eric G. Wagner
+
+Paper on the history by Gibbons: 
+
+Videos by Bird and Merteens: http://podcasts.ox.ac.uk/series/algebra-programming
+
 ** Coalgebra
 
 The area of coalgebra hopes to aim the subjects of various formal structures that capture the essence of state-based computational dynamics such as automata, tranistion systems, Petri nets, event systems etc.
