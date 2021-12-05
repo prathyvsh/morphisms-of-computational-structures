@@ -1,0 +1,233 @@
+* [[http://podcasts.ox.ac.uk/introduction-theory-lists][An Introduction to a Theory of Lists]]
+
+Richard Bird
+Oxford, 16th and 17th December 1986
+
+A calculus used for deriving efficient solutions to certain kinds of problems in computation.
+A set of laws, lemmas, and theorems in the same sense of integral calculus.
+It does not stand for a formal systems with axioms and inference rules.
+Semantic and foundational issues are not touched upon.
+
+Theory of expression trees are waiting to be organized.
+
+Program specification / transformation
+
+General laws which enable programs to be calculated.
+
+Richard Bird has been dissatisfied about the lack of penetrating results such as in integral calculus that scientists and engineers use daily.
+
+Only two players: Richard Bird and Lambert Meertens
+
+Dijkstra, Grieves, Backhouse program calculation with invariant assertions
+
+Difference between Eindhoven school is that of style not of objective.
+
+Eindhoven use imperative notation andd uses predicate calculus as the main tool and
+many of the results are presented using arrays.
+
+Bird-Meertens is: Functional notation, specialized functional calculus and considers lists as a more basic data structure than arrays.
+
+** Summary:
+
+First Lecture
+
+Notation suggested by David Turner
+
+Second Lecture
+
+First example of a calculational proof and some further notation
+
+Third Lecture
+
+Problems about segments of lists
+
+Fourth Lecture
+
+Problems about partitions of lists
+
+Fifth Lecture
+
+More material and further examples
+
+** 1 List Notation
+
+Lists: Ordered and homogenous
+
+[]
+['a']
+['a','p','p','l','e']
+
+** 2 Convention
+
+a, b, c … elements of lists
+x, y, z … lists
+xs, ys, zs … lists of lists
+
+** 3 Length
+
+# :: [ α ] -> Num
+#[a1,a2,…an] = n
+
+** 4 Concatenation
+
+++ :: [ α ] × [ α ] → [ α ]
+Associativity: (x ++ y) ++ z = x ++ ( y ++ z )
+Identity: x ++ [] = [] ++ x = x
+
+# (x ++ y) = # x + # y
+(#, ++ distribution)
+
+** 5 Map
+* :: ( α → β ) × [ α ] → [ β ]
+
+f * [ a₁, a₂, … , aₓ ] = [ fa₁ , fa₂, … faₓ]
+
+f * ( x ++ y ) = ( f * x ) ++ ( f * y )
+{ *, ++ distributivity }
+
+(f • g) * = (f * ) • ( g * )
+{ *, • dist }
+
+( f * )⁻¹ = ( f⁻¹ * )
+{ *, ⁻¹ comm }
+
+** 6 Notational interlude
+
+Let ⊕ :: ( ⍺ ✕ β ) → 𝛾
+
+(a ⊕ ) :: β → 𝛾 | ( a ⊕ ) b = a ⊕ b
+
+( ⊕ b ) :: ⍺ → 𝛾 | ( ⊕ b ) a = a ⊕ b
+
+( f * ) f-map function
+( + 1 ) successor function
+( ++ [a] ) append a function
+
+Function application is left-associative and has highest precedence
+
+f x y + 3 = ((f x) y) + 3
+
+** 7 Filter
+
+◁ :: ( α → Bool ) × [ ⍺ ] → [ ⍺ ]
+p ◁ x the sublists of elements of x satisfying p
+
+even ◁ [1 .. 10] = [2, 4, 6, 8, 10]
+
+p ◁ ( x ++ y) = (p ◁ x) ++ (p ◁ y)
+{◁, ++ dist }
+
+(p ◁ ) • (p ◁) = (p ◁)
+{ ◁ idem }
+(p ◁) • (q ◁) = (q ◁) • (p ◁)
+{ ◁ comm } (For total functions)
+
+(p ◁) • (f *) = (f *) • ((p • f) ◁)
+{ ◁, • comm }
+
+8 Reduce
+
+Borrowed from APL
+
+Operator which takes an operator
+/ :: ( ⍺ × ⍺ → ⍺) × [ ⍺ ] → ⍺
+⊕ / [ a₁, a₂, … , aₓ ] = a₁ ⊕ a₂ ⊕ … ⊕ aₓ
+Only defined if ⊕ is associative
+
+Laws
+
+⊕ / [ a ]  = a { / singletons }
+⊕ / (x ++ y) = (⊕ / x) ⊕ (⊕ / y) { / dist }
+
+If ⊕ has an identity element e, then
+⊕ / [] = e
+otherwise,
+⊕ / [] is not defined
+
+⊕ / y = ⊕ / ( [] ++ y ) = (⊕ / [] ) ⊕ (⊕ / y) = e ⊕ (⊕/y)
+
+9 Examples
+
+sum = + /
+product = × /
+
+n! = x / [1 .. n]
+
+flatten = ++ /
+
+flatten [[1, 2], [], [2, 3]] = [1, 2, 2, 3]
+
+min = ↓ /
+max = ↑ /
+
+head = << /
+last = >> /
+
+all p = (˄ / ) • (p •)
+some p = (˅ / ) • (p •)
+
+10 Promotion Lemmas
+
+Generalize the distribution laws of map, filter, reduce
+
+(f *) • (++ /) = (++ /) • ((f *) *)
+{ * promotion }
+
+fmap to a flatten list is the same as flatten map of f map map.
+
+f*(++ / [ x₁, x₂, … , xₓ ] = f*(x₁ ++ x₂ ++ … ++ xₓ)
+= (f*x₁) ++ f(x₂) ++ … ++ f(xₓ)
+= ++ / [f*x₁, f(x₂), … , f(xₓ) ]
+= ++ / (f*)* [ x₁, x₂, … , xₓ ]
+
+Rather than flattening
+Promote the map into each component list and then flatten the result
+
+( p ◁ ) • (++ /) = (++ /) • ( p ◁ * )
+{ ◁ promotion }
+
+( ⊕ ◁ ) • (++ /) = (⊕ /) • ( ⊕ / * )
+{ ⊕ promotion }
+
+11 Homomorphisms
+
+A function that preserves the properties of associativity and identity e.
+
+h [] = e
+h (x ++ y) = h x ⊕ h y
+
+Equivalently, if h • ( ++ / ) = (⊕ / ) • (h *)
+
+12 Homomorphism Lemma
+
+h is a homomorphism iff
+h = (⊕ / ) • (f *) for some ⊕ and f.
+
+Proof
+
+Suppose h = (⊕ / ) • (f *)
+Then h • (++ /) = (⊕ / ) • (f *) • ( ++ / )
+{ hypothesis }
+= (⊕ / ) • (++ /) • ( (f *) * )
+{ *-promotion }
+= (⊕ / ) • (+(⊕ / ) *) • ( (f *) * )
+{ /-promotion }
+= (⊕ / ) • (+(⊕ / ) *) • ( (f *) * )
+{ *, • dist }
+= (⊕ / ) • (h *)
+{ hypothesis }
+
+Second, define □ a = [a]
+
+so (++ /) • (□ *) = id
+
+Now h = h • (++ /) • ( □ * )
+{ definition of □ }
+= (⊕ /) • (h *) • (□ *)
+{ h is a homomorphism}
+= (⊕ /) • (f *)
+{ *, • dist }
+
+where f = h • □
+Hence h = (⊕ /) • (f *)
+for suitable ⊕ and f.
