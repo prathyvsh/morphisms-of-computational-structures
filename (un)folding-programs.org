@@ -231,3 +231,72 @@ Now h = h • (++ /) • ( □ * )
 where f = h • □
 Hence h = (⊕ /) • (f *)
 for suitable ⊕ and f.
+
+** 13 Examples of homomorphisms
+
+Filter is a homomorphism
+(p ◁) = (++ /) • (f_p *)
+where f_p a = [a] if p a
+= [] otherwise
+
+# = (+ /) • (K_1 *) where K_a b = a
+K is the K combinator for combinatory calculus
+
+sort = (merge /) • (□ *)
+
+reverse = (++~ /) • (□ *)
+where a ⊕~ b = b ⊕ a
+
+** 14 Lemma
+
+a ⊕ b = h(h⁻¹ a ++ h⁻¹ b)
+
+Then h (x ++ y) = h x ⊕ h y
+
+Try and solve a problem by looking for a homomorphism
+
+** 15 Text Processing
+
+Text = [ Char ]
+Line = [ Char \ { NL } ]
+
+unlines :: [Line]⁺ → Text
+unlines = ⊕ /
+x ⊕ y = x ++ [ NL ] ++ y
+
+lines is an injective function
+
+lines :: Text → [ Line ]
+lines • unlines = id
+
+Problem: give a constructive definition of lines
+
+Since line is an injective function (intuitively at least)
+
+lines = (⊗ / ) • (f *)
+
+Direct calculation yields:
+
+f a = [[], []] if a = NL
+= [[a]], otherwise
+
+(xs ++ [x]) ⊗ ([y] ++ ys) = xs ++ [x ++ y] ++ ys
+
+** 16 More text-processing
+
+Word = [ Char \ { SP, NL ]⁺
+Para = [ Line⁺ ]⁺
+
+unwords :: [ Word ]⁺ → Line
+unwords = ⊕SP /
+x ⊕sp y = x ++ [ SP ] ++ y
+
+words :: Line → [ Word ]
+words = (( ≠ [] ) ◁ ) • ( ⊗ / ) • (f_SP * )
+
+unparas :: [ Para ]⁺ → [ Lines ]
+unparas = ⊕[] /
+x ⊕[] y = x ++ [ [] ] ++ y
+
+paras :: [ Line ] → [ Para ]
+paras = (( ≠ [] ) ◁ ) • ( ⊗ / ) • (f_[] * )
