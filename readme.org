@@ -918,6 +918,12 @@ http://perso.ens-lyon.fr/olivier.laurent/picppn.pdf
 
 ** Topology and Computation
 
+** Program Analysis
+
+There is a neat way in which Abstract Interpretation ties together a lot of field is computer science.
+
+This is a good article on it: https://gist.github.com/serras/4370055d8e9acdd3270f5cee879898ed
+
 *** Constructive Mathematics
 
 Employing constructive logic ensures that law of excluded middle is not used.
