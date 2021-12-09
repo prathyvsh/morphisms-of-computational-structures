@@ -300,3 +300,66 @@ x ⊕[] y = x ++ [ [] ] ++ y
 
 paras :: [ Line ] → [ Para ]
 paras = (( ≠ [] ) ◁ ) • ( ⊗ / ) • (f_[] * )
+
+** 17 Examples of use
+
+countlines = # • lines
+
+countwords = # • (++ / ) • (words * ) • lines
+
+countparas = # • paras • lines
+
+normalise :: Text → Text
+normalize = unparse • parse
+
+parse = ( ( words * ) * ) • paras • lines
+unparse = unlines • unparas • ( ( unwords *  ) * )
+
+Unparse is correct because
+
+( f • g )⁻¹ = g⁻¹ • f⁻¹
+(f *)⁻¹ = (f⁻¹ *)
+
+** 20 Directed Reduction
+
+←/- right-reduce
+-/→ left-reduce
+
+(⊕ ←/-)[ a₁, a₂, … , aₓ ] = a₁ ⊕( a₂ ⊕ … (aₓ⊕e))
+The ⊕ need not be associative and doesn’t need to have a unit
+
+←/- :: (( ⍺ × β → β ) × β ) → [ ⍺ ] → β
+-/→ :: (( β × ⍺ → β) × β ) → [ ⍺ ] → β
+
+(⊕ -/→)[ a₁, a₂, … , aₓ ] = (((e⊕a₁)⊕ a₂) ⊕ … aₓ)
+
+Why do we need more reductions? Because they are implementations of the fold function and are closer to what can be achieved by machines.
+
+(f * ) (⊕ ←/- [])  where a ⊕ x = [ f a ] ++ x
+
+** 21 Duality Lemma
+
+(⊕ -/→) = (⊕~ ←/-) • reverse
+
+Example: fact n = x / [ 1 … n ]
+fact n = ( × -/→ 1 ) [1 … n] "going up"
+
+fact n = (x ←/- 1) [ 1 … n ]
+= ( x~ -/→ 1) [n, n-1 … 1]
+= (x -/→ 1) [n, n-1, … 1]
+"going down"
+
+** 22 Specialization Lemma
+
+Every homomorphism can be written as a left-reduction, or as a right reduction.
+
+
+( ⊙ / ) • ( f * ) = (⊕ ←/- e) = (⊗ -/→ e)
+where
+a ⊕ b = f a ⊙ b
+a ⊗ b = a ⊙ f b
+
+and e is the identity element of ⊙.
+
+
+
