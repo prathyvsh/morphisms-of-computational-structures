@@ -344,15 +344,14 @@ Why do we need more reductions? Because they are implementations of the fold fun
 Example: fact n = x / [ 1 … n ]
 fact n = ( × -/→ 1 ) [1 … n] "going up"
 
-fact n = (x ←/- 1) [ 1 … n ]
-= ( x~ -/→ 1) [n, n-1 … 1]
-= (x -/→ 1) [n, n-1, … 1]
+fact n = (× ←/- 1) [ 1 … n ]
+= ( ×~ -/→ 1) [n, n-1 … 1]
+= (× -/→ 1) [n, n-1, … 1]
 "going down"
 
 ** 22 Specialization Lemma
 
 Every homomorphism can be written as a left-reduction, or as a right reduction.
-
 
 ( ⊙ / ) • ( f * ) = (⊕ ←/- e) = (⊗ -/→ e)
 where
@@ -361,5 +360,101 @@ a ⊗ b = a ⊙ f b
 
 and e is the identity element of ⊙.
 
+** 22.5 Cons
+
+(:) :: ⍺ × [ ⍺ ] → [ ⍺ ]
+a : x = [ a ] ++ x
+x ++ y = (: ←/- y ) x
+
+Either : or ++ can be taken as primitive, but unlike ++, every list can be expressed/constructed in terms of [] and : in exactly one way.
+
+Cons has a canonical form, ++ has many ways in which the same thing can be expressed.
+
+** 23 Recursive characterisation
+
+(⊕ ←/- e) [] = e
+
+(⊕ ←/- e) ( [a] ++ x ) = a ⊕ (⊕ ←/- e) x
+
+We can say f = (⊕ ←/- e) is the solution of:
+
+f [] = e
+f([a] ++ x) = a ⊕ fx
+
+Progress of computation is recursive.
+
+Similarly,
+
+(⊕ -/→ e)[] = e
+(⊕ -/→ e)(x ++ [a] ) = (⊕ -/→ e) x ⊕ a
+
+But also
+(⊕ -/→ e) [] = e
+(⊕ -/→ e)([a] ++ x) = (⊕ -/→ (e ⊕ a) ) x
+
+So f = (⊕ -/→ e)(⊕ -/→ e) is the solution of
+f x = g e x
+g e [] = e
+g e([a] ++ x) = g(e ⊕ a) x
+
+So left reductions have the advantage that they give an iterative notion of programming. They are immediately expressing in terms of imperative notions:
+
+y := (⊕ -/→ e) x ⟹ y := e;
+                    for a ← x
+                    do y := y ⊕ a
+
+** 24 Efficiency Consideration
+
+In a functional programming language ←/- can be more time-efficient than -/→.
+←/- can be more space-efficient than -/→.
+
+Recall a << b = a and a >> b = b
+(<< ←/- e)[1, 2, 3]
+
+(⊕ ←/- e)([a] ++ x) = a ⊕ (⊕ ←/- e) x
+(⊕ -/→ e)([a] ++ x) = (⊕ -/→ (e ⊕ a)) x
+
+(<< ←/- e)[1, 2, 3]
+= 1 << (<< ←/- e)[2, 3] (←/- .2)
+= 1 (<<.1)
+This can terminate after one step
+
+(>> -/→ e)[3, 2, 1]
+= (>> -/→ (e >> 3))[2, 1] (-/→ .2)
+= (>> -/→ 3)[2, 1] (>>.1)
+= (>> -/→ (3 >> 2))[1] (-/→ .2)
+= (>> -/→ 2)[1] (>>.1)
+= (>> -/→ ( 2 >> 1))[] (-/→ .2)
+= (>> -/→ 1)[] (>>.1)
+= 1 (-/→ .1)
+
+Whole of the list must be traversed
 
 
+(+ ←/- 0)[1, 2, 3]
+= 1 + (+ ←/- 0)[2, 3]
+= 1 + (2 + (+ ←/- 0)[3])
+= 1 + (2 + (3 + (+ ←/- 0)[])
+= 1 + (2 + (3 + 0))
+= 6
+
+Linear space. Same size as the list that we started with.
+
+(+ -/→ 0)[1, 2, 3]
+= (+ -/→ (0 + 1))[2, 3]
+{ We can evaluate the answer now reducing the size of the list }
+= (+ -/→ 1)[2, 3]
+= (+ -/→ (1 + 2))[3]
+= (+ -/→ 3)[3]
+= (+ -/→ (3 + 3))[]
+= (+ -/→ 6)[]
+= 6
+Constant space
+
+Conclusion
+
+Use (⊕ -/→ e) when ⊕ is strict in the sense that it requires the evaluation of both arguments to return the result. Eg: + × ↑ ↓
+
+Use (⊕ ←/- e) when ⊕⊕ is non-strict that is it does not always demand the complete evaluation of both left and right arguments to return the result.
+
+e.g. and or <<
