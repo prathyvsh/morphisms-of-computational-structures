@@ -1,3 +1,84 @@
+* (Un)folding Programs
+
+** Boom Hierarchy
+
+One framework to begin with which kinds of pulls in together a lot of interesting ideas here is the BOOM hierarchy.
+
+It is a structure between 4 ✕ 4 properties giving us 16 structures.
+
+Write about how the unit less monoids are semigroups.
+
+TODO: Insert a diagram on this here.
+
+Also, show how some are forgetful and some are free.
+
+Talk about the idea of adjunctions.
+
+Discuss about the free vs. forgetful distinction in category theory.
+
+Talk about why ++ is a free structure while Last or +, * are not.
+
+Discuss about the practical implication of having a free structure in programming.
+
+Discuss about the properties: associativity, commutativity, distributivity, idempotency, reflexivity, symmetry, transitivity
+
+** Lattices
+
+These are nice structures. They can be thought of as giving a principled way to locate the evolution of an entity through multiple ways. And by the nature of its axiomatization, it is ensured that each stage in this evolution is tracked in a way that the commonalities between the branches of evolution converge to common points and then converge/diverge out from there. This is the process interpretation of the lattices. If we think about the structure interpretation, the best way to understand them is as closures and kernels of the problem domain.
+
+TODO: I have to understand the idea of closures/kernels, implication/conjunction, and their counterparts in algebraic geometry and how it connects up with the composition of the lattice.
+
+There are at least two dualities in play here
+
+Intersection / Union duality
+
+Chain / Antichain duality
+
+TODO: Describe how they are related to partial orders.
+
+How you can do closures and kernels on these structures to generate transitive reduction and transitive closure. What does this mean in terms of logic?
+
+How can logic be used to capture the various enumerative combinatorics of the structures?
+
+What role does the lattice play?
+
+How did the idea of lattices emerge?
+
+Dualgruppen idea
+
+Link with how splitting fields and group extensions idea gave birth to Galois theory
+
+TODO: Investigate why Peirce was after grounding some kind of duality using lattice like structures.
+TODO: Investigate how it connects with Schröder’s work
+TODO: Link with the history papers here
+
+Ideals/Filters
+
+Link to articles like that of Sowa and ISKO
+
+TODO: Think about how lattices are connected to quantifiers and quantifier elimination.
+TODO: Talk about how they are related to sheaves/fibres/sections/stack etc.
+
+Talk about how adjunctions between lattices give you closure/kernel operators and this is mirrored by monads and comonads.
+
+** Program calculation
+
+Discuss about the two schools: Eindhoven / Oxford
+
+Talk about their difference
+
+Talk about the general approach in a schematic manner once you investigate it.
+
+TODO: Read that Backhouse paper and investigate how Eindhoven style relates to Oxford style
+
+Stalactite vs. Stalagmite distinction in quotients vs. subgroups
+
+Injectivity vs. surjectivity
+
+Two aspects of Homomorphism
+
+How this is also reflected in the canonical decomposition of a function and in formal concept analysis style disjunction
+
 * [[http://podcasts.ox.ac.uk/introduction-theory-lists][An Introduction to a Theory of Lists]]
 
 Richard Bird
