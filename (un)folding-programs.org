@@ -2,11 +2,13 @@
 
 ** Boom Hierarchy
 
-One framework to begin with which kinds of pulls in together a lot of interesting ideas here is the BOOM hierarchy.
+One framework to begin with which kinds of pulls in together a lot of interesting ideas here is the Boom hierarchy.
 
-It is a structure between 4 ✕ 4 properties giving us 16 structures.
+It is a structure between presence/absence of 4 properties giving us 2⁴ = 16 structures.
 
-Write about how the unit less monoids are semigroups.
+Write about how they can be classified as { monoids, semigroups, trees, non-empty trees }
+
+TODO: Find out what the best structures to characterize the trees and their variants (idempotent, non-empty) are.
 
 TODO: Insert a diagram on this here.
 
@@ -21,6 +23,12 @@ Talk about why ++ is a free structure while Last or +, * are not.
 Discuss about the practical implication of having a free structure in programming.
 
 Discuss about the properties: associativity, commutativity, distributivity, idempotency, reflexivity, symmetry, transitivity
+
+TODO: Describe how can logic be used to capture the various enumerative combinatorics of the structures?
+
+Quantifying structures using logical operators and another approach using generating functions.
+
+TODO: Tie in groupoidification, combinatory species, generating functionology, orthogonal polynomials, analytic functors, and 12 fold way once you investigate them deeper here. Maintain only the contextually relevance details when describing: we are using them to understand computation and how they are related to program derivation.
 
 ** Lattices
 
@@ -37,8 +45,6 @@ Chain / Antichain duality
 TODO: Describe how they are related to partial orders.
 
 How you can do closures and kernels on these structures to generate transitive reduction and transitive closure. What does this mean in terms of logic?
-
-How can logic be used to capture the various enumerative combinatorics of the structures?
 
 What role does the lattice play?
 
@@ -60,6 +66,16 @@ TODO: Think about how lattices are connected to quantifiers and quantifier elimi
 TODO: Talk about how they are related to sheaves/fibres/sections/stack etc.
 
 Talk about how adjunctions between lattices give you closure/kernel operators and this is mirrored by monads and comonads.
+
+How lattices connect up with the idea of eigenvalue decomposition and extended Euclidean algorithm
+
+Eigenvalues describing the variance in a distribution
+
+Covariance/correlation of distributions
+
+Lattice homomorphisms
+
+Monotonicity/continuity
 
 ** Program calculation
 
