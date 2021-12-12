@@ -16,6 +16,12 @@ Also, show how some are forgetful and some are free.
 
 Talk about the idea of adjunctions.
 
+Probably not the right place to expand out on Galois theory, but a very broad strokes overview of Galois theory might help here.
+Just keep the salient bits for computation here.
+I can then point to resources which then elaborate this.
+
+Abstraction Interpretation, Noson Yanofsky / Rohith Parikh work.
+
 Discuss about the free vs. forgetful distinction in category theory.
 
 Talk about why ++ is a free structure while Last or +, * are not.
@@ -57,6 +63,7 @@ Link with how splitting fields and group extensions idea gave birth to Galois th
 TODO: Investigate why Peirce was after grounding some kind of duality using lattice like structures.
 TODO: Investigate how it connects with Schröder’s work
 TODO: Link with the history papers here
+TODO: Link with the work of Dedekind and how he leveraged the idea of ideals/filters and identified the concept of PID
 
 Ideals/Filters
 
@@ -69,11 +76,29 @@ Talk about how adjunctions between lattices give you closure/kernel operators an
 
 How lattices connect up with the idea of eigenvalue decomposition and extended Euclidean algorithm
 
+Briefly mention about the connection between Fourier Transforms, Bezout theorem, Euclidean GCD, Singular Value Decomposition, Krohn-Rhodes theory, Eigenvalue Decomposition etc.
+
+https://twitter.com/LdaFCosta/status/1454520031132459008
+https://sridharramesh.github.io/HowSridharThinks/math/BezoutEtc.html
+
+** Formal Concept Analysis
+
+With formal concept analysis, you get a way to partition out the problem space in such a way that the components are linearly independent. You attempt to coordinatize the space in a way that your axes, like eigenvectors spans the whole space so that when you decompose them into subcomponents, the intertwining is reduced and what you get out is orthogonal components which you can linearly recombine to recover the original space. They are in some sense the necessary and sufficient concepts to describe the space in a parsimonious manner. So an equivalence class with maximal information, i.e. the least amount of redundancy (entropy?) needed to describe the original space. It also prevents a skewed coordinate system which might cause overlap of two things on one idea or the converse of one thing as two ideas.
+
+Mention about Duality of Structure and Process from Anna Sfard’s paper and how it connects up with the idea of right and left fold having time / space tradeoffs.
+
 Eigenvalues describing the variance in a distribution
 
 Covariance/correlation of distributions
 
 Lattice homomorphisms
+
+Sets ~ Distributive? Lattices
+Ordered Sets ~ Matrices
+Multisets ~ Modular? Lattices
+Lists ~ Hypermatrices
+
+One of my realization lately has been that matrices model functions: https://twitter.com/prathyvsh/status/1459936336182452233 So I think matrices represent ordered sets in the BOOM hierarchy because you have a certain sense of direction with domain mapping to codomain. With lattices, what you are representing are the multisets/sets which can have different overlaps / elisions within them. I will gladly elaborate on this if you have any doubts on this. But I think I 
 
 Monotonicity/continuity
 
@@ -89,7 +114,7 @@ TODO: Read that Backhouse paper and investigate how Eindhoven style relates to O
 
 Stalactite vs. Stalagmite distinction in quotients vs. subgroups
 
-Injectivity vs. surjectivity
+Injectivity vs. Surjectivity
 
 Two aspects of Homomorphism
 
