@@ -635,3 +635,8 @@ The n “simple” coordinates used to coordinatize Euclidean space are copies o
 Symmetries of a Hexagon.
 
 Let us imagine a regular polygon with n vertices in the plane with one vertex topmost. Let ℤ_n detone the cyclic gorup of order n (corresponding to a modulo n counting circuit). By our convention ℤ_n ≀ ℤ_2 denotes the wreath product of the right rectangular representations of ℤ_n and ℤ_2. Symmetries of a hexagon comprises the dihedral group D_6 (resp. D_n for the regular n-gon), which is covered by such a wreath product. If we paint one side of the hexagon white and the other black, and number the vertices of the hexagon clockwise on the white side from 0 to 5, then a pair (k, color) determines a configuration of the hexagon where we understand k ∈ ℤ_6 as the number on the currently topmost vertex and color ∈ ℤ_2 as the color of the face we see, either 0 denoting white or 1 denoting black. This gives a coordinate representation of the state of the hexagon.
+
+* To Read next
+
+** [[https://www.journals.uchicago.edu/doi/pdf/10.1086/661623][AfterMath: The Work of Proof in the Age of Human-Machine Collaboration]]
+Stephanie Dick

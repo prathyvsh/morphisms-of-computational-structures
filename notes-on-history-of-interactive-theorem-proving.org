@@ -1,2 +1,67 @@
 * History of Interactive Theorem Proving
 John Harrison, Josef Urban, Freek Wiedijk (2014)
+
+
+Interactive Theorem Proving
+An arrangement where the machine and a human user work together interactively to produce a formal proof.
+
+Possibilities:
+
+Computer as a checker of a formal proof produced by a human
+Prover may be highly automated and powerful
+
+Most of the earliest work on computer-assisted proof in the 1950s
+
+A computer program for Presburger’s algorithm
+Davis 1957
+
+A proof method for quantification theory: Its justification and realization
+Gilmore 1960
+
+A computer procedure for quantification theory
+Davis and Putnam 1960
+
+Toward Mechanical Mathematics
+Wang 1960
+
+A mechanical proof procedure and its realization in an electronic computer
+Dag Prawitz, Håken Prawitz, Neri Voghera 1960
+
+and 1960s
+
+A machine-oriented logic based on the resolution principle
+Robinson 1965
+
+An inverse method of establishing deducibility in classical predicate calculus
+Maslov 1964
+
+Mechanical theorem-proving by model elimination
+Loveland 1968
+
+was dedicated to automated theorem proving.
+
+AI-style approaches:
+
+The logic theory machine
+Newell and Simon 1956
+
+Realization of a geometry-theorem proving machine
+Gelerntner 1959
+
+Some automatic proofs in analysis
+Bledsoe 1984
+
+The work of proof in the age of human-machine collaboration
+Dick 2011
+
+
+Proofchecker
+Paul Abrahams
+Machine Verification of Mathematical Proof (1963)
+
+Paul Abrahams introduced in embryonic form many ideas that became significant later:
+
+- a kind of macro facility for derived inference rules
+- the integration of calculational derivations as well as natural deduction rules
+
+Automatic theorem proof-checking in set theory: A preliminary report — Bledsoe and Gilbert 1967 was inspired by Bledsoe’s interest in formalizing the already unusually formal proofs in his PhD adviser A. P. Morse’s  ‘Set Theory’.
