@@ -636,6 +636,20 @@ Symmetries of a Hexagon.
 
 Let us imagine a regular polygon with n vertices in the plane with one vertex topmost. Let ℤ_n detone the cyclic gorup of order n (corresponding to a modulo n counting circuit). By our convention ℤ_n ≀ ℤ_2 denotes the wreath product of the right rectangular representations of ℤ_n and ℤ_2. Symmetries of a hexagon comprises the dihedral group D_6 (resp. D_n for the regular n-gon), which is covered by such a wreath product. If we paint one side of the hexagon white and the other black, and number the vertices of the hexagon clockwise on the white side from 0 to 5, then a pair (k, color) determines a configuration of the hexagon where we understand k ∈ ℤ_6 as the number on the currently topmost vertex and color ∈ ℤ_2 as the color of the face we see, either 0 denoting white or 1 denoting black. This gives a coordinate representation of the state of the hexagon.
 
+* [[http://web.eecs.utk.edu/~bmaclenn/papers/WLIOW.pdf][Words Lie in Our Way]]
+Bruce McLennan
+June 20, 1994
+19 Pages
+
+If numbers are not broken down into digits but are represented by physical quantities proportional to them the computer is called an analogue. For example, a slide rule. In a simple analog computer the representing variable in the computer model is proportional to the represented variable in the modeled system.
+
+In traditional applications of analog computing, the represented variables were continuous phyical quantities, and so the analog computer usually made use of continuous quantities (states of the analog device, such as voltages or currents) to represent them. In digital computers, in contrast, the discrete states of the computer and the values of the modeled variable are not related by a simple proportion.
+
+There is an isomorphism (one-to-one structure preserving map) between the values of a model variable andd the values of the system variable in both analog and digital or a homomorphism (many-to-one structure preserving map) if we consider that a discrete model is an approximation of a continuous system and an analog system too can only have a finite amount of precision when it is used for simulating models.
+
+The complementarity principle states that continuous and discrete models should be complementary, that is, an approximately-discrete continuous model should mak the same macroscopic predictions as a discrete model, and conversely an approximately-continuous discrete model shhould make the same macroscopic predictions as a continuous model.
+
+
 * To Read next
 
 ** [[https://www.journals.uchicago.edu/doi/pdf/10.1086/661623][AfterMath: The Work of Proof in the Age of Human-Machine Collaboration]]
