@@ -649,6 +649,35 @@ There is an isomorphism (one-to-one structure preserving map) between the values
 
 The complementarity principle states that continuous and discrete models should be complementary, that is, an approximately-discrete continuous model should mak the same macroscopic predictions as a discrete model, and conversely an approximately-continuous discrete model shhould make the same macroscopic predictions as a continuous model.
 
+In computation, the substance (matter and energy) is merely a carrier for the form (mathematical structure).
+
+The principal difference between analog and digital computation is that digital compuatiton has discrete series for its successive state while for analog compuattion the states form a continuous trajectory in state space. The state space provides substance for computation upon which a form is imposed by the path through state space.
+
+The equation:
+S(t') = F[t, S(t), X(t)]
+
+is used to characterize four kinds of autonomous systems.
+
+If we call t as time, S(t) as dependent variables, and X(t) as independent variables, depending on whether the next state S(t') depends on them;
+
+Independent of X: Purely autonomous (Square root of 2)
+Dependent of X only at start: Less autonomous (Square root of a given number)
+Dependent of X anytime: Interactive computing / Feedback control system
+Dependent of X but independent of S: Reactive system with no memory
+
+Axiomatic systecs studied in logic do not define a unique trajectory. Rather they define constraints (the inference rules) on allowaable trajectories, but the trajectory over which a give computation proceeds that is, the proof generated is determined by an outside agent.
+
+Formality vs. Transduction
+
+To the extent that the variables do refere to spcific physical quantities, equations are material.
+
+Formal equations: Contain no physical variables while material equations do.
+
+The formal equations specify an implementation-independent computation, whereas the material equations specify an implementation-specific transduction.
+
+Intuitively, the formal equations are the program, the material equations are the input/output relations to the real world.
+
+
 
 * To Read next
 
