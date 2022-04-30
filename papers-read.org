@@ -681,6 +681,20 @@ In its modern sense, calculus emboddies the idea of digital computation and form
 
 Simulacrum as a possible alternate to calculus. Simulacra have images as counterparts of formulas in calculi.
 
+One commonly distinguishes between an uninterpreted calculus andan interpreted calculus. Both hare formal computational systems, but in the former case we consider syntactic relaitons that are internal to the system, wheras in the latter we take into account semantic relaitons, which associate some meaning in an external domain with the states andd processes of the calculus, thus making them representations.
+
+I think of this roughly as being concerned about the internal relations (syntactic) and the mappings being made from the exterior to other systems (semantics).
+
+Systematicity in both the analog and digital cases can be defined as continuity, under the appropriate topology in each case.
+
+Computation is the instantiation of a formal process in a physical system to the end that we may exploit or better understand that process.
+
+A task is computational if its function would be served as well by any system with the same formal structure. Thus, computing the square root and unifying propositions are computational tasks, but digesting starch is not.
+
+A system is computational if it accomplishes a computational task by means of a computation.
+
+A computational system comprises a formal part (e.g., a calculus or simulacrum) and, usually, an interpretation.
+
 * To Read next
 
 ** [[https://www.journals.uchicago.edu/doi/pdf/10.1086/661623][AfterMath: The Work of Proof in the Age of Human-Machine Collaboration]]
