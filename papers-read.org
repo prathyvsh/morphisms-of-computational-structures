@@ -677,7 +677,9 @@ The formal equations specify an implementation-independent computation, whereas 
 
 Intuitively, the formal equations are the program, the material equations are the input/output relations to the real world.
 
+In its modern sense, calculus emboddies the idea of digital computation and formal logical inference.
 
+Simulacrum as a possible alternate to calculus. Simulacra have images as counterparts of formulas in calculi.
 
 * To Read next
 
